@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="ribbon d-flex justify-content-center align-items-center">
+        <img src="{{ url_for('static', filename='img/nhl_logo.png') }}" alt="NHL Logo" width="40">
+        <h1 class="mx-auto">NHL Draft Pick Recommender</h1>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Reorder the ranking to your liking</h2>
+        <br>
+        <div class="list-container mx-auto">
+            <ol id="player-list" class="list-group">
+                {% for player in players %}
+                    <li class="list-group-item">{{ player }}</li>
+                {% endfor %}
+            </ol>
+            <button id="submit" class="btn btn-primary float-right">Submit</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

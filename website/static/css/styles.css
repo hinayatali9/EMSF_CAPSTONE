@@ -1,0 +1,41 @@
+.ribbon {
+    background-color: #3584e4;
+    padding: 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.ribbon img {
+    position: absolute;
+    left: 2%;
+}
+
+#player-list {
+    counter-reset: list-counter;
+    cursor: move;
+    width: 100%;
+}
+
+#player-list .list-group-item {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#submit {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.list-container {
+    width: 50%;
+}
+
+#player-list .list-group-item::before {
+    content: counter(list-counter) ".";
+    counter-increment: list-counter;
+    margin-right: 10px;
+    font-weight: bold;
+    float: left;
+}
