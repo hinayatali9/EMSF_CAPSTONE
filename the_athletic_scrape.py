@@ -766,4 +766,4 @@ for index, row in df1.iterrows():
         print(row['PLAYER_NAME'], best_score)
 
 # Write the merged dataframe to a new CSV file
-merged_df.to_csv('merged.csv', index=False)
+merged_df[["PLAYER_NAME","PLAYER_ID","RANK"]].to_csv('merged.csv', index=False)
