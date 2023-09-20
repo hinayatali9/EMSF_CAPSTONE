@@ -39,3 +39,17 @@
     font-weight: bold;
     float: left;
 }
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+th {
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    padding: 10px; 
+}

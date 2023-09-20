@@ -8,6 +8,7 @@ pandas = "*"
 fuzzywuzzy = "*"
 python-levenshtein = "*"
 flask = "*"
+lxml = "*"
 
 [dev-packages]
 
