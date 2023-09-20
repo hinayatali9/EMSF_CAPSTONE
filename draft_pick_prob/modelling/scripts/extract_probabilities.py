@@ -70,4 +70,24 @@ def get_pick_probability_by_pick(players_ids_removed):
     for i in range(len(unique_numbers_per_list)):
         for j in range(len(unique_numbers_per_list[i][0])):
             heatmap_array[i][int(unique_numbers_per_list[i][0][j])-1]=percentage_occurrences_per_list[i][int(j)]
+    column_vals=['PICK_'+ str(i+len(players_ids_removed)+1) for i in range(x-len(players_ids_removed)+1)]
+    heatmap_array=pd.DataFrame(heatmap_array, columns=column_vals)
+    player_ability_parameters_df.reset_index(drop=True, inplace=True)
+    heatmap_array.reset_index(drop=True, inplace=True)
+    heatmap_array=pd.concat([player_ability_parameters_df[['PLAYER_NAME', 'PLAYER_ID']], heatmap_array], axis=1)
     return heatmap_array
+
+def probability_available_pick_x(players_ids_removed):
+    df_players=get_pick_probability_by_pick(players_ids_removed)
+    probability_available_pick_x=df_players.copy()
+    column_numbers=probability_available_pick_x.columns[2:]
+    accumulated_probability=0
+    for i in range(len(column_numbers)):
+        if i==0:
+            probability_available_pick_x[column_numbers[i]]=1
+            accumulated_probability=1-df_players[column_numbers[i]]
+        else:
+            probability_available_pick_x[column_numbers[i]]=accumulated_probability
+            accumulated_probability-=df_players[column_numbers[i]]
+    return probability_available_pick_x
+
