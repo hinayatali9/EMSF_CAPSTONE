@@ -1,0 +1,1146 @@
+,Team,Type,POS,Name,POS.1,AGE,SH,ACQUIRED,GP,G,A,P,GAA,SV%,League,Notes,NHL eP
+0,Avalanche,Majors,RD,"Byram, Bowen",LD/RD,22,L,Drafted (4 - 2019),42,10.0,14.0,24.0,,,NHL,,24.0
+1,Avalanche,Majors,F,"Foudy, Jean-Luc",C,21,R,Drafted (75 - 2020),46,11.0,25.0,36.0,,,AHL,,25.0
+2,Avalanche,Minors,F,"Olausson, Oskar",RW,20,L,Drafted (28 - 2021),63,11.0,9.0,20.0,,,AHL,,10.0
+3,Avalanche,Minors,F,"Beaucage, Alex",RW,22,R,Drafted (78 - 2019),63,8.0,12.0,20.0,,,AHL,,10.0
+4,Avalanche,Minors,F,"Pavel, Ondrej","C, LW, RW",23,L,Signed to ELC,39,6.0,9.0,15.0,,,NCAA,,6.0
+5,Avalanche,Minors,F,"Polin, Jason",RW,24,R,Signed to ELC,39,30.0,17.0,47.0,,,NCAA,,19.0
+6,Avalanche,Minors,F,"Stienburg, Matthew","C, RW",22,R,Drafted (63 - 2019),18,2.0,5.0,7.0,,,NCAA,,6.0
+7,Avalanche,Minors,D,"Fairbrother, Gianni",LD/RD,22,L,Traded,25,1.0,6.0,7.0,,,AHL,,9.0
+8,Avalanche,Minors,G,"Annunen, Justus",G,23,L,Drafted (64 - 2018),41,0.0,0.0,0.0,2.54,0.916,AHL,,0.0
+9,Avalanche,Minors,G,"Miner, Trent",G,22,L,Drafted (202 - 2019),37,0.0,0.0,0.0,3.04,0.91,ECHL,*no translation,0.0
+10,Avalanche,Loaned,F,"Kovalenko, Nikolai",RW,23,L,Drafted (171 - 2018),56,21.0,33.0,54.0,,,KHL,,61.0
+11,Avalanche,Prospects,F,"Ritchie, Calum",C,18,R,Drafted (27 - 2023),59,24.0,35.0,59.0,,,OHL,,12.0
+12,Avalanche,Prospects,F,"Buyalsky, Andrei",C,23,L,Drafted (92 - 2021),34,5.0,13.0,18.0,,,NCAA,,8.0
+13,Avalanche,Prospects,F,"Ambrosio, Colby",C,21,R,Drafted (118 - 2020),36,10.0,11.0,21.0,,,NCAA,,9.0
+14,Avalanche,Prospects,F,"Jedlicka, Maros",C,20,L,Drafted (219 - 2023),39,17.0,18.0,35.0,,,Slovak Extraliga,,22.0
+15,Avalanche,Prospects,F,"Makar, Taylor",C,22,L,Drafted (220 - 2021),32,10.0,2.0,12.0,,,NCAA,,6.0
+16,Avalanche,Prospects,D,"Gulyayev, Mikhail",LD,18,L,Drafted (31 - 2023),22,2.0,23.0,25.0,,,MHL,,13.0
+17,Avalanche,Prospects,D,"Behrens, Sean",LD,20,L,Drafted (61 - 2021),31,3.0,18.0,21.0,,,NCAA,,11.0
+18,Avalanche,Prospects,D,"Ishimnikov, Nikita",RD,18,R,Drafted (155 - 2023),41,11.0,7.0,18.0,,,MHL,,5.0
+19,Avalanche,Prospects,D,"Hanzel, Jeremy",LD,20,L,Drafted (187 - 2023),66,13.0,35.0,48.0,,,WHL,,8.0
+20,Avalanche,Prospects,D,"Romaine, Chris",RD,19,R,Drafted (193 - 2022),48,0.0,10.0,10.0,,,USHL,,2.0
+21,Avalanche,Prospects,G,"Zhigalov, Ivan",G,20,R,Drafted (225 - 2022),45,0.0,0.0,0.0,3.59,0.889,OHL,,0.0
+22,Avalanche,Reserve,F,"Ranta, Sampo",LW,23,L,Drafted (78 - 2018),58,11.0,11.0,22.0,,,AHL,,12.0
+23,Blackhawks,Majors,C,"Bedard, Connor",C,18,R,Drafted (1 - 2023),57,71.0,72.0,143.0,,,WHL,,29.0
+24,Blackhawks,Majors,LW,"Kurashev, Philipp","LW, C, RW",23,L,Drafted (120 - 2018),70,9.0,15.0,25.0,,,NHL,,25.0
+25,Blackhawks,Majors,C,"Reichel, Lukas","LW, C",21,L,Drafted (17 - 2020),55,20.0,31.0,51.0,,,AHL,,30.0
+26,Blackhawks,Majors,LD,"Korchinski, Kevin",LD,19,L,Drafted (7 - 2022),54,11.0,62.0,73.0,,,WHL,,16.0
+27,Blackhawks,Majors,LD,"Vlasic, Alex",LD,22,L,Drafted (43 - 2019),56,2.0,17.0,19.0,,,AHL,,11.0
+28,Blackhawks,Minors,F,"Ludwinski, Paul",C,19,L,Drafted (39 - 2022),47,9.0,25.0,34.0,,,OHL,,9.0
+29,Blackhawks,Minors,F,"Dach, Colton",C,20,L,Drafted (62 - 2021),23,12.0,15.0,27.0,,,WHL,,14.0
+30,Blackhawks,Minors,F,"Hayes, Gavin",LW,19,R,Drafted (66 - 2022),66,41.0,40.0,81.0,,,OHL,,14.0
+31,Blackhawks,Minors,F,"Savoie, Samuel",LW,19,L,Drafted (81 - 2022),60,26.0,33.0,59.0,,,QMJHL,,9.0
+32,Blackhawks,Minors,F,"Teplý, Michal",LW,22,R,Drafted (105 - 2019),56,9.0,16.0,25.0,,,AHL,,14.0
+33,Blackhawks,Minors,F,"Luypen, Jalen",C,21,L,Drafted (216 - 2021),38,18.0,21.0,39.0,,,WHL,,12.0
+34,Blackhawks,Minors,F,"Rolston, Ryder","C, LW, RW",21,R,Traded,27,7.0,13.0,20.0,,,NCAA,,12.0
+35,Blackhawks,Minors,D,"Phillips, Isaak",LD,21,L,Drafted (141 - 2020),51,6.0,17.0,23.0,,,AHL,,14.0
+36,Blackhawks,Minors,D,"Kaiser, Wyatt",LD,21,L,Drafted (81 - 2020),35,5.0,18.0,23.0,,,NCAA,,10.0
+37,Blackhawks,Minors,D,"Allan, Nolan",LD,20,L,Drafted (32 - 2021),57,11.0,16.0,27.0,,,WHL,,5.0
+38,Blackhawks,Minors,D,"Del Mastro, Ethan",LD,20,L,Drafted (105 - 2021),52,7.0,52.0,59.0,,,OHL,,13.0
+39,Blackhawks,Minors,D,"Crevier, Louis",RD,22,R,Drafted (188 - 2020),62,0.0,5.0,5.0,,,AHL,,3.0
+40,Blackhawks,Minors,G,"Commesso, Drew",G,21,L,Drafted (46 - 2020),34,0.0,0.0,0.0,2.46,0.913,NCAA,,0.0
+41,Blackhawks,Loaned,F,"Saarela, Antti",C,22,L,Drafted (123 - 2019),41,7.0,11.0,18.0,,,Liiga,,16.0
+42,Blackhawks,Prospects,F,"Nazar, Frank","RW, C",19,R,Drafted (13 - 2022),13,2.0,5.0,7.0,,,NCAA,*figure out college acronym,9.0
+43,Blackhawks,Prospects,F,"Moore, Oliver",C,18,L,Drafted (19 - 2023),61,31.0,44.0,75.0,,,NTDP,"*After high school, only has national teams",20.0
+44,Blackhawks,Prospects,F,"Kantserov, Roman",RW,18,L,Drafted (44 - 2023),45,27.0,27.0,54.0,,,MHL,*no translation,14.0
+45,Blackhawks,Prospects,F,"Misiak, Martin",RW,18,L,Drafted (55 - 2023),27,6.0,11.0,17.0,,,USHL,"*no translation, has another team with slightly more games but much worse stats",7.0
+46,Blackhawks,Prospects,F,"Greene, Ryan",C,19,R,Drafted (57 - 2022),38,9.0,22.0,31.0,,,NCAA,,13.0
+47,Blackhawks,Prospects,F,"Lardis, Nick",RW,18,L,Drafted (67 - 2023),69,37.0,28.0,65.0,,,OHL,,11.0
+48,Blackhawks,Prospects,F,"Slaggert, Landon",C,21,L,Drafted (79 - 2020),35,7.0,6.0,13.0,,,NCAA,,6.0
+49,Blackhawks,Prospects,F,"Thompson, Aidan",C,21,L,Drafted (90 - 2022),32,10.0,22.0,32.0,,,NCAA,,16.0
+50,Blackhawks,Prospects,F,"Felcman, Jiri",C,18,L,Drafted (93 - 2023),40,10.0,21.0,31.0,,,U20 Elit,,3.0
+51,Blackhawks,Prospects,F,"Pharand, Alex","C, RW",18,R,Drafted (99 - 2023),67,18.0,21.0,39.0,,,OHL,,7.0
+52,Blackhawks,Prospects,F,"Stjernborg, Victor",C,20,L,Drafted (108 - 2021),42,1.0,7.0,8.0,,,SHL,,9.0
+53,Blackhawks,Prospects,F,"Marcel, Marcel",LW,19,L,Drafted (131 - 2023),52,14.0,18.0,32.0,,,QMJHL,,6.0
+54,Blackhawks,Prospects,F,"Oscarson, Milton",C,20,L,Drafted (167 - 2023),45,1.0,2.0,3.0,,,SHL,,3.0
+55,Blackhawks,Prospects,F,"Safonov, Ilya",C,22,L,Drafted (172 - 2021),64,19.0,18.0,37.0,,,KHL,,37.0
+56,Blackhawks,Prospects,F,"James, Dominic","LW, C",21,L,Drafted (173 - 2022),35,10.0,18.0,28.0,,,NCAA,,13.0
+57,Blackhawks,Prospects,F,"Gorman, Liam",C,23,L,Traded,32,12.0,12.0,24.0,,,NCAA,,12.0
+58,Blackhawks,Prospects,F,"Juntorp, Nils",LW,19,R,Drafted (188 - 2022),59,12.0,15.0,27.0,,,USHL,,5.0
+59,Blackhawks,Prospects,F,"Tohila, Riku",C,19,R,Drafted (199 - 2022),42,18.0,6.0,24.0,,,U20SM-sarja,,4.0
+60,Blackhawks,Prospects,D,"Rinzel, Sam",RD,19,R,Drafted (25 - 2022),58,9.0,27.0,36.0,,,USHL,,7.0
+61,Blackhawks,Prospects,D,"Harding, Taige",LD,21,L,Drafted (91 - 2021),37,4.0,13.0,17.0,,,NCAA,,7.0
+62,Blackhawks,Prospects,D,"Krutil, Michael",RD,21,R,Drafted (110 - 2020),22,0.0,1.0,1.0,,,Czechia 2,(also played in Czechia for similar games),1.0
+63,Blackhawks,Prospects,D,"Peltonen, Janne",LD,18,L,Drafted (195 - 2023),40,3.0,6.0,9.0,,,U20SM-sarja,,2.0
+64,Blackhawks,Prospects,D,"Kelley, Connor",RD,21,R,Drafted (204 - 2021),21,0.0,6.0,6.0,,,NCAA,,5.0
+65,Blackhawks,Prospects,G,"Gajan, Adam",G,19,L,Drafted (35 - 2023),34,0.0,0.0,0.0,2.57,0.917,NAHL,,0.0
+66,Blackhawks,Prospects,G,"Basse, Dominic",G,22,L,Drafted (167 - 2019),19,0.0,0.0,0.0,2.29,0.911,NCAA,,0.0
+67,Blues,Majors,LW,"Neighbours, Jake",LW,21,L,Drafted (26 - 2020),43,6.0,4.0,10.0,,,NHL,,10.0
+68,Blues,Majors,C,"Alexandrov, Nikita",C,22,L,Drafted (62 - 2019),41,19.0,19.0,38.0,,,AHL,,30.0
+69,Blues,Majors,G,"Hofer, Joel",G,23,L,Drafted (107 - 2018),47,0.0,0.0,0.0,2.5,0.921,AHL,,0.0
+70,Blues,Minors,F,"Bolduc, Zachary",C,20,L,Drafted (17 - 2021),61,50.0,60.0,110.0,,,QMJHL,,17.0
+71,Blues,Minors,F,"Dean, Zach",C,20,L,Traded,50,33.0,37.0,70.0,,,QMJHL,,13.0
+72,Blues,Minors,F,"Abramov, Mikhail",C,22,L,Traded,34,6.0,10.0,16.0,,,AHL,,15.0
+73,Blues,Minors,F,"Dickinson, Tanner",C,21,L,Drafted (119 - 2020),35,18.0,29.0,47.0,,,OHL,,16.0
+74,Blues,Minors,F,"Washkurak, Keean",C,22,L,Drafted (155 - 2019),45,10.0,3.0,13.0,,,AHL,,9.0
+75,Blues,Minors,F,"Laferrière, Mathias",C,23,R,Drafted (169 - 2018),50,9.0,17.0,26.0,,,AHL,,17.0
+76,Blues,Minors,D,"Tucker, Tyler",LD/RD,23,L,Drafted (200 - 2018),41,3.0,18.0,21.0,,,AHL,,16.0
+77,Blues,Minors,D,"Kessel, Matthew",RD,23,R,Drafted (150 - 2020),71,5.0,28.0,33.0,,,AHL,,15.0
+78,Blues,Minors,D,"Buchinger, Michael",LD,19,L,Drafted (88 - 2022),61,15.0,52.0,67.0,,,OHL,,13.0
+79,Blues,Minors,D,"Lööf, Leo",LD,21,L,Drafted (88 - 2020),55,4.0,12.0,16.0,,,Liiga,,11.0
+80,Blues,Minors,D,"Skinner, Hunter",RD,22,R,Traded,23,0.0,8.0,8.0,,,AHL,,11.0
+81,Blues,Minors,D,"Gaudet, Marc-Andre",LD,19,L,Drafted (152 - 2022),66,15.0,46.0,61.0,,,QMJHL,,9.0
+82,Blues,Minors,D,"Malmström, Anton",LD,23,L,Signed to ELC,33,3.0,3.0,6.0,,,NCAA,,3.0
+83,Blues,Minors,D,"Biakabutuka, Jérémie",RD,21,R,Signed to ELC,56,17.0,25.0,42.0,,,QMJHL,,7.0
+84,Blues,Minors,G,"Zherenko, Vadim",G,22,L,Drafted (208 - 2019),25,0.0,0.0,0.0,3.14,0.913,AHL,,0.0
+85,Blues,Minors,G,"Ellis, Colten",G,22,L,Drafted (93 - 2019),27,0.0,0.0,0.0,3.46,0.888,ECHL,,0.0
+86,Blues,Minors,G,"Cranley, Will",G,21,L,Drafted (163 - 2020),44,0.0,0.0,0.0,3.87,0.884,OHL,,0.0
+87,Blues,Loaned,F,"Dvorsky, Dalibor",C,18,L,Drafted (10 - 2023),38,6.0,8.0,14.0,,,HockeyAllsvenskan,,11.0
+88,Blues,Prospects,F,"Snuggerud, Jimmy","RW, C",19,R,Drafted (23 - 2022),40,21.0,29.0,50.0,,,NCAA,,20.0
+89,Blues,Prospects,F,"Stenberg, Otto",C,18,L,Drafted (25 - 2023),29,11.0,15.0,26.0,,,J20 Nationell,*has SHL for less games,7.0
+90,Blues,Prospects,F,"Robertsson, Simon",RW,20,L,Drafted (71 - 2021),16,5.0,2.0,7.0,,,SHL,"*a lot of leagues, has Hockey Allsvenskan for 1 less game",20.0
+91,Blues,Prospects,F,"Kaskimäki, Aleksanteri",C,19,L,Drafted (73 - 2022),41,3.0,4.0,7.0,,,Liiga,,6.0
+92,Blues,Prospects,F,"Pekarcik, Juraj",LW,17,L,Drafted (76 - 2023),30,0.0,3.0,3.0,,,Slovak Extraliga,,2.0
+93,Blues,Prospects,F,"Peterson, Dylan",C,21,R,Drafted (86 - 2020),39,5.0,13.0,18.0,,,NCAA,,7.0
+94,Blues,Prospects,F,"Stancl, Jakub",LW,18,L,Drafted (106 - 2023),35,11.0,6.0,17.0,,,J20 Nationell,,4.0
+95,Blues,Prospects,F,"Sim, Landon",RW,19,L,Drafted (184 - 2022),56,14.0,7.0,21.0,,,OHL,,4.0
+96,Blues,Prospects,F,"Vorobyov, Ivan",C,21,R,Drafted (198 - 2021),28,6.0,19.0,25.0,,,VHL,,24.0
+97,Blues,Prospects,F,"Susuyev, Nikita",RW,18,L,Drafted (202 - 2023),38,11.0,17.0,28.0,,,MHL,,9.0
+98,Blues,Prospects,D,"Lindstein, Theo",LD,18,L,Drafted (29 - 2023),32,1.0,1.0,2.0,,,SHL,,3.0
+99,Blues,Prospects,D,"Burns, Quinton",LD,18,L,Drafted (74 - 2023),54,2.0,27.0,29.0,,,OHL,,6.0
+100,Blues,Prospects,D,"Koromyslov, Arseni",LD,19,L,Drafted (120 - 2022),29,0.0,2.0,2.0,,,KHL,,4.0
+101,Blues,Prospects,D,"Fischer, Paul",LD,18,L,Drafted (138 - 2023),22,2.0,4.0,6.0,,,USHL,*U18 Naional team has more games,3.0
+102,Blues,Prospects,D,"Mayich, Matthew",LD,18,L,Drafted (170 - 2023),64,5.0,17.0,22.0,,,OHL,,4.0
+103,Blues,Prospects,D,"Beck, Noah",LD,22,L,Drafted (194 - 2020),37,6.0,17.0,23.0,,,NCAA,,10.0
+104,Blue Jackets,Majors,RW,"Marchenko, Kirill",RW,23,R,Drafted (49 - 2018),59,21.0,4.0,25.0,,,NHL,,25.0
+105,Blue Jackets,Majors,RW,"Johnson, Kent","LW, C",20,L,Drafted (5 - 2021),79,16.0,24.0,40.0,,,NHL,,40.0
+106,Blue Jackets,Majors,LW,"Texier, Alexandre","LW, C, RW",23,L,Drafted (45 - 2017),46,13.0,22.0,35.0,,,NL,,29.0
+107,Blue Jackets,Majors,C,"Fantilli, Adam",C,18,L,Drafted (3 - 2023),36,30.0,35.0,65.0,,,NCAA,,29.0
+108,Blue Jackets,Majors,RW,"Chinakhov, Yegor","RW, LW",22,L,Drafted (21 - 2020),30,4.0,9.0,13.0,,,NHL,,13.0
+109,Blue Jackets,Majors,RW,"Voronkov, Dmitri",LW,23,L,Drafted (114 - 2019),54,18.0,13.0,31.0,,,KHL,,36.0
+110,Blue Jackets,Majors,RD,"Boqvist, Adam",RD,23,R,Traded,46,5.0,19.0,24.0,,,NHL,,24.0
+111,Blue Jackets,Minors,F,"Sillinger, Cole",C,20,L,Drafted (12 - 2021),64,3.0,8.0,11.0,,,NHL,,11.0
+112,Blue Jackets,Minors,F,"Foudy, Liam","LW, C",23,L,Drafted (18 - 2018),62,7.0,7.0,14.0,,,NHL,,14.0
+113,Blue Jackets,Minors,F,"McKown, Hunter",C,21,R,Signed to ELC,38,21.0,7.0,28.0,,,NCAA,,12.0
+114,Blue Jackets,Minors,F,"Pyyhtiä, Mikael",C,21,L,Drafted (114 - 2020),47,7.0,13.0,20.0,,,Liiga,,15.0
+115,Blue Jackets,Minors,F,"Angle, Tyler",C,22,L,Drafted (212 - 2019),66,11.0,12.0,23.0,,,AHL,,11.0
+116,Blue Jackets,Minors,F,"Del Bel Belluz, Luca",C,19,L,Drafted (44 - 2022),66,40.0,47.0,87.0,,,OHL,,16.0
+117,Blue Jackets,Minors,F,"Dumais, Jordan",RW,19,R,Drafted (96 - 2022),64,54.0,86.0,140.0,,,QMJHL,,20.0
+118,Blue Jackets,Minors,F,"Malatesta, James",LW,20,L,Drafted (133 - 2021),55,37.0,29.0,66.0,,,QMJHL,,11.0
+119,Blue Jackets,Minors,F,"Butler, Cameron",RW,21,R,Signed to ELC,63,27.0,28.0,55.0,,,OHL,,10.0
+120,Blue Jackets,Minors,D,"Berni, Tim",LD,23,L,Drafted (159 - 2018),59,1.0,2.0,3.0,,,NHL,,3.0
+121,Blue Jackets,Minors,D,"Christiansen, Jacob",LD/RD,23,L,Signed to ELC,50,11.0,23.0,34.0,,,AHL,,22.0
+122,Blue Jackets,Minors,D,"Jiricek, David",RD,19,R,Drafted (6 - 2022),55,6.0,32.0,38.0,,,AHL,,22.0
+123,Blue Jackets,Minors,D,"Svozil, Stanislav",LD,20,L,Drafted (69 - 2021),56,11.0,67.0,78.0,,,WHL,,16.0
+124,Blue Jackets,Minors,D,"Knazko, Samuel",LD,21,L,Drafted (78 - 2020),50,1.0,20.0,21.0,,,AHL,,13.0
+125,Blue Jackets,Minors,D,"Mateychuk, Denton",LD,19,L,Drafted (12 - 2022),63,8.0,57.0,65.0,,,WHL,,12.0
+126,Blue Jackets,Minors,D,"Ceulemans, Corson",RD,20,R,Drafted (25 - 2021),33,8.0,15.0,23.0,,,NCAA,,11.0
+127,Blue Jackets,Minors,D,"Bjørgvik Holm, Ole Julian",LD,21,L,Drafted (145 - 2020),25,0.0,2.0,2.0,,,AHL,,3.0
+128,Blue Jackets,Minors,G,"Greaves, Jet",G,22,L,Signed to ELC,43,0.0,0.0,0.0,3.08,0.899,AHL,,0.0
+129,Blue Jackets,Minors,G,"Lalonde, Nolan",G,19,L,Signed to ELC,41,0.0,0.0,0.0,4.09,0.868,OHL,,0.0
+130,Blue Jackets,Prospects,F,"Brindley, Gavin",C,18,R,Drafted (34 - 2023),41,12.0,26.0,38.0,,,NCAA,,15.0
+131,Blue Jackets,Prospects,F,"Whitelaw, William",RW,18,R,Drafted (66 - 2023),62,36.0,25.0,61.0,,,USHL,,12.0
+132,Blue Jackets,Prospects,F,"Dolzhenkov, Kirill",RW,19,L,Drafted (109 - 2022),50,18.0,27.0,45.0,,,MHL,,11.0
+133,Blue Jackets,Prospects,F,"Pinelli, Luca",C,18,L,Drafted (114 - 2023),67,29.0,34.0,63.0,,,OHL,,11.0
+135,Blue Jackets,Prospects,F,"Keskinen, Oiva",C,19,L,Drafted (194 - 2023),38,20.0,21.0,41.0,,,U20SM-sarja,,7.0
+136,Blue Jackets,Prospects,F,"Rysavy, Martin",RW,20,L,Drafted (197 - 2021),47,11.0,22.0,33.0,,,WHL,,8.0
+137,Blue Jackets,Prospects,F,"Fisher, James",RW,19,R,Drafted (203 - 2022),42,3.0,7.0,10.0,,,USHL,,3.0
+138,Blue Jackets,Prospects,F,"Peddle, Tyler","LW, C",18,L,Drafted (224 - 2023),64,24.0,17.0,41.0,,,QMJHL,,6.0
+139,Blue Jackets,Prospects,D,"Hreschuk, Aidan",LD,20,L,Traded,35,1.0,5.0,6.0,,,NCAA,,3.0
+140,Blue Jackets,Prospects,D,"Strathmann, Andrew",LD,18,L,Drafted (98 - 2023),56,3.0,35.0,38.0,,,USHL,,8.0
+141,Blue Jackets,Prospects,D,"Richard, Guillaume",LD,20,L,Drafted (101 - 2021),31,1.0,7.0,8.0,,,NCAA,,4.0
+142,Blue Jackets,Prospects,D,"Makarov, Nikolai",LD,20,L,Drafted (132 - 2021),25,1.0,7.0,8.0,,,MHL,,4.0
+143,Blue Jackets,Prospects,G,"Ivanov, Sergei",G,19,L,Drafted (138 - 2022),16,0.0,0.0,0.0,3.07,0.9,VHL,,0.0
+144,Blue Jackets,Prospects,G,"Strahl, Melvin",G,18,L,Drafted (156 - 2023),23,0.0,0.0,0.0,3.35,0.883,J20 Nationell,,0.0
+145,Bruins,Majors,RW,"Lauko, Jakub","LW, RW",23,L,Drafted (77 - 2018),35,10.0,7.0,17.0,,,AHL,,15.0
+146,Bruins,Minors,F,"Lysell, Fabian",RW,20,R,Drafted (21 - 2021),54,14.0,23.0,37.0,,,AHL,,22.0
+147,Bruins,Minors,F,"Merkulov, Georgi",LW,22,L,Signed to ELC,67,24.0,31.0,55.0,,,AHL,,26.0
+148,Bruins,Minors,F,"Beecher, John",C,22,L,Drafted (30 - 2019),61,9.0,14.0,23.0,,,AHL,,12.0
+149,Bruins,Minors,F,"Poitras, Matthew",C,19,R,Drafted (54 - 2022),63,16.0,79.0,95.0,,,OHL,,18.0
+150,Bruins,Minors,F,"Harrison, Brett",C,20,L,Drafted (85 - 2021),57,34.0,35.0,69.0,,,OHL,,14.0
+151,Bruins,Minors,F,"Kuntar, Trevor",C,22,L,Drafted (89 - 2020),34,13.0,16.0,29.0,,,NCAA,,14.0
+152,Bruins,Minors,F,"Hall, Curtis",C,23,R,Drafted (119 - 2018),37,1.0,3.0,4.0,,,AHL,,3.0
+153,Bruins,Minors,F,"Toporowski, Luke",LW,22,L,Signed to ELC,47,15.0,14.0,29.0,,,AHL,,20.0
+154,Bruins,Minors,F,"Farinacci, John",C,22,R,Signed to ELC,19,5.0,15.0,20.0,,,NCAA,,17.0
+155,Bruins,Minors,D,"Regula, Alec",RD,23,R,Traded,51,5.0,16.0,21.0,,,AHL,,13.0
+156,Bruins,Minors,D,"Lohrei, Mason",LD,22,L,Drafted (58 - 2020),40,4.0,28.0,32.0,,,NCAA,,13.0
+157,Bruins,Minors,D,"Callahan, Michael",LD,23,L,Traded,55,1.0,7.0,8.0,,,AHL,,5.0
+158,Bruins,Minors,D,"Mast, Ryan",RD,20,R,Drafted (181 - 2021),51,8.0,22.0,30.0,,,OHL,,7.0
+159,Bruins,Prospects,F,"Olson, Quinn","C, LW",22,L,Drafted (92 - 2019),37,7.0,17.0,24.0,,,NCAA,,10.0
+160,Bruins,Prospects,F,"Pelosi, Christopher",C,18,L,Drafted (92 - 2023),43,13.0,6.0,19.0,,,USHL,,5.0
+161,Bruins,Prospects,F,"Spicer, Cole",C,19,L,Drafted (117 - 2022),32,3.0,3.0,6.0,,,NCAA,,3.0
+162,Bruins,Prospects,F,"Locmelis, Dans","C, LW, RW",19,L,Drafted (119 - 2022),44,25.0,34.0,59.0,,,J20 Nationell,,10.0
+163,Bruins,Prospects,F,"Hendrickson, Beckett",LW,18,L,Drafted (124 - 2023),21,7.0,9.0,16.0,,,USHL,*U18 Naional team has more games,9.0
+164,Bruins,Prospects,F,"Jellvik, Oskar",LW,20,L,Drafted (149 - 2021),34,4.0,13.0,17.0,,,NCAA,,8.0
+165,Bruins,Prospects,F,"Walsh, Ryan","C, LW, RW",20,R,Drafted (188 - 2023),61,30.0,49.0,79.0,,,USHL,,15.0
+166,Bruins,Prospects,F,"Duran, Riley",C,21,R,Drafted (182 - 2020),29,8.0,12.0,20.0,,,NCAA,,11.0
+167,Bruins,Prospects,F,"Schmaltz, Jake",C,22,R,Drafted (192 - 2019),34,5.0,7.0,12.0,,,NCAA,,6.0
+168,Bruins,Prospects,F,"Gasseau, Andre",C,20,L,Drafted (213 - 2021),36,10.0,19.0,29.0,,,NCAA,,13.0
+169,Bruins,Prospects,F,"Nässén, Casper","RW, LW",19,R,Drafted (214 - 2023),48,23.0,17.0,40.0,,,J20 Nationell,,6.0
+170,Bruins,Prospects,D,"Brunet, Frédéric",LD,20,L,Drafted (132 - 2022),66,16.0,57.0,73.0,,,QMJHL,,10.0
+171,Bruins,Prospects,D,"Myrenberg, Jonathan",RD,20,R,Traded,49,4.0,8.0,12.0,,,HockeyAllsvenskan,,7.0
+172,Bruins,Prospects,D,"Langenbrunner, Mason",RD,20,R,Drafted (151 - 2020),33,1.0,0.0,1.0,,,NCAA,,0.0
+173,Bruins,Prospects,D,"Bychkov, Roman",LD,22,L,Drafted (154 - 2019),17,0.0,2.0,2.0,,,KHL,,7.0
+174,Bruins,Prospects,D,"Edward, Jackson",LD,19,L,Drafted (200 - 2022),65,5.0,20.0,25.0,,,OHL,,5.0
+175,Bruins,Prospects,D,"Gallagher, Ty",RD,20,R,Drafted (217 - 2021),40,3.0,18.0,21.0,,,NCAA,,8.0
+176,Bruins,Prospects,D,"Kostadinski, Kristian",LD,18,L,Drafted (220 - 2023),43,2.0,8.0,10.0,,,J20 Nationell,,2.0
+177,Bruins,Prospects,G,"Svedebäck, Philip",G,21,L,Drafted (117 - 2021),34,0.0,0.0,0.0,2.18,0.909,NCAA,,0.0
+178,Bruins,Prospects,G,"Dyck, Reid",G,19,L,Drafted (183 - 2022),40,0.0,0.0,0.0,3.62,0.887,WHL,,0.0
+179,Canadiens,Majors,LW,"Caufield, Cole",LW,22,R,Drafted (15 - 2019),46,26.0,10.0,36.0,,,NHL,,36.0
+180,Canadiens,Majors,C,"Dach, Kirby","C, RW",22,R,Traded,58,14.0,24.0,38.0,,,NHL,,38.0
+181,Canadiens,Majors,C,"Newhook, Alex","LW, C",22,L,Traded,82,14.0,16.0,30.0,,,NHL,,30.0
+182,Canadiens,Majors,RW,"Slafkovsky, Juraj","LW, RW",19,L,Drafted (1 - 2022),39,4.0,6.0,10.0,,,NHL,,10.0
+183,Canadiens,Majors,LD,"Guhle, Kaiden",LD/RD,21,L,Drafted (16 - 2020),44,4.0,14.0,18.0,,,NHL,,18.0
+184,Canadiens,Majors,LD,"Harris, Jordan",LD/RD,23,L,Drafted (71 - 2018),65,4.0,13.0,17.0,,,NHL,,17.0
+185,Canadiens,Majors,RD,"Xhekaj, Arber",LD/RD,22,L,Signed to ELC,51,5.0,8.0,13.0,,,NHL,,13.0
+186,Canadiens,Minors,F,"Ylönen, Jesse","RW, LW",23,R,Drafted (35 - 2018),39,11.0,21.0,32.0,,,AHL,,26.0
+187,Canadiens,Minors,F,"Farrell, Sean","LW, C",21,L,Drafted (124 - 2020),34,20.0,33.0,53.0,,,NCAA,,25.0
+188,Canadiens,Minors,F,"Beck, Owen",C,19,R,Drafted (33 - 2022),60,24.0,42.0,66.0,,,OHL,,13.0
+189,Canadiens,Minors,F,"Mesar, Filip","RW, C, LW",19,R,Drafted (26 - 2022),52,17.0,34.0,51.0,,,OHL,,12.0
+190,Canadiens,Minors,F,"Mysak, Jan","C, LW",21,L,Drafted (48 - 2020),40,5.0,4.0,9.0,,,AHL,,7.0
+191,Canadiens,Minors,F,"Kidney, Riley",C,20,L,Drafted (63 - 2021),60,28.0,82.0,110.0,,,QMJHL,,17.0
+192,Canadiens,Minors,F,"Roy, Joshua","RW, LW",20,L,Drafted (150 - 2021),55,46.0,53.0,99.0,,,QMJHL,,17.0
+193,Canadiens,Minors,F,"Simoneau, Xavier","RW, LW, C",22,L,Drafted (191 - 2021),62,6.0,32.0,38.0,,,AHL,,20.0
+194,Canadiens,Minors,F,"Heineman, Emil",LW,21,L,Traded,35,8.0,7.0,15.0,,,SHL,,20.0
+195,Canadiens,Minors,F,"Légaré, Nathan",RW,22,R,Traded,68,8.0,11.0,19.0,,,AHL,,9.0
+196,Canadiens,Minors,D,"Barron, Justin",RD,21,R,Traded,39,4.0,11.0,15.0,,,NHL,,15.0
+197,Canadiens,Minors,D,"Reinbacher, David",RD,18,R,Drafted (5 - 2023),46,3.0,19.0,22.0,,,NL,,18.0
+198,Canadiens,Minors,D,"Mailloux, Logan",RD,20,R,Drafted (31 - 2021),59,25.0,28.0,53.0,,,OHL,,11.0
+199,Canadiens,Minors,D,"Struble, Jayden",LD,22,L,Drafted (46 - 2019),31,1.0,11.0,12.0,,,NCAA,,6.0
+200,Canadiens,Minors,D,"Norlinder, Mattias",LD,23,L,Drafted (64 - 2019),67,2.0,17.0,19.0,,,AHL,,9.0
+201,Canadiens,Minors,D,"Trudeau, William",LD,20,L,Drafted (113 - 2021),60,7.0,20.0,27.0,,,AHL,,14.0
+202,Canadiens,Minors,D,"Beaudin, Nicolas",LD,23,L,Traded,42,2.0,24.0,26.0,,,AHL,,20.0
+203,Canadiens,Minors,G,"Dobes, Jakub",G,22,L,Drafted (136 - 2020),40,0.0,0.0,0.0,2.31,0.918,NCAA,,0.0
+204,Canadiens,Prospects,F,"Tuch, Luke",LW,21,L,Drafted (47 - 2020),40,9.0,11.0,20.0,,,NCAA,,8.0
+205,Canadiens,Prospects,F,"Kapanen, Oliver",C,20,R,Drafted (64 - 2021),55,12.0,15.0,27.0,,,Liiga,,18.0
+206,Canadiens,Prospects,F,"Rohrer, Vinzenz","RW, C",19,R,Drafted (75 - 2022),54,19.0,30.0,49.0,,,OHL,,11.0
+207,Canadiens,Prospects,F,"Smilanic, Ty","C, LW, RW",21,L,Traded,14,1.0,1.0,2.0,,,NCAA,,2.0
+208,Canadiens,Prospects,F,"Xhekaj, Florian",LW,19,L,Drafted (101 - 2023),68,13.0,12.0,25.0,,,OHL,,4.0
+209,Canadiens,Prospects,F,"Smith, Jack","C, LW, RW",21,L,Drafted (102 - 2020),24,0.0,5.0,5.0,,,NCAA,,3.0
+210,Canadiens,Prospects,F,"Biondi, Blake","C, LW, RW",21,R,Drafted (109 - 2020),17,3.0,3.0,6.0,,,NCAA,,6.0
+211,Canadiens,Prospects,F,"Guindon, Cedrick","C, LW",19,L,Drafted (127 - 2022),68,22.0,47.0,69.0,,,OHL,,12.0
+212,Canadiens,Prospects,F,"Davidson, Jared",C,21,L,Drafted (130 - 2022),60,38.0,44.0,82.0,,,WHL,,16.0
+213,Canadiens,Prospects,F,"Pitlick, Rhett",LW,22,L,Drafted (131 - 2019),40,11.0,14.0,25.0,,,NCAA,,10.0
+214,Canadiens,Prospects,F,"Harris, Samuel",LW,19,L,Drafted (133 - 2023),56,30.0,26.0,56.0,,,USHL,,12.0
+215,Canadiens,Prospects,F,"Eriksson, Filip",C,18,L,Drafted (165 - 2023),11,5.0,5.0,10.0,,,J20 Nationell,,7.0
+216,Canadiens,Prospects,F,"Gordin, Alexander",C,22,L,Drafted (171 - 2020),40,10.0,5.0,15.0,,,VHL,,10.0
+217,Canadiens,Prospects,D,"Hutson, Lane",LD,19,L,Drafted (62 - 2022),39,15.0,33.0,48.0,,,NCAA,,20.0
+218,Canadiens,Prospects,D,"Kostenko, Dmitri",RD,20,R,Drafted (87 - 2021),52,2.0,2.0,4.0,,,KHL,,5.0
+219,Canadiens,Prospects,D,"Engström, Adam",LD,19,L,Drafted (92 - 2022),43,6.0,10.0,16.0,,,SHL,,17.0
+220,Canadiens,Prospects,D,"Konyushkov, Bogdan",RD,20,R,Drafted (110 - 2023),64,2.0,23.0,25.0,,,KHL,,25.0
+221,Canadiens,Prospects,D,"Sobolev, Daniil",RD,20,R,Drafted (142 - 2021),48,1.0,8.0,9.0,,,OHL,,2.0
+222,Canadiens,Prospects,D,"Nurmi, Petteri",LD,21,L,Drafted (194 - 2022),48,1.0,14.0,15.0,,,Liiga,,11.0
+223,Canadiens,Prospects,D,"Mittelstadt, Luke",LD,20,L,Drafted (197 - 2023),38,5.0,16.0,21.0,,,NCAA,,9.0
+224,Canadiens,Prospects,D,"Tourigny, Miguël",RD,21,R,Drafted (216 - 2022),39,5.0,19.0,24.0,,,Slovak Extraliga,,15.0
+225,Canadiens,Prospects,G,"Fowler, Jacob",G,18,L,Drafted (69 - 2023),40,,,,2.27,0.921,USHL,,0.0
+226,Canadiens,Prospects,G,"Miller, Quentin",G,18,L,Drafted (128 - 2023),20,,,,2.11,0.911,QMJHL,,0.0
+227,Canadiens,Prospects,G,"Volokhin, Yevgeni",G,18,L,Drafted (144 - 2023),31,,,,2.12,0.927,MHL,,0.0
+228,Canadiens,Prospects,G,"Croteau, Emmett",G,19,L,Drafted (162 - 2022),28,,,,2.46,0.917,USHL,,0.0
+229,Canadiens,Reserve,G,"Vrbetic, Joe",G,20,L,Drafted (214 - 2021),28,,,,3.3,0.896,ECHL,,0.0
+230,Canucks,Majors,C,"Åman, Nils",C,23,L,Signed to ELC,68,4.0,12.0,16.0,,,NHL,,16.0
+231,Canucks,Majors,RW,"Podkolzin, Vasily","RW, LW",22,L,Drafted (10 - 2019),39,4.0,3.0,7.0,,,NHL,,7.0
+232,Canucks,Majors,LD,"Hughes, Quinn",LD,23,L,Drafted (7 - 2018),78,7.0,69.0,76.0,,,NHL,,76.0
+233,Canucks,Majors,G,"Silovs, Arturs",G,22,L,Drafted (156 - 2019),44,,,,2.44,0.909,NHL,,0.0
+234,Canucks,Majors,F,"Höglander, Nils","LW, RW",22,L,Drafted (40 - 2019),45,14.0,18.0,32.0,,,AHL,,23.0
+235,Canucks,Minors,F,"Räty, Aatu",C,20,L,Traded,52,9.0,18.0,27.0,,,AHL,,17.0
+236,Canucks,Minors,F,"McDonough, Aidan",LW,23,L,Drafted (195 - 2019),34,20.0,18.0,38.0,,,NCAA,,18.0
+237,Canucks,Minors,F,"Lekkerimäki, Jonathan","RW, C",19,R,Drafted (15 - 2022),29,3.0,6.0,9.0,,,HockeyAllsvenskan,,9.0
+238,Canucks,Minors,F,"Klimovich, Danila",RW,20,R,Drafted (41 - 2021),67,17.0,12.0,29.0,,,AHL,,14.0
+239,Canucks,Minors,F,"Plasek, Karel","LW, RW",23,L,Drafted (175 - 2019),31,6.0,9.0,15.0,,,Czechia,,23.0
+240,Canucks,Minors,F,"Karlsson, Linus",RW,23,R,Traded,72,24.0,25.0,49.0,,,AHL,,22.0
+241,Canucks,Minors,F,"Bloom, Josh",LW,20,L,Traded,68,32.0,39.0,71.0,,,OHL,,12.0
+242,Canucks,Minors,F,"Bains, Arshdeep",LW,22,L,Signed to ELC,66,13.0,25.0,38.0,,,AHL,,18.0
+243,Canucks,Minors,F,"Sasson, Max",C,23,L,Signed to ELC,38,15.0,27.0,42.0,,,NCAA,,18.0
+244,Canucks,Minors,F,"Nielsen, Tristen",C,23,L,Signed to ELC,64,14.0,27.0,41.0,,,AHL,,20.0
+245,Canucks,Minors,D,"McWard, Cole",D,22,R,Signed to ELC,39,9.0,12.0,21.0,,,NCAA,,9.0
+246,Canucks,Minors,D,"Woo, Jett",RD,23,R,Drafted (37 - 2018),68,7.0,14.0,21.0,,,AHL,,10.0
+247,Canucks,Minors,D,"Pettersson, Elias",LD,19,L,Drafted (80 - 2022),43,1.0,6.0,7.0,,,SHL,,8.0
+248,Canucks,Minors,D,"Kudryavtsev, Kirill",LD,19,L,Drafted (208 - 2022),67,8.0,42.0,50.0,,,OHL,,9.0
+249,Canucks,Minors,D,"Johansson, Filip",RD,23,R,Signed to ELC,51,5.0,16.0,21.0,,,SHL,,19.0
+250,Canucks,Minors,G,"Tolopilo, Nikita",G,23,L,Signed to ELC,45,,,,2.1,0.924,HockeyAllsvenskan,,0.0
+251,Canucks,Prospects,F,"Mueller, Ty","C, LW, RW",20,L,Drafted (105 - 2023),34,12.0,13.0,25.0,,,NCAA,,12.0
+252,Canucks,Prospects,F,"Alriksson, Vilmer",LW,18,L,Drafted (107 - 2023),43,12.0,9.0,21.0,,,J20 Nationell,,4.0
+253,Canucks,Prospects,F,"Gardner, Daimon",C,19,L,Drafted (112 - 2022),46,12.0,30.0,42.0,,,USHL,,11.0
+254,Canucks,Prospects,F,"Kunz, Jackson","C, LW, RW",21,L,Drafted (113 - 2020),24,5.0,0.0,5.0,,,NCAA,,3.0
+255,Canucks,Prospects,F,"Perkins, Matthew",LW,19,L,Drafted (119 - 2023),60,15.0,29.0,44.0,,,USHL,,9.0
+256,Canucks,Prospects,F,"Zlodeyev, Dmitri",C,21,L,Drafted (175 - 2020),33,7.0,6.0,13.0,,,VHL,,11.0
+257,Canucks,Prospects,F,"Malone, Jack",RW,22,R,Drafted (180 - 2019),34,8.0,9.0,17.0,,,NCAA,,8.0
+258,Canucks,Prospects,F,"Forsell, Lucas",LW,20,R,Drafted (201 - 2021),35,11.0,2.0,13.0,,,SHL,,17.0
+259,Canucks,Prospects,D,"Willander, Tom",RD,18,R,Drafted (11 - 2023),39,4.0,21.0,25.0,,,J20 Nationell,,5.0
+260,Canucks,Prospects,D,"Brzustewicz, Hunter",RD,18,R,Drafted (75 - 2023),68,6.0,51.0,57.0,,,OHL,,10.0
+261,Canucks,Prospects,D,"Jurmo, Joni",LD,21,L,Drafted (82 - 2020),52,5.0,8.0,13.0,,,Liiga,,9.0
+262,Canucks,Prospects,D,"Mynio, Sawyer",LD,18,L,Drafted (89 - 2023),68,5.0,26.0,31.0,,,WHL,,5.0
+263,Canucks,Prospects,D,"Truscott, Jacob",LD,21,L,Drafted (144 - 2020),23,4.0,12.0,16.0,,,NCAA,,11.0
+264,Canucks,Prospects,D,"Gabrielsson, Hugo",LD,20,L,Drafted (169 - 2021),35,0.0,6.0,6.0,,,HockeyAllsvenskan,,5.0
+265,Canucks,Prospects,D,"Celebrini, Aiden",RD,18,R,Drafted (171 - 2023),47,5.0,16.0,21.0,,,AJHL,,2.0
+266,Canucks,Prospects,D,"Dorrington, Jackson",LD,19,L,Drafted (176 - 2022),35,0.0,6.0,6.0,,,NCAA,,3.0
+267,Canucks,Prospects,D,"Persson, Viktor",RD,21,R,Drafted (191 - 2020),24,0.0,3.0,3.0,,,Liiga,,5.0
+269,Canucks,Prospects,G,"Young, Ty",G,19,L,Drafted (144 - 2022),34,,,,3.89,0.889,WHL,,0.0
+270,Canucks,Prospects,G,"Thiessen, Matthew",G,23,L,Drafted (192 - 2018),19,,,,2.64,0.905,NCAA,,0.0
+271,Canucks,Reserve,F,"Kravtsov, Vitali","LW, RW",23,L,Traded,44,4.0,4.0,8.0,,,NHL,,8.0
+272,Capitals,Majors,RW,"Protas, Aliaksei","RW, LW, C",22,L,Drafted (91 - 2019),58,4.0,11.0,15.0,,,NHL,,15.0
+273,Capitals,Majors,LD,"Fehérváry, Martin",LD/RD,23,L,Drafted (46 - 2018),67,6.0,10.0,16.0,,,NHL,,16.0
+274,Capitals,Majors,LD,"Sandin, Rasmus",LD,23,L,Traded,71,7.0,28.0,35.0,,,NHL,,35.0
+275,Capitals,Majors,F,"McMichael, Connor","LW, C",22,L,Drafted (25 - 2019),57,16.0,23.0,39.0,,,AHL,,22.0
+276,Capitals,Majors,D,"Alexeyev, Alexander",LD/RD,23,L,Drafted (31 - 2018),32,0.0,5.0,5.0,,,NHL,,5.0
+277,Capitals,Minors,F,"Miroshnichenko, Ivan",LW,19,R,Drafted (20 - 2022),23,3.0,1.0,4.0,,,KHL,,11.0
+278,Capitals,Minors,F,"Lapierre, Hendrix",C,21,L,Drafted (22 - 2020),60,15.0,15.0,30.0,,,AHL,,16.0
+279,Capitals,Minors,F,"Cristall, Andrew",LW,18,L,Drafted (40 - 2023),54,39.0,56.0,95.0,,,WHL,,20.0
+280,Capitals,Minors,F,"Suzdalev, Alexander",LW,19,L,Drafted (70 - 2022),66,38.0,48.0,86.0,,,WHL,,15.0
+281,Capitals,Minors,F,"Sutter, Riley",RW,23,R,Drafted (93 - 2018),69,5.0,7.0,12.0,,,AHL,,6.0
+282,Capitals,Minors,F,"Hofer, Ryan",C,21,L,Drafted (181 - 2022),66,40.0,28.0,68.0,,,WHL,,12.0
+283,Capitals,Minors,F,"Trineyev, Bogdan",RW,21,R,Drafted (117 - 2020),39,2.0,11.0,13.0,,,KHL,,21.0
+284,Capitals,Minors,F,"Rybinski, Henry",RW,22,R,Signed to ELC,51,5.0,13.0,18.0,,,AHL,,11.0
+285,Capitals,Minors,F,"Dubé, Pierrick",RW,22,R,Signed to ELC,44,16.0,16.0,32.0,,,AHL,,23.0
+286,Capitals,Minors,D,"Iorio, Vincent",RD,20,R,Drafted (55 - 2021),63,2.0,20.0,22.0,,,AHL,,11.0
+288,Capitals,Loaned,F,"Persson, Ludwig","LW, C",19,L,Drafted (85 - 2022),45,4.0,11.0,15.0,,,HockeyAllsvenskan,,10.0
+289,Capitals,Prospects,F,"Leonard, Ryan",RW,18,R,Drafted (8 - 2023),57,51.0,43.0,94.0,,,NTDP,,26.0
+290,Capitals,Prospects,F,"Thomas, Patrick",C,19,L,Drafted (104 - 2023),66,17.0,39.0,56.0,,,OHL,,10.0
+291,Capitals,Prospects,F,"Karabela, Jake",C,19,L,Drafted (149 - 2022),68,18.0,21.0,39.0,,,NHL,,39.0
+292,Capitals,Prospects,F,"Hänelt, Haakon",C,20,L,Drafted (151 - 2021),34,3.0,15.0,18.0,,,QMJHL,,5.0
+293,Capitals,Prospects,F,"Hyland, Brett","LW, C",20,L,Drafted (200 - 2023),42,26.0,21.0,47.0,,,WHL,,13.0
+294,Capitals,Prospects,F,"Magnusson, Oskar","C, RW",21,L,Drafted (211 - 2020),52,6.0,10.0,16.0,,,HockeyAllsvenskan,,9.0
+295,Capitals,Prospects,D,"Chesley, Ryan",RD,19,R,Drafted (37 - 2022),36,2.0,8.0,10.0,,,NCAA,,4.0
+296,Capitals,Prospects,D,"Johnson, Brent",RD,20,R,Drafted (80 - 2021),13,1.0,5.0,6.0,,,NCAA,,7.0
+297,Capitals,Prospects,D,"Lemay, Joaquim",LD,21,L,Drafted (119 - 2021),32,2.0,10.0,12.0,,,NCAA,,6.0
+298,Capitals,Prospects,D,"Allen, Cameron",RD,18,R,Drafted (136 - 2023),62,5.0,20.0,25.0,,,OHL,,5.0
+299,Capitals,Prospects,D,"Gucciardi, David",LD,20,L,Drafted (213 - 2022),36,4.0,6.0,10.0,,,NCAA,,4.0
+301,Capitals,Prospects,G,"Keller, Antoine",G,18,L,Drafted (206 - 2023),25,,,,3.4,0.0,U20 Elit,*SV% is blank,0.0
+302,Coyotes,Majors,C,"Hayton, Barrett","C, LW",23,L,Drafted (5 - 2018),82,19.0,24.0,43.0,,,NHL,,43.0
+303,Coyotes,Majors,C,"Cooley, Logan",C,19,L,Drafted (3 - 2022),39,22.0,38.0,60.0,,,NCAA,,24.0
+304,Coyotes,Majors,LW,"Maccelli, Matias",LW,22,L,Drafted (98 - 2019),64,11.0,38.0,49.0,,,NHL,,49.0
+305,Coyotes,Majors,C,"McBain, Jack","C, LW",23,L,Signed to ELC,82,12.0,14.0,26.0,,,NHL,,26.0
+306,Coyotes,Majors,RW,"Guenther, Dylan",RW,20,R,Drafted (9 - 2021),33,6.0,9.0,15.0,,,NHL,,15.0
+307,Coyotes,Majors,LD,"Moser, J.J.",LD/RD,23,L,Drafted (60 - 2021),82,7.0,24.0,31.0,,,NHL,,31.0
+308,Coyotes,Training Camp,F,"Geekie, Conor",C,19,L,Drafted (11 - 2022),66,35.0,42.0,77.0,,,WHL,,13.0
+309,Coyotes,Training Camp,F,"Douglas, Curtis",C,23,L,Traded,63,8.0,7.0,15.0,,,AHL,,8.0
+310,Coyotes,Training Camp,F,"Doan, Josh",RW,21,R,Drafted (37 - 2021),39,16.0,22.0,38.0,,,NCAA,,16.0
+311,Coyotes,Training Camp,F,"Räty, Aku",C,22,R,Drafted (151 - 2019),53,18.0,24.0,42.0,,,Liiga,,29.0
+312,Coyotes,Training Camp,F,"McCartney, Ben",LW,22,L,Drafted (204 - 2020),45,7.0,8.0,15.0,,,AHL,,11.0
+313,Coyotes,Training Camp,F,"Lutz, Julian",LW,19,L,Drafted (43 - 2022),24,1.0,7.0,8.0,,,DEL,,10.0
+314,Coyotes,Training Camp,F,"Ekefjard, Elliot",RW,21,L,Drafted (192 - 2020),37,4.0,1.0,5.0,,,HockeyAllsvenskan,,4.0
+315,Coyotes,Training Camp,D,"Söderström, Victor",RD,22,R,Drafted (11 - 2019),44,2.0,19.0,21.0,,,AHL,,15.0
+316,Coyotes,Training Camp,D,"Kesselring, Michael",RD,23,R,Traded,49,13.0,9.0,22.0,,,AHL,,14.0
+317,Coyotes,Training Camp,D,"Kolyachonok, Vladislav",LD/RD,22,L,Traded,71,3.0,18.0,21.0,,,AHL,,9.0
+318,Coyotes,Training Camp,D,"Lamoureux, Maveric",RD,19,R,Drafted (29 - 2022),35,5.0,14.0,19.0,,,QMJHL,,5.0
+319,Coyotes,Training Camp,D,"Szuber, Maksymilian",LD,21,L,Drafted (163 - 2022),46,3.0,7.0,10.0,,,DEL,,6.0
+320,Coyotes,Training Camp,D,"Onyebuchi, Montana",RD,23,R,Signed to ELC,35,3.0,7.0,10.0,,,AHL,,9.0
+321,Coyotes,Training Camp,D,"Diliberatore, Peter",LD,23,L,Traded,30,2.0,3.0,5.0,,,AHL,,5.0
+322,Coyotes,Training Camp,D,"Langlois, Jérémy",LD,19,L,Drafted (94 - 2022),41,11.0,39.0,50.0,,,QMJHL,,11.0
+323,Coyotes,Training Camp,D,"Goldsmith, Terrell",LD,18,L,Drafted (102 - 2023),58,3.0,6.0,9.0,,,WHL,,2.0
+324,Coyotes,Training Camp,D,"Kipkie, Justin",LD,18,L,Drafted (160 - 2023),67,8.0,25.0,33.0,,,WHL,,6.0
+325,Coyotes,Training Camp,G,"Thornton, Anson",G,20,R,Signed to ELC,44,,,,3.13,0.903,OHL,,0.0
+326,Coyotes,Prospects,F,"But, Daniil","RW, LW",18,R,Drafted (12 - 2023),32,18.0,14.0,32.0,,,MHL,,12.0
+327,Coyotes,Prospects,F,"Fedotov, Ilya",LW,20,R,Drafted (43 - 2021),42,9.0,5.0,14.0,,,KHL,,21.0
+328,Coyotes,Prospects,F,"Matikka, Miko",RW,19,R,Drafted (67 - 2022),58,27.0,28.0,55.0,,,USHL,,11.0
+329,Coyotes,Prospects,F,"Castagna, Jonathan",C,18,L,Drafted (70 - 2023),50,29.0,43.0,72.0,,,CAHS,,2.0
+330,Coyotes,Prospects,F,"Nordh, Noel","RW, LW",18,L,Drafted (72 - 2023),38,13.0,14.0,27.0,,,J20 Nationell,,5.0
+331,Coyotes,Prospects,F,"Ludtke, Tanner",C,18,L,Drafted (81 - 2023),57,32.0,34.0,66.0,,,USHL,,14.0
+332,Coyotes,Prospects,F,"Moroz, Vadim",RW,19,R,Drafted (88 - 2023),39,5.0,9.0,14.0,,,KHL,,23.0
+333,Coyotes,Prospects,F,"Daryin, Alexander",C,23,R,Drafted (107 - 2019),30,7.0,6.0,13.0,,,KHL,,27.0
+334,Coyotes,Prospects,F,"Bantle, Carson",LW,21,L,Drafted (142 - 2020),35,9.0,7.0,16.0,,,NCAA,,7.0
+335,Coyotes,Prospects,F,"Bau, Samu",C,19,L,Drafted (162 - 2023),25,1.0,1.0,2.0,,,Liiga,,3.0
+336,Coyotes,Prospects,F,"Barklund, Filip","C, LW",21,L,Drafted (173 - 2020),36,15.0,19.0,34.0,,,HockeyEttan,,8.0
+337,Coyotes,Prospects,F,"Savunov, Danil",C,22,L,Drafted (174 - 2019),43,11.0,19.0,30.0,,,VHL,,19.0
+338,Coyotes,Prospects,F,"Zlnka, Adam",RW,19,R,Drafted (204 - 2022),56,8.0,16.0,24.0,,,USHL,,5.0
+339,Coyotes,Prospects,F,"Lipkin, Sam",LW,20,L,Drafted (223 - 2021),39,14.0,29.0,43.0,,,NCAA,,18.0
+340,Coyotes,Prospects,D,"Simashev, Dmitri",LD,18,L,Drafted (6 - 2023),33,1.0,11.0,12.0,,,MHL,,4.0
+341,Coyotes,Prospects,D,"Duda, Artem",LD,19,L,Drafted (36 - 2022),14,5.0,8.0,13.0,,,MHL,,11.0
+342,Coyotes,Prospects,D,"Morden, Matthew",LD,19,L,Drafted (131 - 2022),57,3.0,18.0,21.0,,,USHL,,4.0
+343,Coyotes,Prospects,G,"Hrabal, Michael",G,18,L,Drafted (38 - 2023),31,,,,2.86,0.908,USHL,,0.0
+344,Coyotes,Prospects,G,"Korhonen, Rasmus",G,20,L,Drafted (122 - 2021),15,,,,2.92,0.879,Liiga,,0.0
+345,Coyotes,Prospects,G,"Thelin, Melker",G,18,L,Drafted (134 - 2023),15,,,,2.11,0.93,HockeyEttan,,0.0
+346,Coyotes,Prospects,G,"Musser, Carsen",G,18,L,Drafted (166 - 2023),28,,,,3.07,0.89,NTDP,*US National 18 Team,0.0
+347,Coyotes,Reserve,F,"Jeník, Jan",C,23,L,Drafted (65 - 2018),30,7.0,16.0,23.0,,,AHL,,24.0
+348,Devils,Majors,C,"Hughes, Jack",C,22,L,Drafted (1 - 2019),78,43.0,56.0,99.0,,,NHL,,99.0
+349,Devils,Majors,RW,"Mercer, Dawson","RW, C",21,R,Drafted (18 - 2020),82,27.0,29.0,56.0,,,NHL,,56.0
+350,Devils,Majors,RW,"Holtz, Alexander","RW, LW",21,R,Drafted (7 - 2020),19,3.0,1.0,4.0,,,NHL,,4.0
+351,Devils,Majors,LD,"Hughes, Luke",LD/RD,20,L,Drafted (4 - 2021),39,10.0,38.0,48.0,,,NCAA,,20.0
+352,Devils,Majors,LD,"Bahl, Kevin",LD,23,L,Traded,42,2.0,6.0,8.0,,,NHL,,8.0
+353,Devils,Majors,G,"Schmid, Akira",G,23,L,Drafted (136 - 2018),23,,,,2.62,0.905,AHL,,0.0
+354,Devils,Minors,F,"Foote, Nolan",LW,22,L,Traded,55,20.0,17.0,37.0,,,AHL,,21.0
+355,Devils,Minors,F,"Stillman, Chase",RW,20,R,Drafted (29 - 2021),59,19.0,29.0,48.0,,,OHL,,10.0
+356,Devils,Minors,F,"Clarke, Graeme","RW, C",22,R,Drafted (80 - 2019),68,25.0,33.0,58.0,,,AHL,,27.0
+357,Devils,Minors,F,"Filmon, Josh",LW,19,L,Drafted (166 - 2022),64,47.0,28.0,75.0,,,WHL,,14.0
+358,Devils,Minors,D,"Nemec, Simon",RD,19,R,Drafted (2 - 2022),65,12.0,22.0,34.0,,,AHL,,17.0
+359,Devils,Minors,D,"Misyul, Daniil",LD,22,L,Drafted (70 - 2019),59,0.0,7.0,7.0,,,KHL,,8.0
+360,Devils,Minors,D,"Vukojevic, Michael",LD,22,L,Drafted (82 - 2019),37,2.0,1.0,3.0,,,AHL,,3.0
+361,Devils,Minors,D,"Vilén, Topias",LD,20,L,Drafted (129 - 2021),41,9.0,8.0,17.0,,,Liiga,,15.0
+363,Devils,Minors,G,"Daws, Nico",G,22,L,Drafted (84 - 2020),33,,,,2.7,0.904,AHL,,0.0
+364,Devils,Minors,G,"Brennan, Tyler",G,19,L,Drafted (102 - 2022),37,,,,2.86,0.898,WHL,,0.0
+365,Devils,Prospects,F,"Hämeenaho, Lenni",RW,18,R,Drafted (58 - 2023),51,9.0,12.0,21.0,,,Liiga,,15.0
+366,Devils,Prospects,F,"Salminen, Samu",C,20,L,Drafted (68 - 2021),27,9.0,8.0,17.0,,,NCAA,,10.0
+367,Devils,Prospects,F,"Pytlik, Jaromir",C,21,L,Drafted (99 - 2020),33,2.0,1.0,3.0,,,Czechia,,4.0
+368,Devils,Prospects,F,"Squires, Cam",RW,18,R,Drafted (122 - 2023),67,30.0,34.0,64.0,,,QMJHL,,9.0
+369,Devils,Prospects,F,"Gritsyuk, Arseni",LW,22,L,Drafted (129 - 2019),66,15.0,25.0,40.0,,,KHL,,38.0
+370,Devils,Prospects,F,"Shlaine, Artem",C,21,L,Drafted (130 - 2020),38,11.0,21.0,32.0,,,NCAA,,13.0
+371,Devils,Prospects,F,"Hauser, Petr",RW,19,R,Drafted (141 - 2022),35,6.0,13.0,19.0,,,Czechia 2,,11.0
+372,Devils,Prospects,F,"Brown, Cole","RW, LW",18,L,Drafted (164 - 2023),60,17.0,25.0,42.0,,,OHL,,8.0
+373,Devils,Prospects,F,"Bardakov, Zakhar",C,22,L,Drafted (203 - 2021),42,6.0,12.0,18.0,,,KHL,,27.0
+374,Devils,Prospects,D,"Casey, Seamus",RD,19,R,Drafted (46 - 2022),37,8.0,21.0,29.0,,,NCAA,,12.0
+375,Devils,Prospects,D,"Orlov, Daniil",LD,19,L,Drafted (110 - 2022),18,2.0,6.0,8.0,,,MHL,,5.0
+376,Devils,Prospects,D,"Edwards, Ethan",LD,21,L,Drafted (120 - 2020),37,4.0,10.0,14.0,,,NCAA,,6.0
+377,Devils,Prospects,D,"Leddy, Charlie",RD,19,R,Drafted (126 - 2022),35,2.0,5.0,7.0,,,NCAA,,3.0
+378,Devils,Prospects,D,"Cheslock, Chase",RD,18,R,Drafted (154 - 2023),28,4.0,27.0,31.0,,,USHS-MN,,2.0
+379,Devils,Prospects,D,"Hurtig, Viktor",RD,21,R,Drafted (164 - 2021),34,1.0,4.0,5.0,,,NCAA,,2.0
+380,Devils,Prospects,D,"Karpovich, Daniil",LD,18,L,Drafted (186 - 2023),47,10.0,25.0,35.0,,,MHL,,9.0
+381,Devils,Prospects,D,"Barabosha, Artem",RD,19,R,Drafted (198 - 2022),48,1.0,4.0,5.0,,,MHL,,1.0
+382,Devils,Prospects,G,"Málek, Jakub",G,21,L,Drafted (100 - 2021),22,,,,2.15,0.903,Liiga,,0.0
+383,Devils,Prospects,G,"Brady, Cole",G,22,L,Drafted (127 - 2019),12,,,,3.1,0.907,NCAA,,0.0
+384,Ducks,Majors,C,"Zegras, Trevor","C, LW",22,L,Drafted (9 - 2019),81,23.0,42.0,65.0,,,NHL,,65.0
+385,Ducks,Majors,C,"McTavish, Mason","C, LW",20,L,Drafted (3 - 2021),80,17.0,26.0,43.0,,,NHL,,43.0
+386,Ducks,Majors,C,"Carlsson, Leo",C,18,L,Drafted (2 - 2023),44,10.0,15.0,25.0,,,SHL,,26.0
+387,Ducks,Majors,RD,"Drysdale, Jamie",RD,21,R,Drafted (6 - 2020),81,4.0,28.0,32.0,,,NHL,*2021-2022 season,32.0
+388,Ducks,Majors,F,"Lundeström, Isac","C, LW",23,L,Drafted (23 - 2018),61,4.0,10.0,14.0,,,NHL,,14.0
+389,Ducks,Minors,F,"Regenda, Pavol","LW, RW",23,L,Signed to ELC,50,13.0,12.0,25.0,,,AHL,,16.0
+390,Ducks,Minors,F,"Nesterenko, Nikita",C,22,L,Traded,36,13.0,21.0,34.0,,,NCAA,,15.0
+391,Ducks,Minors,F,"Groulx, Benoit-Olivier",C,23,L,Drafted (54 - 2018),63,18.0,21.0,39.0,,,AHL,,20.0
+392,Ducks,Minors,F,"Gaucher, Nathan",C,19,R,Drafted (22 - 2022),44,22.0,24.0,46.0,,,QMJHL,,10.0
+393,Ducks,Minors,F,"Perreault, Jacob",RW,21,R,Drafted (27 - 2020),48,8.0,11.0,19.0,,,AHL,,13.0
+394,Ducks,Minors,F,"Tracey, Brayden",LW,22,L,Drafted (29 - 2019),62,10.0,18.0,28.0,,,AHL,,14.0
+395,Ducks,Minors,F,"Pastujov, Sasha","LW, RW",20,L,Drafted (66 - 2021),60,41.0,57.0,98.0,,,OHL,,19.0
+396,Ducks,Minors,F,"McLaughlin, Blake",LW,23,L,Drafted (79 - 2018),43,14.0,20.0,34.0,,,ECHL,,10.0
+397,Ducks,Minors,F,"Lopina, Joshua",C,22,R,Drafted (98 - 2021),59,2.0,2.0,4.0,,,AHL,,2.0
+398,Ducks,Minors,F,"Caulfield, Judd",RW,22,R,Traded,39,10.0,9.0,19.0,,,NCAA,,8.0
+399,Ducks,Minors,F,"Wiebe, Jaxsen","RW, C",21,R,Signed to ELC,45,14.0,25.0,39.0,,,WHL,,10.0
+400,Ducks,Minors,D,"Helleson, Drew",RD,22,R,Traded,65,5.0,13.0,18.0,,,AHL,,9.0
+401,Ducks,Minors,D,"LaCombe, Jackson",LD/RD,22,L,Drafted (39 - 2019),37,9.0,26.0,35.0,,,NCAA,,15.0
+402,Ducks,Minors,D,"Mintyukov, Pavel",LD,19,L,Drafted (10 - 2022),69,24.0,64.0,88.0,,,OHL,,15.0
+403,Ducks,Minors,D,"Zellweger, Olen",LD,20,L,Drafted (34 - 2021),55,32.0,48.0,80.0,,,WHL,,17.0
+404,Ducks,Minors,D,"Warren, Noah",RD,19,R,Drafted (42 - 2022),47,3.0,17.0,20.0,,,QMJHL,,4.0
+405,Ducks,Minors,D,"Luneau, Tristan",RD,19,R,Drafted (53 - 2022),65,20.0,63.0,83.0,,,QMJHL,,12.0
+406,Ducks,Minors,D,"Hinds, Tyson",LD,20,L,Drafted (76 - 2021),56,11.0,43.0,54.0,,,QMJHL,,9.0
+407,Ducks,Minors,G,"Dostal, Lukas",G,23,L,Drafted (85 - 2018),34,,,,2.97,0.912,AHL,,0.0
+408,Ducks,Minors,G,"Clang, Calle",G,21,L,Traded,25,,,,2.69,0.901,SHL,,0.0
+409,Ducks,Minors,G,"Alexander, Gage",G,21,L,Drafted (148 - 2021),16,,,,3.59,0.887,AHL,,0.0
+410,Ducks,Prospects,F,"Myatovic, Nico",LW,18,L,Drafted (33 - 2023),68,30.0,30.0,60.0,,,WHL,,10.0
+411,Ducks,Prospects,F,"Colangelo, Sam",RW,21,R,Drafted (36 - 2020),35,9.0,15.0,24.0,,,NCAA,,11.0
+412,Ducks,Prospects,F,"Terrance, Carey",C,18,L,Drafted (59 - 2023),67,30.0,17.0,47.0,,,OHL,,8.0
+413,Ducks,Prospects,F,"Pitre, Coulson",RW,18,R,Drafted (65 - 2023),59,25.0,35.0,60.0,,,OHL,,12.0
+414,Ducks,Prospects,F,"Sidorov, Yegor",RW,19,L,Drafted (85 - 2023),53,40.0,36.0,76.0,,,WHL,,17.0
+415,Ducks,Prospects,F,"King, Ben",C,21,R,Drafted (107 - 2022),30,17.0,18.0,35.0,,,WHL,,13.0
+416,Ducks,Prospects,F,"Perbix, Jack",C,23,R,Drafted (116 - 2018),39,6.0,13.0,19.0,,,NCAA,,8.0
+417,Ducks,Prospects,F,"Hvidston, Connor",LW,19,L,Drafted (139 - 2022),59,21.0,44.0,65.0,,,WHL,,13.0
+418,Ducks,Prospects,F,"Callow, Michael",RW,19,R,Drafted (154 - 2022),61,21.0,19.0,40.0,,,USHL,,8.0
+419,Ducks,Prospects,F,"Sundsvik, Albin",C,22,L,Drafted (160 - 2020),52,3.0,8.0,11.0,,,SHL,,10.0
+420,Ducks,Prospects,F,"Kukkonen, Kyle",C,20,R,Drafted (162 - 2021),39,18.0,9.0,27.0,,,NCAA,,11.0
+422,Ducks,Prospects,D,"Moore, Ian",RD,21,R,Drafted (67 - 2020),34,1.0,18.0,19.0,,,NCAA,,9.0
+423,Ducks,Prospects,D,"Smith, Konnor",LD,18,L,Drafted (97 - 2023),65,3.0,12.0,15.0,,,OHL,,3.0
+424,Ducks,Prospects,D,"Dionicio, Rodwin",LD,19,L,Drafted (129 - 2023),50,15.0,35.0,50.0,,,OHL,,12.0
+425,Ducks,Prospects,D,"Port, Vojtech",RD,18,R,Drafted (161 - 2023),48,4.0,13.0,17.0,,,WHL,,4.0
+426,Ducks,Prospects,D,"Francis, William",RD,22,R,Drafted (163 - 2019),28,0.0,1.0,1.0,,,NCAA,,1.0
+427,Ducks,Prospects,G,"Clara, Damian",G,18,L,Drafted (60 - 2023),35,,,,2.79,0.903,J20 Nationell,,0.0
+428,Ducks,Prospects,G,"Buteyets, Vyacheslav",G,21,L,Drafted (178 - 2022),35,,,,2.11,0.933,VHL,,0.0
+429,Flames,Majors,RW,"Coronato, Matthew",RW,20,R,Drafted (13 - 2021),34,20.0,16.0,36.0,,,NCAA,,17.0
+430,Flames,Majors,LW,"Pelletier, Jakob",LW,22,L,Drafted (26 - 2019),35,16.0,21.0,37.0,,,AHL,,34.0
+431,Flames,Minors,F,"Honzek, Samuel",LW,18,L,Drafted (16 - 2023),43,23.0,33.0,56.0,,,WHL,,15.0
+432,Flames,Minors,F,"Zary, Connor",C,21,L,Drafted (24 - 2020),72,21.0,37.0,58.0,,,AHL,,26.0
+433,Flames,Minors,F,"Strömgren, William",LW,20,L,Drafted (45 - 2021),45,3.0,5.0,8.0,,,SHL,,8.0
+434,Flames,Minors,F,"Schwindt, Cole","RW, C",22,R,Traded,70,14.0,18.0,32.0,,,AHL,,15.0
+435,Flames,Minors,F,"Nikolayev, Ilya",C,22,L,Drafted (88 - 2019),40,13.0,20.0,33.0,,,ECHL,,10.0
+436,Flames,Minors,F,"Pospisil, Martin",RW,23,L,Drafted (105 - 2018),20,4.0,6.0,10.0,,,AHL,,16.0
+437,Flames,Minors,F,"Emilio Pettersen, Mathias",C,23,L,Drafted (167 - 2018),61,19.0,25.0,44.0,,,AHL,,23.0
+438,Flames,Minors,F,"Ciona, Lucas",LW,20,L,Drafted (173 - 2021),63,28.0,47.0,75.0,,,WHL,,14.0
+439,Flames,Minors,F,"Kerins, Rory",C,21,L,Drafted (174 - 2020),38,17.0,20.0,37.0,,,ECHL,,12.0
+440,Flames,Minors,F,"Klapka, Adam","RW, C",23,R,Signed to ELC,60,13.0,12.0,25.0,,,AHL,,13.0
+441,Flames,Minors,D,"Kuznetsov, Yan",LD,21,L,Drafted (50 - 2020),63,5.0,14.0,19.0,,,AHL,,10.0
+442,Flames,Minors,D,"Poirier, Jérémie",LD,21,L,Drafted (72 - 2020),69,9.0,32.0,41.0,,,AHL,,19.0
+443,Flames,Minors,D,"Solovyov, Ilya",LD,23,L,Drafted (205 - 2020),68,4.0,14.0,18.0,,,AHL,,8.0
+444,Flames,Minors,G,"Wolf, Dustin",G,22,L,Drafted (214 - 2019),55,,,,2.09,0.932,AHL,,0.0
+445,Flames,Prospects,F,"Rönni, Topi",C,19,L,Drafted (59 - 2022),22,2.0,3.0,5.0,,,Liiga,,8.0
+446,Flames,Prospects,F,"Suniev, Aydar",LW,18,L,Drafted (80 - 2023),50,45.0,45.0,90.0,,,BCHL,,12.0
+447,Flames,Prospects,F,"Koumontzis, Demetrios",LW,23,L,Drafted (108 - 2018),37,7.0,11.0,18.0,,,NCAA,,8.0
+448,Flames,Prospects,F,"Lipinski, Jaden",C,18,R,Drafted (112 - 2023),66,19.0,32.0,51.0,,,WHL,,9.0
+449,Flames,Prospects,F,"Bell, Parker",LW,19,L,Drafted (155 - 2022),55,25.0,39.0,64.0,,,WHL,,13.0
+450,Flames,Prospects,F,"Littler, Cade",C,19,R,Drafted (219 - 2022),51,29.0,39.0,68.0,,,BCHL,,9.0
+451,Flames,Prospects,D,"Morin, Étienne",LD,18,L,Drafted (48 - 2023),67,21.0,51.0,72.0,,,QMJHL,,10.0
+452,Flames,Prospects,D,"Boltmann, Jake",RD,21,R,Drafted (80 - 2020),37,1.0,4.0,5.0,,,NCAA,,2.0
+453,Flames,Prospects,D,"Hurtig, Axel",LD,18,L,Drafted (208 - 2023),34,2.0,6.0,8.0,,,J20 Nationell,,2.0
+454,Flames,Prospects,G,"Sergeev, Arsenii",G,20,L,Drafted (205 - 2021),19,,,,2.61,0.912,NCAA,,0.0
+455,Flames,Prospects,G,"Yegorov, Yegor",G,18,L,Drafted (176 - 2023),15,,,,2.29,0.915,MHL,,0.0
+456,Flames,Reserve,G,"Chechelev, Daniil",G,22,R,Drafted (96 - 2020),42,,,,3.58,0.894,ECHL,,0.0
+457,Flyers,Majors,LW,"Farabee, Joel","LW, RW",23,L,Drafted (14 - 2018),82,15.0,24.0,39.0,,,NHL,,39.0
+458,Flyers,Majors,RD,"York, Cam",LD/RD,22,L,Drafted (14 - 2019),54,2.0,18.0,20.0,,,NHL,,20.0
+459,Flyers,Majors,D,"Zamula, Yegor",LD/RD,23,L,Signed to ELC,44,1.0,18.0,19.0,,,AHL,,14.0
+460,Flyers,Minors,F,"Foerster, Tyson","RW, C",21,R,Drafted (23 - 2020),66,20.0,28.0,48.0,,,AHL,,23.0
+461,Flyers,Minors,F,"Desnoyers, Elliot","C, LW",21,L,Drafted (135 - 2020),65,23.0,21.0,44.0,,,AHL,,22.0
+462,Flyers,Minors,F,"Brink, Bobby",RW,22,R,Drafted (34 - 2019),41,12.0,16.0,28.0,,,AHL,,22.0
+463,Flyers,Minors,F,"Tuomaala, Samu",RW,20,R,Drafted (46 - 2021),29,26.0,20.0,46.0,,,Mestis,,23.0
+464,Flyers,Minors,F,"Wisdom, Zayde",C,21,R,Drafted (94 - 2020),45,3.0,7.0,10.0,,,AHL,,7.0
+465,Flyers,Minors,F,"Avon, Jon-Randall",C,20,L,Signed to ELC,59,29.0,31.0,60.0,,,OHL,,12.0
+466,Flyers,Minors,D,"Ginning, Adam",LD,23,L,Drafted (50 - 2018),68,3.0,16.0,19.0,,,AHL,,9.0
+467,Flyers,Minors,D,"Grans, Helge",RD,21,R,Traded,59,2.0,7.0,9.0,,,AHL,,5.0
+468,Flyers,Minors,D,"Bonk, Oliver",RD,18,R,Drafted (22 - 2023),67,10.0,30.0,40.0,,,OHL,,7.0
+469,Flyers,Minors,D,"Andrae, Emil",LD,21,L,Drafted (54 - 2020),51,6.0,20.0,26.0,,,SHL,,24.0
+470,Flyers,Minors,D,"Millman, Mason",LD,22,L,Drafted (103 - 2019),63,8.0,37.0,45.0,,,ECHL,,9.0
+471,Flyers,Minors,D,"Samson, Ethan",RD,20,R,Drafted (174 - 2021),60,18.0,42.0,60.0,,,WHL,,12.0
+472,Flyers,Minors,D,"Gendron, Alexis",RW,19,L,Drafted (220 - 2022),63,55.0,26.0,81.0,,,QMJHL,,12.0
+473,Flyers,Minors,G,"Ersson, Samuel",G,23,L,Drafted (143 - 2018),42,,,,2.84,0.9,AHL,,0.0
+474,Flyers,Loaned,G,"Kolosov, Aleksei",G,21,L,Drafted (78 - 2021),42,,,,2.54,0.912,KHL,,0.0
+475,Flyers,Prospects,F,"Gauthier, Cutter","LW, C",19,L,Drafted (5 - 2022),32,16.0,21.0,37.0,,,NCAA,,18.0
+476,Flyers,Prospects,F,"Michkov, Matvei",RW,18,L,Drafted (7 - 2023),30,9.0,11.0,20.0,,,KHL,,42.0
+477,Flyers,Prospects,F,"Kaplan, Devin",RW,19,R,Drafted (69 - 2022),40,10.0,13.0,23.0,,,NCAA,,9.0
+478,Flyers,Prospects,F,"Barkey, Denver",C,18,L,Drafted (95 - 2023),61,22.0,37.0,59.0,,,OHL,,11.0
+479,Flyers,Prospects,F,"Knuble, Cole","RW, C",19,R,Drafted (103 - 2023),57,30.0,36.0,66.0,,,USHL,,14.0
+480,Flyers,Prospects,F,"Ciernik, Alex","RW, LW",18,L,Drafted (120 - 2023),25,3.0,9.0,12.0,,,HockeyAllsvenskan,,14.0
+481,Flyers,Prospects,F,"Bump, Alex",LW,19,L,Drafted (133 - 2022),48,14.0,25.0,39.0,,,USHL,,10.0
+482,Flyers,Prospects,F,"MacPherson, Ryan",C,18,L,Drafted (172 - 2023),49,25.0,36.0,61.0,,,GOJHL,,3.0
+483,Flyers,Prospects,F,"Brodzinski, Bryce",RW,23,R,Drafted (196 - 2019),40,19.0,12.0,31.0,,,NCAA,,12.0
+485,Flyers,Prospects,F,"McLaughlin, Owen",C,20,L,Drafted (206 - 2021),37,2.0,13.0,15.0,,,NCAA,,6.0
+486,Flyers,Prospects,F,"Rizzo, Massimo","C, LW",22,L,Traded,38,17.0,29.0,46.0,,,NCAA,,19.0
+487,Flyers,Prospects,D,"Zanetti, Brian",LD,20,L,Drafted (110 - 2021),47,5.0,7.0,12.0,,,OHL,,3.0
+488,Flyers,Prospects,D,"Sotheran, Carter",RD,18,R,Drafted (135 - 2023),68,4.0,19.0,23.0,,,WHL,,4.0
+489,Flyers,Prospects,D,"Murchison, Ty",LD,20,L,Drafted (158 - 2021),36,2.0,3.0,5.0,,,NCAA,,2.0
+490,Flyers,Prospects,D,"McDonald, Hunter",LD,21,L,Drafted (165 - 2022),35,1.0,13.0,14.0,,,NCAA,,6.0
+491,Flyers,Prospects,D,"Mann, Matteo",RD,18,R,Drafted (199 - 2023),45,0.0,5.0,5.0,,,QMJHL,,1.0
+492,Flyers,Prospects,G,"Bjarnason, Carson",G,18,L,Drafted (51 - 2023),47,,,,3.08,0.9,WHL,,0.0
+493,Flyers,Prospects,G,"Zavragin, Yegor",G,18,L,Drafted (87 - 2023),21,,,,2.49,0.92,MHL,,0.0
+494,Hurricanes,Majors,RW,"Jarvis, Seth",RW,21,R,Drafted (13 - 2020),82,14.0,25.0,39.0,,,NHL,,39.0
+495,Hurricanes,Majors,LW,"Svechnikov, Andrei","LW, RW",23,L,Drafted (2 - 2018),64,23.0,32.0,55.0,,,NHL,,55.0
+496,Hurricanes,Majors,C,"Kotkaniemi, Jesperi",C,23,L,Signed to SPC,82,18.0,25.0,43.0,,,NHL,,43.0
+497,Hurricanes,Majors,C,"Drury, Jack",C,23,L,Drafted (42 - 2018),38,2.0,6.0,8.0,,,NHL,,8.0
+498,Hurricanes,Minors,F,"Suzuki, Ryan",C,22,L,Drafted (28 - 2019),50,13.0,19.0,32.0,,,AHL,,20.0
+499,Hurricanes,Minors,F,"Ponomarev, Vasili",C,21,L,Drafted (53 - 2020),64,24.0,22.0,46.0,,,AHL,,23.0
+500,Hurricanes,Minors,F,"Rees, Jamieson",C,22,L,Drafted (44 - 2019),65,14.0,28.0,42.0,,,AHL,,21.0
+501,Hurricanes,Minors,F,"Gunler, Noel","RW, LW",21,R,Drafted (41 - 2020),31,8.0,10.0,18.0,,,AHL,,19.0
+502,Hurricanes,Minors,F,"Unger Sörum, Felix",RW,18,R,Drafted (62 - 2023),42,10.0,36.0,46.0,,,J20 Nationell,,8.0
+503,Hurricanes,Minors,F,"Robidas, Justin",C,20,R,Drafted (147 - 2021),63,25.0,53.0,78.0,,,QMJHL,,11.0
+504,Hurricanes,Minors,F,"Murray, Blake",C,22,L,Drafted (183 - 2019),29,10.0,7.0,17.0,,,ECHL,,7.0
+505,Hurricanes,Minors,F,"Pashin, Alexander","C, LW, RW",21,L,Drafted (199 - 2020),47,4.0,6.0,10.0,,,AHL,,7.0
+506,Hurricanes,Minors,D,"Honka, Anttoni",RD,22,R,Drafted (83 - 2019),70,6.0,28.0,34.0,,,AHL,,15.0
+507,Hurricanes,Minors,D,"Fensore, Domenick",LD,22,L,Drafted (90 - 2019),37,9.0,22.0,31.0,,,NCAA,,13.0
+508,Hurricanes,Minors,D,"Seeley, Ronan",LD,21,L,Drafted (208 - 2020),70,4.0,21.0,25.0,,,AHL,,11.0
+509,Hurricanes,Minors,G,"Perets, Yaniv",G,23,L,Signed to ELC,41,,,,1.49,0.931,NCAA,,0.0
+510,Hurricanes,Loaned,F,"Koivunen, Ville",RW,20,L,Drafted (51 - 2021),52,12.0,16.0,28.0,,,Liiga,,19.0
+511,Hurricanes,Loaned,F,"Tieksola, Tuukka",RW,22,R,Drafted (121 - 2019),52,8.0,16.0,24.0,,,AHL,,15.0
+512,Hurricanes,Loaned,D,"Heimosalmi, Aleksi",RD,20,R,Drafted (44 - 2021),45,4.0,11.0,15.0,,,Liiga,,12.0
+513,Hurricanes,Prospects,F,"Nadeau, Bradly",LW,18,R,Drafted (30 - 2023),54,45.0,68.0,113.0,,,BCHL,,14.0
+514,Hurricanes,Prospects,F,"Trikozov, Gleb","LW, RW, C",19,R,Drafted (60 - 2022),25,14.0,15.0,29.0,,,MHL,*same number of games on VHL,14.0
+515,Hurricanes,Prospects,F,"Perevalov, Alexander",LW,19,R,Drafted (71 - 2022),27,2.0,1.0,3.0,,,KHL,,7.0
+516,Hurricanes,Prospects,F,"Perron, Jayden",RW,18,R,Drafted (94 - 2023),61,24.0,48.0,72.0,,,USHL,,14.0
+517,Hurricanes,Prospects,F,"Rykov, Alexander",RW,18,L,Drafted (100 - 2023),20,4.0,7.0,11.0,,,VHL,,15.0
+518,Hurricanes,Prospects,F,"Blake, Jackson",RW,20,R,Drafted (109 - 2021),39,16.0,26.0,42.0,,,NCAA,,17.0
+519,Hurricanes,Prospects,F,"Nybeck, Zion",RW,21,L,Drafted (115 - 2020),50,13.0,21.0,34.0,,,HockeyAllsvenskan,,20.0
+520,Hurricanes,Prospects,F,"Lucius, Cruz",RW,19,R,Drafted (124 - 2022),34,11.0,23.0,34.0,,,NCAA,,16.0
+521,Hurricanes,Prospects,F,"Yarovoi, Stanislav",LW,20,R,Drafted (126 - 2023),45,9.0,7.0,16.0,,,KHL,,23.0
+522,Hurricanes,Prospects,F,"Mercuri, Lucas",C,21,R,Drafted (159 - 2020),35,3.0,11.0,14.0,,,NCAA,,6.0
+523,Hurricanes,Prospects,F,"Mukhanov, Timur",LW,18,R,Drafted (163 - 2023),31,4.0,4.0,8.0,,,VHL,,7.0
+524,Hurricanes,Prospects,F,"Emerson, Michael","C, LW, RW",19,R,Drafted (190 - 2023),60,30.0,34.0,64.0,,,USHL,,13.0
+525,Hurricanes,Prospects,F,"Guslistov, Nikita",C,21,L,Drafted (209 - 2021),52,4.0,11.0,15.0,,,KHL,,18.0
+526,Hurricanes,Prospects,D,"Morrow, Scott",RD,20,R,Drafted (40 - 2021),35,9.0,22.0,31.0,,,NCAA,,14.0
+527,Hurricanes,Prospects,D,"Nikishin, Alexander",LD,21,L,Drafted (69 - 2020),65,11.0,44.0,55.0,,,KHL,,54.0
+528,Hurricanes,Prospects,D,"Webber, Cade",LD,22,L,Drafted (99 - 2019),40,1.0,5.0,6.0,,,NCAA,,2.0
+529,Hurricanes,Prospects,D,"Forsmark, Simon",LD,19,L,Drafted (101 - 2022),33,6.0,24.0,30.0,,,J20 Nationell,,7.0
+530,Hurricanes,Prospects,D,"Legault, Charles-Alexis",RD,20,R,Drafted (139 - 2023),40,2.0,7.0,9.0,,,NCAA,,4.0
+531,Hurricanes,Prospects,D,"Grudinin, Vladimir",LD,19,L,Drafted (156 - 2022),26,1.0,1.0,2.0,,,KHL,,5.0
+532,Hurricanes,Prospects,D,"Montgomery, Bryce",RD,20,R,Drafted (170 - 2021),48,6.0,11.0,17.0,,,USHL,,4.0
+533,Hurricanes,Prospects,D,"Pelevin, Alexander",LD,19,L,Drafted (205 - 2022),41,2.0,16.0,18.0,,,MHL,,5.0
+534,Hurricanes,Prospects,D,"Nyström, Joel",RD,21,R,Drafted (219 - 2021),46,6.0,10.0,16.0,,,SHL,,16.0
+535,Hurricanes,Prospects,G,"Hamrla, Patrik",G,20,L,Drafted (83 - 2021),44,,,,2.82,0.894,QMJHL,,0.0
+536,Hurricanes,Prospects,G,"Khazheyev, Ruslan",G,18,L,Drafted (158 - 2023),23,,,,2.38,0.923,MHL,,0.0
+537,Hurricanes,Prospects,G,"Vondras, Jakub",G,19,R,Drafted (171 - 2022),29,,,,2.19,0.929,Czechia U20,,0.0
+538,Hurricanes,Prospects,G,"Quapp, Nikita",G,20,L,Drafted (187 - 2021),12,,,,2.67,0.917,DEL2,,0.0
+539,Hurricanes,Prospects,G,"Kucharski, Jake",G,23,L,Drafted (197 - 2018),20,,,,2.72,0.904,NCAA,,0.0
+541,Hurricanes,Prospects,G,"Velmakin, Yegor",G,20,L,Drafted (222 - 2023),21,,,,2.29,0.915,NMHL,,0.0
+542,Islanders,Majors,RW,"Wahlstrom, Oliver",RW,23,R,Drafted (11 - 2018),35,7.0,9.0,16.0,,,NHL,,16.0
+543,Islanders,Majors,LD,"Romanov, Alexander",LD,23,L,Traded,76,2.0,20.0,22.0,,,NHL,,22.0
+544,Islanders,Majors,RD,"Dobson, Noah",RD,23,R,Drafted (12 - 2018),78,13.0,36.0,49.0,,,NHL,,49.0
+545,Islanders,Majors,F,"Holmström, Simon",RW,22,L,Drafted (23 - 2019),50,6.0,3.0,9.0,,,NHL,,9.0
+546,Islanders,Majors,D,"Bolduc, Samuel",LD,22,L,Drafted (57 - 2019),56,10.0,25.0,35.0,,,AHL,,20.0
+547,Islanders,Minors,F,"Dufour, William",RW,21,R,Drafted (152 - 2020),69,21.0,27.0,48.0,,,AHL,,22.0
+548,Islanders,Minors,F,"Iskhakov, Ruslan",C,23,L,Drafted (43 - 2018),69,17.0,34.0,51.0,,,AHL,,24.0
+549,Islanders,Minors,F,"Maggio, Matthew",RW,20,R,Drafted (142 - 2022),66,54.0,57.0,111.0,,,OHL,,20.0
+550,Islanders,Minors,F,"Newkirk, Reece",C,22,L,Drafted (147 - 2019),50,18.0,18.0,36.0,,,ECHL,,9.0
+551,Islanders,Minors,F,"Liukas, Eetu",LW,20,L,Drafted (157 - 2021),58,14.0,9.0,23.0,,,Liiga,,14.0
+552,Islanders,Minors,F,"Kuefler, Daylan",LW,21,L,Drafted (174 - 2022),54,31.0,30.0,61.0,,,WHL,,13.0
+553,Islanders,Minors,D,"Odelius, Calle",LD,19,L,Drafted (65 - 2022),43,1.0,10.0,11.0,,,HockeyAllsvenskan,,7.0
+554,Islanders,Minors,D,"George, Isaiah",LD,19,L,Drafted (98 - 2022),54,7.0,15.0,22.0,,,OHL,,5.0
+555,Islanders,Minors,D,"Fulp, Aidan",RD,23,R,Signed to ELC,38,2.0,13.0,15.0,,,NCAA,,6.0
+556,Islanders,Minors,D,"Mitchell, Travis",LD,23,L,Signed to ELC,34,6.0,13.0,19.0,,,NCAA,,9.0
+557,Islanders,Minors,G,"Skarek, Jakub",G,23,L,Drafted (72 - 2018),38,,,,3.37,0.892,AHL,,0.0
+558,Islanders,Minors,G,"Lennox, Tristan",G,20,L,Drafted (93 - 2021),45,,,,3.15,0.888,OHL,,0.0
+559,Islanders,Prospects,F,"Nelson, Danny","C, LW, RW",18,L,Drafted (49 - 2023),62,21.0,26.0,47.0,,,NTDP,,12.0
+560,Islanders,Prospects,F,"Finley, Quinn",LW,19,L,Drafted (78 - 2022),55,25.0,40.0,65.0,,,USHL,,14.0
+561,Islanders,Prospects,F,"Ljungkrantz, Alexander",LW,21,L,Drafted (90 - 2020),52,6.0,5.0,11.0,,,SHL,,10.0
+562,Islanders,Prospects,F,"Nurmi, Jesse",LW,18,L,Drafted (113 - 2023),41,21.0,29.0,50.0,,,U20SM-sarja,,8.0
+563,Islanders,Prospects,F,"Jefferies, Alex",LW,21,R,Drafted (121 - 2020),38,14.0,27.0,41.0,,,NCAA,,17.0
+564,Islanders,Prospects,F,"Berg, Cameron",C,21,L,Drafted (125 - 2021),37,10.0,14.0,24.0,,,NCAA,,10.0
+565,Islanders,Prospects,F,"Gill, Justin",C,20,L,Drafted (145 - 2023),68,44.0,49.0,93.0,,,QMJHL,,13.0
+566,Islanders,Prospects,D,"Schulz, Zachary",LD,18,L,Drafted (177 - 2023),52,1.0,9.0,10.0,,,NTDP,,3.0
+567,Islanders,Prospects,D,"Rajaniemi, Matias",LD,21,L,Drafted (183 - 2020),31,0.0,4.0,4.0,,,Liiga,,5.0
+568,Islanders,Prospects,D,"Malinen, Aleksi",LD,20,L,Drafted (189 - 2021),42,0.0,7.0,7.0,,,Liiga,,6.0
+569,Islanders,Prospects,D,"Good Bogg, Dennis",LD,19,L,Drafted (209 - 2023),39,4.0,24.0,28.0,,,J20 Nationell,,5.0
+570,Islanders,Prospects,D,"Machu, Tomas",RD,20,R,Drafted (221 - 2021),57,4.0,10.0,14.0,,,USHL,,3.0
+571,Jets,Majors,LW,"Perfetti, Cole","LW, C",21,L,Drafted (10 - 2020),51,8.0,22.0,30.0,,,NHL,,30.0
+572,Jets,Majors,F,"Gustafsson, David","LW, C",23,L,Drafted (60 - 2018),46,0.0,6.0,6.0,,,NHL,,6.0
+573,Jets,Minors,F,"Lucius, Chaz",C,20,R,Drafted (18 - 2021),12,2.0,3.0,5.0,,,AHL,,13.0
+574,Jets,Minors,F,"Lambert, Brad","C, RW",19,R,Drafted (30 - 2022),26,17.0,21.0,38.0,,,WHL,,17.0
+575,Jets,Minors,F,"Torgersson, Daniel","LW, RW",21,L,Drafted (40 - 2020),69,11.0,9.0,20.0,,,AHL,,9.0
+576,Jets,Minors,F,"Chibrikov, Nikita",RW,20,L,Drafted (50 - 2021),31,1.0,1.0,2.0,,,KHL,,4.0
+577,Jets,Minors,F,"Zhilkin, Danil",C,19,L,Drafted (77 - 2022),60,29.0,27.0,56.0,,,OHL,,11.0
+578,Jets,Minors,F,"Nikkanen, Henri",C,22,L,Drafted (113 - 2019),66,5.0,11.0,16.0,,,AHL,,8.0
+579,Jets,Minors,F,"Wagner, Fabian",C,19,L,Drafted (175 - 2022),33,11.0,22.0,33.0,,,J20 Nationell,,7.0
+580,Jets,Minors,F,"Ford, Parker",C,23,R,Signed to ELC,37,12.0,14.0,26.0,,,NCAA,,11.0
+581,Jets,Minors,D,"Heinola, Ville",LD,22,L,Drafted (20 - 2019),48,4.0,33.0,37.0,,,AHL,,25.0
+582,Jets,Minors,D,"Kniazev, Artemi",LD,22,L,Traded,61,5.0,23.0,28.0,,,AHL,,15.0
+583,Jets,Minors,D,"Lundmark, Simon",RD,22,R,Drafted (51 - 2019),64,3.0,14.0,17.0,,,AHL,,8.0
+584,Jets,Minors,D,"Salomonsson, Elias",RD,19,R,Drafted (55 - 2022),25,3.0,2.0,5.0,,,SHL,,9.0
+585,Jets,Minors,D,"Kuzmin, Dmitri",LD,20,L,Drafted (82 - 2021),65,14.0,45.0,59.0,,,OHL,,11.0
+586,Jets,Minors,D,"Chisholm, Declan",LD/RD,23,L,Drafted (150 - 2018),59,5.0,38.0,43.0,,,AHL,,23.0
+587,Jets,Minors,D,"Bauer, Tyrel",RD,21,R,Drafted (164 - 2020),47,2.0,5.0,7.0,,,AHL,,5.0
+588,Jets,Minors,G,"Salminen, Oskari",G,23,L,Signed to ELC,39,,,,3.06,0.896,AHL,,0.0
+589,Jets,Minors,G,"DiVincentiis, Domenic",G,19,L,Drafted (207 - 2022),48,,,,2.33,0.919,OHL,,0.0
+590,Jets,Prospects,F,"McGroarty, Rutger","LW, C",19,L,Drafted (14 - 2022),39,18.0,21.0,39.0,,,NCAA,,16.0
+591,Jets,Prospects,F,"Barlow, Colby",LW,18,L,Drafted (18 - 2023),59,46.0,33.0,79.0,,,OHL,,16.0
+592,Jets,Prospects,F,"Nehring, Zach",RW,18,R,Drafted (82 - 2023),54,39.0,46.0,85.0,,,USHS-Prep,,4.0
+593,Jets,Prospects,F,"Blaisdell, Harrison",C,22,L,Drafted (134 - 2019),32,1.0,3.0,4.0,,,NCAA,,2.0
+594,Jets,Prospects,F,"Rashevsky, Dmitri",RW,22,L,Drafted (146 - 2021),67,19.0,19.0,38.0,,,KHL,,36.0
+595,Jets,Prospects,F,"Julien, Jacob",C,19,L,Drafted (146 - 2023),40,9.0,7.0,16.0,,,OHL,,5.0
+596,Jets,Prospects,F,"Levis, Connor",RW,18,R,Drafted (210 - 2023),68,27.0,40.0,67.0,,,WHL,,11.0
+597,Jets,Prospects,F,"Wong, Austin","C, RW",23,R,Drafted (215 - 2018),30,1.0,0.0,1.0,,,NCAA,,1.0
+598,Jets,Prospects,D,"Brown, Garrett",RD,19,R,Drafted (99 - 2022),36,3.0,13.0,16.0,,,USHL,,5.0
+599,Jets,Prospects,D,"Johannesson, Anton",LD,21,L,Drafted (133 - 2020),32,8.0,18.0,26.0,,,HockeyEttan,,7.0
+600,Jets,Prospects,G,"Milic, Thomas",G,20,L,Drafted (151 - 2023),33,,,,2.08,0.928,WHL,,0.0
+601,Kings,Majors,LW,"Byfield, Quinton","C, LW",21,L,Drafted (2 - 2020),53,3.0,19.0,22.0,,,NHL,,22.0
+602,Kings,Majors,RW,"Kaliyev, Arthur","RW, LW",22,L,Drafted (33 - 2019),56,13.0,15.0,28.0,,,NHL,,28.0
+603,Kings,Majors,LD,"Björnfot, Tobias",LD,22,L,Drafted (22 - 2019),50,5.0,7.0,12.0,,,AHL,,8.0
+604,Kings,Majors,RD,"Clarke, Brandt",RD,20,R,Drafted (8 - 2021),31,23.0,38.0,61.0,,,OHL,,23.0
+605,Kings,Majors,F,"Fagemo, Samuel","LW, RW",23,R,Drafted (50 - 2019),56,23.0,9.0,32.0,,,AHL,,18.0
+606,Kings,Training Camp,F,"Turcotte, Alex",C,22,L,Drafted (5 - 2019),32,6.0,11.0,17.0,,,AHL,,17.0
+607,Kings,Training Camp,D,"Spence, Jordan",RD,22,R,Drafted (95 - 2019),56,4.0,41.0,45.0,,,AHL,,26.0
+608,Kings,Minors,F,"Pinelli, Francesco",C,20,L,Drafted (42 - 2021),60,41.0,49.0,90.0,,,OHL,,18.0
+609,Kings,Minors,F,"Helenius, Samuel",C,20,L,Drafted (59 - 2021),61,2.0,12.0,14.0,,,AHL,,7.0
+610,Kings,Minors,F,"Thomas, Akil",C,23,R,Drafted (51 - 2018),13,5.0,3.0,8.0,,,AHL,,20.0
+611,Kings,Minors,F,"Laferriere, Alex",RW,21,R,Drafted (83 - 2020),34,21.0,21.0,42.0,,,NCAA,,20.0
+612,Kings,Minors,F,"Chromiak, Martin",RW,21,R,Drafted (128 - 2020),55,15.0,13.0,28.0,,,AHL,,16.0
+613,Kings,Minors,F,"Lee, Andre","LW, C",23,L,Drafted (188 - 2019),58,6.0,3.0,9.0,,,AHL,,5.0
+614,Kings,Minors,F,"Madden, Tyler",C,23,R,Traded,71,20.0,13.0,33.0,,,AHL,,15.0
+615,Kings,Minors,D,"Dvorak, Jakub",LD,18,L,Drafted (54 - 2023),24,0.0,2.0,2.0,,,Czechia,,4.0
+616,Kings,Minors,D,"Nousiainen, Kim",LD,22,L,Drafted (119 - 2019),37,2.0,4.0,6.0,,,AHL,,5.0
+617,Kings,Minors,D,"Krygier, Cole",LD,23,L,Traded,38,10.0,6.0,16.0,,,NCAA,,7.0
+618,Kings,Minors,G,"Portillo, Erik",G,23,L,Traded,38,,,,3.0,0.908,NCAA,,0.0
+619,Kings,Prospects,F,"Hughes, Jack",C,19,L,Drafted (51 - 2022),32,5.0,11.0,16.0,,,NCAA,,8.0
+620,Kings,Prospects,F,"Simontaival, Kasper",C,21,R,Drafted (66 - 2020),49,10.0,14.0,24.0,,,Liiga,,18.0
+621,Kings,Prospects,F,"Ziemmer, Koehn",RW,18,R,Drafted (78 - 2023),68,41.0,48.0,89.0,,,WHL,,15.0
+622,Kings,Prospects,F,"Connors, Kenny",C,20,L,Drafted (103 - 2022),32,9.0,17.0,26.0,,,NCAA,,13.0
+623,Kings,Prospects,F,"Wright, Jared","C, LW, RW",20,R,Drafted (169 - 2022),34,8.0,4.0,12.0,,,NCAA,,6.0
+624,Kings,Prospects,F,"Conmy, Ryan",RW,18,R,Drafted (182 - 2023),60,33.0,29.0,62.0,,,USHL,,12.0
+625,Kings,Prospects,F,"Jämsen, Aatu",RW,21,L,Drafted (190 - 2020),43,14.0,18.0,32.0,,,Liiga,,27.0
+626,Kings,Prospects,F,"Lawrence, Kaleb",RW,20,L,Drafted (215 - 2022),50,16.0,21.0,37.0,,,OHL,,9.0
+627,Kings,Prospects,D,"Kirsanov, Kirill",LD,20,L,Drafted (84 - 2021),31,4.0,10.0,14.0,,,VHL,,12.0
+628,Kings,Prospects,D,"Booth, Angus",LD,19,L,Drafted (116 - 2022),62,3.0,16.0,19.0,,,QMJHL,,3.0
+629,Kings,Prospects,D,"Meehan, Ben",LD,22,L,Drafted (140 - 2020),34,4.0,13.0,17.0,,,NCAA,,8.0
+630,Kings,Prospects,D,"Salin, Otto",RD,19,R,Drafted (148 - 2022),27,2.0,6.0,8.0,,,Liiga,,11.0
+631,Kings,Prospects,D,"Mania, Matthew",RD,18,R,Drafted (150 - 2023),67,10.0,28.0,38.0,,,OHL,,7.0
+632,Kings,Prospects,D,"Doyle, Braden",LD,22,L,Drafted (157 - 2019),23,1.0,7.0,8.0,,,NCAA,,6.0
+633,Kings,Prospects,D,"Sparkes, Jack",RD,19,R,Drafted (180 - 2022),53,1.0,7.0,8.0,,,USHL,,2.0
+634,Kings,Prospects,G,"Slukynsky, Hampton",G,18,L,Drafted (118 - 2023),30,,,,1.47,0.941,USHS-MN,,0.0
+635,Kings,Prospects,G,"Markkanen, Juho",G,21,L,Drafted (112 - 2020),18,,,,3.04,0.894,DEL,,0.0
+636,Kings,Reserve,F,"Shafigullin, Bulat","C, LW, RW",23,L,Drafted (82 - 2018),30,4.0,9.0,13.0,,,KHL,,27.0
+637,Knights,Majors,LW,"Cotter, Paul","LW, C",23,L,Drafted (115 - 2018),55,13.0,5.0,18.0,,,NHL,,18.0
+638,Knights,Majors,F,"Dorofeyev, Pavel","LW, RW",22,L,Drafted (79 - 2019),32,9.0,8.0,17.0,,,AHL,,17.0
+639,Knights,Minors,F,"Brisson, Brendan","C, LW, RW",21,L,Drafted (29 - 2020),58,18.0,19.0,37.0,,,AHL,,20.0
+640,Knights,Minors,F,"Edstrom, David",C,18,L,Drafted (32 - 2023),28,15.0,13.0,28.0,,,J20 Nationell,,7.0
+641,Knights,Minors,F,"Sapovaliv, Matyas",C,19,L,Drafted (48 - 2022),61,27.0,29.0,56.0,,,OHL,,11.0
+642,Knights,Minors,F,"Brabenec, Jakub",C,20,L,Drafted (102 - 2021),54,18.0,42.0,60.0,,,QMJHL,,10.0
+644,Knights,Minors,F,"Primeau, Mason",C,22,L,Drafted (141 - 2019),27,5.0,3.0,8.0,,,AHL,,9.0
+645,Knights,Minors,D,"Korczak, Kaedan",RD,22,R,Drafted (41 - 2019),50,4.0,10.0,14.0,,,AHL,,9.0
+646,Knights,Minors,D,"Chayka, Daniil",LD,20,L,Drafted (38 - 2021),57,2.0,6.0,8.0,,,AHL,,4.0
+647,Knights,Minors,D,"Cormier, Lukas",LD,21,L,Drafted (68 - 2020),62,10.0,25.0,35.0,,,AHL,,18.0
+648,Knights,Minors,D,"Ahac, Layton",LD,22,L,Drafted (86 - 2019),34,1.0,3.0,4.0,,,AHL,,4.0
+649,Knights,Minors,D,"Fleming, Joe",RD,20,R,Signed to ELC,63,5.0,22.0,27.0,,,QMJHL,,4.0
+650,Knights,Minors,D,"Sedoff, Christoffer",LD,21,L,Signed to ELC,59,5.0,46.0,51.0,,,WHL,,10.0
+651,Knights,Minors,G,"Vikman, Jesper",G,21,L,Drafted (125 - 2020),45,,,,3.29,0.903,WHL,,0.0
+652,Knights,Minors,G,"Saville, Isaiah",G,22,R,Drafted (135 - 2019),33,,,,3.09,0.92,ECHL,,0.0
+653,Knights,Loaned,F,"Morozov, Ivan",C,23,R,Drafted (61 - 2018),58,6.0,11.0,17.0,,,AHL,,9.0
+654,Knights,Loaned,G,"Lindbom, Carl",G,20,L,Drafted (222 - 2021),36,1.86,0.93,,,,HockeyAllsvenskan,,0.0
+655,Knights,Prospects,F,"Cataford, Mathieu","C, RW",18,R,Drafted (77 - 2023),68,31.0,44.0,75.0,,,QMJHL,,10.0
+656,Knights,Prospects,F,"Gustafson, Jordan",C,19,L,Drafted (79 - 2022),40,16.0,20.0,36.0,,,WHL,,10.0
+657,Knights,Prospects,F,"Hallum, Jackson","C, LW, RW",21,L,Drafted (91 - 2020),39,6.0,11.0,17.0,,,NCAA,,7.0
+658,Knights,Prospects,F,"Donovan, Ryder",C,22,R,Drafted (110 - 2019),34,2.0,2.0,4.0,,,NCAA,,2.0
+659,Knights,Prospects,F,"Demek, Jakub",RW,20,L,Drafted (128 - 2021),15,4.0,7.0,11.0,,,WHL,,8.0
+660,Knights,Prospects,F,"Hemmerling, Ben",RW,19,R,Drafted (177 - 2022),55,21.0,41.0,62.0,,,WHL,,13.0
+661,Knights,Prospects,F,"Uronen, Tuomas",RW,18,R,Drafted (192 - 2023),39,20.0,23.0,43.0,,,U20SM-sarja,,8.0
+662,Knights,Prospects,D,"Kärki, Arttu",LD,18,L,Drafted (96 - 2023),36,13.0,26.0,39.0,,,U20SM-sarja,,7.0
+663,Knights,Prospects,D,"Ellis, Noah",RD,21,R,Drafted (184 - 2020),23,1.0,1.0,2.0,,,NCAA,,1.0
+664,Knights,Prospects,D,"Cholach, Artur",LD,20,L,Drafted (190 - 2021),60,3.0,18.0,21.0,,,OHL,,4.0
+665,Knights,Prospects,D,"Wiebe, Abram",LD,20,L,Drafted (209 - 2022),54,12.0,41.0,53.0,,,BCHL,,6.0
+666,Knights,Prospects,G,"Whitehead, Cameron",G,20,L,Drafted (128 - 2022),43,,,,2.83,0.904,USHL,,0.0
+667,Knights,Reserve,F,"Guay, Patrick","LW, C",21,L,Drafted (145 - 2022),49,16.0,36.0,52.0,,,ECHL,,13.0
+668,Kraken,Majors,C,"Beniers, Matthew",C,20,L,Drafted (2 - 2021),80,24.0,33.0,57.0,,,NHL,,57.0
+669,Kraken,Majors,C,"Wright, Shane",C,19,R,Drafted (4 - 2022),20,15.0,22.0,37.0,,,OHL,,22.0
+670,Kraken,Minors,F,"Kartye, Tye",LW,22,L,Signed to ELC,72,28.0,29.0,57.0,,,AHL,,25.0
+671,Kraken,Minors,F,"Sale, Eduard","LW, RW",18,L,Drafted (20 - 2023),43,7.0,7.0,14.0,,,Czechia,,16.0
+672,Kraken,Minors,F,"Firkus, Jagger",RW,19,R,Drafted (35 - 2022),66,40.0,48.0,88.0,,,WHL,,15.0
+673,Kraken,Minors,F,"Goyette, David",C,19,L,Drafted (61 - 2022),63,41.0,51.0,92.0,,,OHL,,17.0
+674,Kraken,Minors,F,"Winterton, Ryan",C,20,R,Drafted (67 - 2021),34,12.0,24.0,36.0,,,OHL,,13.0
+675,Kraken,Minors,F,"Robertson, Tucker",C,20,R,Drafted (123 - 2022),68,36.0,54.0,90.0,,,OHL,,16.0
+676,Kraken,Minors,F,"Melanson, Jacob",RW,20,R,Drafted (131 - 2021),59,50.0,49.0,99.0,,,QMJHL,,16.0
+677,Kraken,Minors,F,"Morrison, Logan",C,21,R,Signed to ELC,56,40.0,54.0,94.0,,,OHL,,20.0
+678,Kraken,Minors,F,"Henman, Luke",C,23,L,Signed to ELC,67,7.0,8.0,15.0,,,AHL,,7.0
+679,Kraken,Minors,F,"Petman, Ville","C, LW",23,L,Signed to ELC,72,12.0,16.0,28.0,,,AHL,,12.0
+680,Kraken,Minors,D,"Seppälä, Peetro",LD,23,L,Signed to ELC,70,1.0,11.0,12.0,,,AHL,,5.0
+681,Kraken,Minors,D,"Evans, Ryker",LD,21,L,Drafted (35 - 2021),71,6.0,38.0,44.0,,,AHL,,20.0
+682,Kraken,Minors,D,"Nelson, Ty",RD,19,R,Drafted (68 - 2022),67,24.0,52.0,76.0,,,OHL,,13.0
+683,Kraken,Minors,D,"Ottavainen, Ville",RD,21,R,Drafted (99 - 2021),54,5.0,11.0,16.0,,,Liiga,,11.0
+684,Kraken,Loaned,F,"Nyman, Jani","LW, RW",19,L,Drafted (49 - 2022),29,10.0,4.0,14.0,,,Liiga,,17.0
+685,Kraken,Loaned,G,"Kokko, Niklas",G,19,L,Drafted (58 - 2022),14,,,,2.95,0.901,Mestis,,0.0
+686,Kraken,Prospects,F,"Rehkopf, Carson",LW,18,L,Drafted (50 - 2023),68,30.0,29.0,59.0,,,OHL,,10.0
+687,Kraken,Prospects,F,"Fisker Mølgaard, Oscar",C,18,L,Drafted (52 - 2023),41,4.0,3.0,7.0,,,SHL,,8.0
+688,Kraken,Prospects,F,"MacDonald, Ben",C,19,L,Drafted (91 - 2022),52,23.0,27.0,50.0,,,BCHL,,6.0
+689,Kraken,Prospects,F,"Loshko, Andrei","RW, C",18,L,Drafted (116 - 2023),67,22.0,48.0,70.0,,,QMJHL,,10.0
+690,Kraken,Prospects,F,"Hall, Barrett","C, LW, RW",19,L,Drafted (164 - 2022),56,17.0,28.0,45.0,,,USHL,,9.0
+691,Kraken,Prospects,F,"Forsfjäll, Zeb",C,18,L,Drafted (180 - 2023),34,8.0,14.0,22.0,,,J20 Nationell,,5.0
+692,Kraken,Prospects,F,"Janicke, Justin",LW,20,L,Drafted (195 - 2021),36,7.0,7.0,14.0,,,NCAA,,6.0
+693,Kraken,Prospects,F,"Jackson, Kyle",C,20,L,Drafted (196 - 2022),67,31.0,52.0,83.0,,,OHL,,15.0
+694,Kraken,Prospects,F,"Wisdom, Zaccharya",RW,19,R,Drafted (212 - 2023),59,28.0,20.0,48.0,,,USHL,,10.0
+695,Kraken,Prospects,D,"Dragicevic, Lukas",RD,18,R,Drafted (57 - 2023),68,15.0,60.0,75.0,,,WHL,,13.0
+696,Kraken,Prospects,D,"Price, Caden",LD,18,L,Drafted (84 - 2023),65,5.0,35.0,40.0,,,WHL,,7.0
+697,Kraken,Prospects,D,"Jugnauth, Tyson",LD,19,L,Drafted (100 - 2022),32,5.0,10.0,15.0,,,NCAA,,7.0
+698,Kraken,Prospects,D,"Hammell, Kaden",RD,18,R,Drafted (148 - 2023),67,8.0,18.0,26.0,,,WHL,,4.0
+699,Kraken,Prospects,G,"Vyazovoi, Semyon",G,20,L,Drafted (163 - 2021),24,,,,2.27,0.92,VHL,,0.0
+700,Kraken,Prospects,G,"Vedenpää, Visa",G,18,L,Drafted (168 - 2023),31,,,,2.63,0.886,U20SM-sarja,,0.0
+701,Leafs,Majors,LW,"Knies, Matthew",LW,20,L,Drafted (57 - 2021),40,21.0,21.0,42.0,,,NCAA,,17.0
+702,Leafs,Minors,F,"Robertson, Nicholas",LW,22,L,Drafted (53 - 2019),15,2.0,3.0,5.0,,,NHL,,5.0
+703,Leafs,Minors,F,"Steeves, Alex","LW, RW",23,L,Signed to ELC,65,19.0,32.0,51.0,,,AHL,,25.0
+704,Leafs,Minors,F,"Der-Arguchintsev, Semyon",C,23,R,Drafted (76 - 2018),50,12.0,28.0,40.0,,,AHL,,26.0
+705,Leafs,Minors,F,"Cowan, Easton","C, RW",18,L,Drafted (28 - 2023),68,20.0,33.0,53.0,,,OHL,,9.0
+706,Leafs,Minors,F,"Minten, Fraser","C, LW",19,L,Drafted (38 - 2022),57,31.0,36.0,67.0,,,WHL,,14.0
+707,Leafs,Minors,F,"Hirvonen, Roni",LW,21,L,Drafted (59 - 2020),57,15.0,13.0,28.0,,,Liiga,,18.0
+708,Leafs,Minors,F,"Ovchinnikov, Dmitry","C, LW, RW",21,L,Drafted (137 - 2020),68,5.0,8.0,13.0,,,KHL,,12.0
+709,Leafs,Minors,F,"Voit, Ty",LW,20,R,Drafted (153 - 2021),67,24.0,81.0,105.0,,,OHL,,19.0
+710,Leafs,Minors,F,"Tverberg, Ryan",C,21,R,Drafted (213 - 2020),35,15.0,15.0,30.0,,,NCAA,,14.0
+711,Leafs,Minors,F,"Ellis, Max",RW,23,R,Signed to ELC,49,10.0,10.0,20.0,,,AHL,,13.0
+712,Leafs,Minors,F,"Kressler, Braeden",C,20,R,Signed to ELC,47,25.0,27.0,52.0,,,OHL,,13.0
+713,Leafs,Minors,D,"Niemelä, Topi",RD,21,R,Drafted (64 - 2020),58,8.0,10.0,18.0,,,Liiga,,11.0
+714,Leafs,Minors,D,"Kokkonen, Mikko",LD,22,L,Drafted (84 - 2019),36,0.0,6.0,6.0,,,AHL,,5.0
+715,Leafs,Minors,D,"Villeneuve, William",RD,21,R,Drafted (122 - 2020),54,3.0,22.0,25.0,,,AHL,,15.0
+716,Leafs,Minors,G,"Hildeby, Dennis",G,22,L,Drafted (122 - 2022),21,,,,2.25,0.918,SHL,,0.0
+717,Leafs,Minors,G,"Peksa, Vyacheslav",G,21,L,Drafted (185 - 2021),40,,,,2.34,0.921,VHL,,0.0
+718,Leafs,Loaned,G,"Akhtiamov, Artur",G,21,L,Drafted (106 - 2020),39,,,,1.74,0.943,VHL,,0.0
+719,Leafs,Prospects,F,"Moldenhauer, Nicholas","RW, C",19,R,Drafted (95 - 2022),55,30.0,45.0,75.0,,,USHL,,16.0
+720,Leafs,Prospects,F,"Grebenkin, Nikita",RW,20,L,Drafted (135 - 2022),45,9.0,17.0,26.0,,,KHL,,37.0
+721,Leafs,Prospects,F,"Malinoski, Hudson",C,19,L,Drafted (153 - 2023),44,16.0,54.0,70.0,,,AJHL,,8.0
+722,Leafs,Prospects,F,"Miettinen, Veeti",RW,21,L,Drafted (168 - 2020),41,12.0,24.0,36.0,,,NCAA,,14.0
+723,Leafs,Prospects,F,"Miller, Joe","C, LW, RW",21,R,Drafted (180 - 2020),33,13.0,15.0,28.0,,,NCAA,,13.0
+725,Leafs,Prospects,F,"Lisowsky, Brandon",LW,19,L,Drafted (218 - 2022),65,38.0,33.0,71.0,,,WHL,,13.0
+726,Leafs,Prospects,D,"Koster, Mike",LD,22,L,Drafted (146 - 2019),40,6.0,23.0,29.0,,,NCAA,,12.0
+727,Leafs,Prospects,D,"Chadwick, Noah",LD,18,L,Drafted (185 - 2023),67,5.0,15.0,20.0,,,WHL,,3.0
+728,Leafs,Prospects,D,"Fusco, John",LD,22,L,Drafted (189 - 2020),22,3.0,8.0,11.0,,,NCAA,,8.0
+729,Leafs,Reserve,F,"Kizimov, Semyon",RW,23,L,Drafted (211 - 2018),26,7.0,13.0,20.0,,,VHL,,21.0
+730,Lightning ,Minors,F,"Fortier, Gabriel",LW,23,L,Drafted (59 - 2018),67,11.0,18.0,29.0,,,AHL,,14.0
+731,Lightning ,Minors,F,"Finley, Jack",C,21,R,Drafted (57 - 2020),67,12.0,9.0,21.0,,,AHL,,10.0
+732,Lightning ,Minors,F,"Goncalves, Gage",LW,22,L,Drafted (62 - 2020),71,13.0,41.0,54.0,,,AHL,,24.0
+733,Lightning ,Minors,F,"Groshev, Maxim","RW, LW",21,L,Drafted (85 - 2020),34,4.0,2.0,6.0,,,KHL,,11.0
+734,Lightning ,Minors,F,"Edmonds, Lucas","RW, LW",22,R,Drafted (86 - 2022),49,15.0,12.0,27.0,,,AHL,,18.0
+735,Lightning ,Minors,F,"Dureau, Jaydon",LW,22,L,Drafted (147 - 2020),36,6.0,13.0,19.0,,,ECHL,,6.0
+736,Lightning ,Minors,F,"MacArthur, Bennett",LW,22,L,Signed to ELC,53,10.0,18.0,28.0,,,ECHL,,6.0
+737,Lightning ,Minors,F,"Usau, Ilya",C,22,L,Signed to ELC,57,4.0,12.0,16.0,,,AHL,,9.0
+738,Lightning ,Minors,D,"Thompson, Jack",RD,21,R,Drafted (93 - 2020),71,8.0,15.0,23.0,,,AHL,,10.0
+739,Lightning ,Minors,D,"Schmidt, Roman",RD,20,R,Drafted (96 - 2021),64,4.0,24.0,28.0,,,OHL,,5.0
+740,Lightning ,Minors,D,"Crozier, Maxwell",RD,23,R,Drafted (120 - 2019),37,3.0,21.0,24.0,,,NCAA,,10.0
+741,Lightning ,Minors,D,"Carlile, Declan",LD,23,L,Signed to ELC,69,8.0,16.0,24.0,,,AHL,,11.0
+742,Lightning ,Minors,D,"Lilleberg, Emil Martinsen",LD,22,L,Signed to ELC,46,3.0,8.0,11.0,,,SHL,,11.0
+743,Lightning ,Minors,G,"Alnefelt, Hugo",G,22,L,Drafted (71 - 2019),33,,,,2.77,0.904,AHL,,0.0
+744,Lightning ,Prospects,F,"Howard, Isaac",LW,19,L,Drafted (31 - 2022),35,6.0,11.0,17.0,,,NCAA,,8.0
+745,Lightning ,Prospects,F,"Gauthier, Ethan",RW,18,R,Drafted (37 - 2023),66,30.0,39.0,69.0,,,QMJHL,,10.0
+746,Lightning ,Prospects,F,"Shaugabay, Jayson",RW,18,R,Drafted (115 - 2023),31,33.0,63.0,96.0,,,USHS-MN,,6.0
+747,Lightning ,Prospects,F,"Duke, Dylan",LW,20,L,Drafted (126 - 2021),41,18.0,14.0,32.0,,,NCAA,,12.0
+748,Lightning ,Prospects,F,"Capone, Nick",RW,21,R,Drafted (157 - 2020),35,9.0,9.0,18.0,,,NCAA,,8.0
+749,Lightning ,Prospects,F,"Kurth, Connor",RW,20,R,Drafted (192 - 2022),38,7.0,4.0,11.0,,,NCAA,,5.0
+750,Lightning ,Prospects,F,"Harvey, Jack",C,20,L,Drafted (193 - 2023),62,40.0,34.0,74.0,,,USHL,,14.0
+751,Lightning ,Prospects,F,"Flinton, Robert",LW,20,L,Drafted (211 - 2021),27,6.0,9.0,15.0,,,NCAA,,9.0
+752,Lightning ,Prospects,F,"Hay, Ethan",C,18,L,Drafted (211 - 2023),64,17.0,11.0,28.0,,,OHL,,5.0
+753,Lightning ,Prospects,F,"Webster, Mckade",C,23,R,Drafted (213 - 2019),30,6.0,8.0,14.0,,,NCAA,,7.0
+754,Lightning ,Prospects,F,"Huuhtanen, Niko",RW,20,R,Drafted (224 - 2021),48,17.0,13.0,30.0,,,Liiga,,23.0
+755,Lightning ,Prospects,F,"Veinbergs, Klavs",C,20,L,Drafted (224 - 2022),50,12.0,16.0,28.0,,,USHL,,7.0
+756,Lightning ,Prospects,D,"Powell, Eamon",RD,21,R,Drafted (116 - 2020),36,5.0,17.0,22.0,,,NCAA,,10.0
+757,Lightning ,Prospects,D,"Clark, Warren",RD,19,R,Drafted (179 - 2023),55,6.0,32.0,38.0,,,MJHL,,3.0
+758,Lightning ,Prospects,D,"Gagne, Alex",LD,21,L,Drafted (192 - 2021),35,1.0,8.0,9.0,,,NCAA,,4.0
+759,Lightning ,Prospects,D,"Pylenkov, Daniil",LD,22,L,Drafted (196 - 2021),40,4.0,17.0,21.0,,,KHL,,33.0
+760,Lightning ,Prospects,D,"Gill, Dyllan",RD,19,R,Drafted (223 - 2022),68,8.0,49.0,57.0,,,QMJHL,,8.0
+761,Lightning ,Prospects,G,"Malík, Nick",G,21,L,Drafted (160 - 2022),24,,,,2.74,0.891,Liiga,,0.0
+762,Oilers,Majors,C,"McLeod, Ryan",C,23,L,Drafted (40 - 2018),57,11.0,12.0,23.0,,,NHL,,23.0
+763,Oilers,Majors,LW,"Holloway, Dylan","LW, C",21,L,Drafted (14 - 2020),51,3.0,6.0,9.0,,,NHL,,9.0
+764,Oilers,Majors,RD,"Bouchard, Evan",RD,23,R,Drafted (10 - 2018),82,8.0,32.0,40.0,,,NHL,,40.0
+765,Oilers,Majors,D,"Broberg, Philip",LD,22,L,Drafted (8 - 2019),46,1.0,7.0,8.0,,,NHL,,8.0
+766,Oilers,Minors,F,"Lavoie, Raphael","RW, C",22,R,Drafted (38 - 2019),61,25.0,20.0,45.0,,,AHL,,24.0
+767,Oilers,Minors,F,"Bourgault, Xavier",RW,20,R,Drafted (22 - 2021),62,13.0,21.0,34.0,,,AHL,,17.0
+768,Oilers,Minors,F,"Savoie, Carter",LW,21,L,Drafted (100 - 2020),44,8.0,3.0,11.0,,,AHL,,8.0
+769,Oilers,Minors,F,"Chiasson, Jake",C,20,R,Drafted (116 - 2021),70,20.0,38.0,58.0,,,WHL,,10.0
+770,Oilers,Minors,F,"Tullio, Tyler",RW,21,R,Drafted (126 - 2020),63,13.0,13.0,26.0,,,AHL,,13.0
+771,Oilers,Minors,F,"Petrov, Matvei",LW,20,R,Drafted (180 - 2021),65,27.0,66.0,93.0,,,OHL,,17.0
+772,Oilers,Minors,F,"Berglund, Carl","C, RW",23,L,Signed to ELC,36,12.0,15.0,27.0,,,NCAA,,12.0
+773,Oilers,Minors,F,"Grubbe, Jayden",C,20,R,Signed to ELC,64,18.0,49.0,67.0,,,WHL,,12.0
+774,Oilers,Minors,D,"Wanner, Maximus",RD,20,R,Drafted (212 - 2021),44,8.0,22.0,30.0,,,WHL,,8.0
+775,Oilers,Minors,G,"Rodrigue, Olivier",G,23,L,Drafted (62 - 2018),29,,,,2.77,0.912,AHL,,0.0
+776,Oilers,Minors,G,"Fanti, Ryan",G,23,L,Signed to ELC,34,,,,3.49,0.894,ECHL,,0.0
+777,Oilers,Prospects,F,"Berezkin, Maksim","LW, RW",21,R,Drafted (138 - 2020),52,7.0,19.0,26.0,,,KHL,,32.0
+778,Oilers,Prospects,F,"Mazura, Tomas",C,22,L,Drafted (162 - 2019),28,3.0,9.0,12.0,,,NCAA,,7.0
+779,Oilers,Prospects,F,"Denezhkin, Maxim",C,22,L,Drafted (193 - 2019),37,8.0,13.0,21.0,,,VHL,,15.0
+780,Oilers,Prospects,F,"Lachance, Shane",LW,20,L,Drafted (186 - 2021),62,33.0,21.0,54.0,,,USHL,,10.0
+781,Oilers,Prospects,F,"Lindewall, Jeremias",LW,21,L,Drafted (200 - 2020),35,2.0,4.0,6.0,,,HockeyAllsvenskan,,5.0
+782,Oilers,Prospects,F,"Copponi, Matt",C,20,R,Drafted (216 - 2023),37,14.0,15.0,29.0,,,NCAA,,12.0
+783,Oilers,Prospects,F,"Määttä, Joel",C,21,L,Drafted (222 - 2022),36,7.0,7.0,14.0,,,NCAA,,6.0
+784,Oilers,Prospects,D,"Akey, Beau",RD,18,R,Drafted (56 - 2023),66,11.0,36.0,47.0,,,OHL,,8.0
+785,Oilers,Prospects,D,"Münzenberger, Luca",LD,20,L,Drafted (90 - 2021),28,0.0,5.0,5.0,,,NCAA,,3.0
+786,Oilers,Prospects,D,"Yevseyev, Nikita",LD,19,L,Drafted (190 - 2022),48,5.0,2.0,7.0,,,KHL,,9.0
+787,Oilers,Prospects,G,"Day, Nathaniel",G,18,L,Drafted (184 - 2023),32,,,,3.91,0.874,OHL,,0.0
+788,Oilers,Prospects,G,"Jonsson, Samuel",G,19,L,Drafted (158 - 2022),27,,,,2.65,0.902,J20 Nationell,,0.0
+789,Panthers,Majors,C,"Lundell, Anton","C, LW",21,L,Drafted (12 - 2020),73,12.0,21.0,33.0,,,NHL,,33.0
+790,Panthers,Majors,RW,"Denisenko, Grigori","LW, RW",23,R,Drafted (15 - 2018),56,12.0,24.0,36.0,,,AHL,,21.0
+791,Panthers,Majors,G,"Knight, Spencer",G,22,L,Drafted (13 - 2019),21,,,,3.18,0.901,NHL,,0.0
+792,Panthers,Minors,F,"Samoskevich, Mackie",RW,20,R,Drafted (24 - 2021),39,20.0,23.0,43.0,,,NCAA,,18.0
+793,Panthers,Minors,F,"Giles, Patrick",C,23,R,Signed to ELC,72,3.0,10.0,13.0,,,AHL,,6.0
+794,Panthers,Minors,F,"Sourdif, Justin",C,21,R,Drafted (87 - 2020),48,7.0,17.0,24.0,,,AHL,,16.0
+795,Panthers,Minors,F,"Schwindt, Kai",LW,19,L,Signed to ELC,67,12.0,13.0,25.0,,,OHL,,4.0
+796,Panthers,Minors,F,"McAllister, Ryan",C,21,L,Signed to ELC,39,13.0,36.0,49.0,,,NCAA,,20.0
+797,Panthers,Minors,D,"Benning, Michael",RD,21,R,Drafted (95 - 2020),39,13.0,21.0,34.0,,,NCAA,,14.0
+798,Panthers,Minors,D,"Nause, Evan",LD,20,L,Drafted (56 - 2021),40,5.0,24.0,29.0,,,QMJHL,,7.0
+799,Panthers,Minors,D,"Alscher, Marek",LD,19,L,Drafted (93 - 2022),60,8.0,16.0,24.0,,,WHL,,5.0
+800,Panthers,Minors,D,"Ludvig, John",LD,23,L,Drafted (69 - 2019),54,3.0,14.0,17.0,,,AHL,,10.0
+801,Panthers,Minors,D,"Uens, Zach",LD,22,L,Drafted (105 - 2020),35,3.0,1.0,4.0,,,ECHL,,1.0
+802,Panthers,Minors,D,"Staios, Nathan",LD,22,L,Signed to ELC,44,4.0,14.0,18.0,,,ECHL,,5.0
+803,Panthers,Minors,G,"Guzda, Mack",G,22,L,Signed to ELC,29,,,,2.88,0.897,AHL,,0.0
+804,Panthers,Prospects,F,"Sawchyn, Gracyn",C,18,R,Drafted (63 - 2023),58,18.0,40.0,58.0,,,WHL,,12.0
+805,Panthers,Prospects,F,"Lindmark, Owen",C,22,R,Drafted (137 - 2019),36,4.0,5.0,9.0,,,NCAA,,4.0
+806,Panthers,Prospects,F,"Vilmanis, Sandis",LW,19,L,Drafted (157 - 2022),62,20.0,25.0,45.0,,,OHL,,9.0
+807,Panthers,Prospects,F,"Kos, Jakub","C, LW, RW",20,L,Drafted (184 - 2021),24,4.0,15.0,19.0,,,Mestis,,12.0
+808,Panthers,Prospects,F,"Davies, Joshua",LW,19,L,Drafted (186 - 2022),62,20.0,14.0,34.0,,,WHL,,6.0
+809,Panthers,Prospects,F,"Ekmark, Elliot",C,21,L,Drafted (198 - 2020),16,2.0,1.0,3.0,,,HockeyAllsvenskan,,5.0
+810,Panthers,Prospects,F,"Zvyagin, Stepan",LW,19,L,Drafted (198 - 2023),37,14.0,19.0,33.0,,,MHL,,10.0
+811,Panthers,Prospects,F,"Arnsby, Liam",C,19,R,Drafted (214 - 2022),54,12.0,18.0,30.0,,,OHL,,7.0
+812,Panthers,Prospects,F,"Devine, Jack",RW,19,R,Drafted (221 - 2022),38,14.0,17.0,31.0,,,NCAA,,13.0
+813,Panthers,Prospects,D,"Berger, Carter",LD,23,L,Drafted (106 - 2019),33,5.0,18.0,23.0,,,NCAA,,11.0
+814,Panthers,Prospects,D,"Lukashevich, Vladislav",LD,20,L,Drafted (120 - 2021),45,2.0,16.0,18.0,,,MHL,,5.0
+815,Panthers,Prospects,D,"Jansson, Ludvig",RD,19,R,Drafted (125 - 2022),44,1.0,9.0,10.0,,,HockeyAllsvenskan,,7.0
+816,Panthers,Prospects,D,"Wikman, Albert",LD,18,L,Drafted (127 - 2023),43,2.0,10.0,12.0,,,J20 Nationell,,2.0
+817,Panthers,Prospects,D,"Puutio, Kasper",RD,21,R,Drafted (153 - 2020),48,3.0,8.0,11.0,,,Liiga,,8.0
+818,Panthers,Prospects,D,"Coughlin, Luke",LD,18,L,Drafted (191 - 2023),37,5.0,14.0,19.0,,,QMJHL,,5.0
+819,Panthers,Prospects,G,"Gerasimyuk, Kirill",G,20,L,Drafted (152 - 2021),24,,,,1.82,0.932,MHL,,0.0
+820,Panthers,Prospects,G,"Glifford, Olof",G,18,L,Drafted (159 - 2023),11,,,,2.56,0.929,J18 Nationell,,0.0
+821,Panthers,Prospects,G,"Muszelik, Tyler",G,19,L,Drafted (189 - 2022),13,,,,3.24,0.883,NCAA,,0.0
+822,Penguins,Minors,F,"Poulin, Samuel","C, LW",22,L,Drafted (21 - 2019),15,4.0,0.0,4.0,,,AHL,,9.0
+823,Penguins,Minors,F,"Gruden, Jonathan",LW,23,L,Traded,54,16.0,15.0,31.0,,,AHL,,18.0
+824,Penguins,Minors,F,"Svejkovsky, Lukas",C,21,R,Drafted (108 - 2020),47,3.0,12.0,15.0,,,AHL,,10.0
+825,Penguins,Minors,F,"Ansons, Raivis",LW,21,L,Drafted (149 - 2020),44,2.0,4.0,6.0,,,AHL,,4.0
+826,Penguins,Minors,F,"Glover, Ty",C,22,L,Signed to ELC,49,7.0,5.0,12.0,,,AHL,,8.0
+827,Penguins,Minors,F,"Frasca, Jordan",C,22,L,Signed to ELC,36,7.0,5.0,12.0,,,ECHL,,4.0
+829,Penguins,Minors,D,"Smith, Ty",LD/RD,23,L,Traded,39,7.0,17.0,24.0,,,AHL,,20.0
+830,Penguins,Minors,D,"Pickering, Owen",LD,19,L,Drafted (21 - 2022),61,9.0,36.0,45.0,,,WHL,,9.0
+831,Penguins,Minors,D,"Pieniniemi, Emil",LD,18,L,Drafted (91 - 2023),31,1.0,12.0,13.0,,,U20SM-sarja,,3.0
+832,Penguins,Minors,D,"Belliveau, Isaac",LD,20,L,Drafted (154 - 2021),55,11.0,35.0,46.0,,,QMJHL,,8.0
+833,Penguins,Minors,G,"Gauthier, Taylor",G,22,R,Signed to ELC,20,,,,2.71,0.907,AHL,,0.0
+834,Penguins,Minors,G,"Blomqvist, Joel",G,21,L,Drafted (52 - 2020),21,,,,2.29,0.907,Liiga,,0.0
+835,Penguins,Prospects,F,"Yager, Brayden","C, LW, RW",18,R,Drafted (14 - 2023),67,28.0,50.0,78.0,,,WHL,,13.0
+836,Penguins,Prospects,F,"Broz, Tristan",C,20,L,Drafted (58 - 2021),40,10.0,18.0,28.0,,,NCAA,,11.0
+837,Penguins,Prospects,F,"Ilyin, Mikhail","C, LW, RW",18,L,Drafted (142 - 2023),28,4.0,22.0,26.0,,,MHL,,11.0
+838,Penguins,Prospects,F,"Plante, Zam",C,19,L,Drafted (150 - 2022),33,8.0,15.0,23.0,,,USHL,,8.0
+839,Penguins,Prospects,F,"Yoder, Chase",C,21,L,Drafted (170 - 2020),37,8.0,7.0,15.0,,,NCAA,,6.0
+840,Penguins,Prospects,F,"Foster, Cooper",C,18,L,Drafted (174 - 2023),63,19.0,17.0,36.0,,,OHL,,7.0
+841,Penguins,Prospects,F,"Devlin, Luke",C,19,L,Drafted (182 - 2022),51,11.0,26.0,37.0,,,BCHL,,5.0
+842,Penguins,Prospects,F,"Järventie, Emil",LW,18,L,Drafted (217 - 2023),21,8.0,11.0,19.0,,,U20SM-sarja,,6.0
+844,Penguins,Prospects,D,"Nickl, Thimo",RD,21,R,Traded,47,0.0,8.0,8.0,,,HockeyAllsvenskan,,5.0
+845,Penguins,Prospects,D,"Collins, Nolan",RD,19,R,Drafted (167 - 2022),63,8.0,22.0,30.0,,,OHL,,6.0
+846,Penguins,Prospects,D,"Laatsch, Daniel",LD,21,L,Drafted (215 - 2021),36,1.0,6.0,7.0,,,NCAA,,3.0
+847,Penguins,Prospects,D,"Kangas, Kalle",LD,18,L,Drafted (223 - 2023),42,1.0,8.0,9.0,,,U20SM-sarja,,1.0
+848,Penguins,Prospects,G,"Murashov, Sergei",G,19,R,Drafted (118 - 2022),37,,,,1.53,0.948,MHL,,0.0
+849,Penguins,Prospects,F,"Hållander, Filip",C,23,L,Traded,43,11.0,22.0,33.0,,,AHL,,24.0
+850,Predators,Majors,RW,"Evangelista, Luke",RW,21,R,Drafted (42 - 2020),49,9.0,32.0,41.0,,,AHL,,27.0
+851,Predators,Majors,LW,"Tomasino, Philip","LW, RW",22,R,Drafted (24 - 2019),38,12.0,20.0,32.0,,,AHL,,27.0
+852,Predators,Majors,C,"Pärssinen, Juuso",C,22,L,Drafted (210 - 2019),45,6.0,19.0,25.0,,,NHL,,25.0
+853,Predators,Training Camp,F,"Afanasyev, Egor","C, LW",22,L,Drafted (45 - 2019),57,13.0,13.0,26.0,,,AHL,,15.0
+854,Predators,Training Camp,F,"Kemell, Joakim",RW,19,R,Drafted (17 - 2022),43,12.0,3.0,15.0,,,Liiga,,13.0
+855,Predators,Training Camp,F,"Svechkov, Fedor",C,20,L,Drafted (19 - 2021),27,2.0,2.0,4.0,,,KHL,,9.0
+856,Predators,Training Camp,F,"Lind, Kalan",LW,18,L,Drafted (46 - 2023),43,16.0,28.0,44.0,,,WHL,,12.0
+857,Predators,Training Camp,F,"Schaefer, Reid",LW,19,L,Traded,55,28.0,33.0,61.0,,,WHL,,13.0
+858,Predators,Training Camp,F,"Kondelík, Jáchym",C,23,L,Drafted (111 - 2018),38,5.0,6.0,11.0,,,AHL,,9.0
+859,Predators,Training Camp,F,"L'Heureux, Zachary",LW,20,L,Drafted (27 - 2021),33,21.0,21.0,42.0,,,QMJHL,,12.0
+860,Predators,Training Camp,F,"Mutter, Navrin",LW,22,L,Signed to ELC,53,2.0,6.0,8.0,,,AHL,,5.0
+861,Predators,Training Camp,F,"Burke, Nolan",C,20,L,Signed to ELC,56,50.0,32.0,82.0,,,OHL,,17.0
+862,Predators,Training Camp,F,"Willis, Joey",C,18,L,Drafted (111 - 2023),68,15.0,29.0,44.0,,,OHL,,8.0
+863,Predators,Training Camp,F,"Roest, Austin",C,19,R,Drafted (175 - 2023),60,32.0,46.0,78.0,,,WHL,,15.0
+864,Predators,Training Camp,D,"Stastney, Spencer",LD,23,L,Drafted (131 - 2018),56,5.0,8.0,13.0,,,AHL,,7.0
+865,Predators,Training Camp,D,"Del Gaizo, Marc",LD,23,L,Drafted (109 - 2019),71,3.0,28.0,31.0,,,AHL,,14.0
+866,Predators,Training Camp,D,"Molendyk, Tanner",LD,18,L,Drafted (24 - 2023),67,9.0,28.0,37.0,,,WHL,,6.0
+867,Predators,Training Camp,D,"Matier, Jack",RD,20,R,Drafted (124 - 2021),58,13.0,36.0,49.0,,,OHL,,10.0
+868,Predators,Training Camp,D,"Wilsby, Adam",LD,23,L,Drafted (101 - 2020),72,1.0,17.0,18.0,,,AHL,,8.0
+869,Predators,Training Camp,D,"Prokop, Luke",RD,21,R,Drafted (73 - 2020),43,4.0,17.0,21.0,,,WHL,,6.0
+870,Predators,Training Camp,D,"MacKinnon, Dylan",RD,18,R,Drafted (83 - 2023),61,6.0,17.0,23.0,,,QMJHL,,3.0
+871,Predators,Training Camp,D,"Sward, Graham",LD,20,L,Drafted (146 - 2022),52,4.0,29.0,33.0,,,WHL,,7.0
+872,Predators,Training Camp,G,"Askarov, Yaroslav",G,21,R,Drafted (11 - 2020),48,,,,2.69,0.911,AHL,,0.0
+873,Predators,Prospects,F,"Wood, Matthew",RW,18,R,Drafted (15 - 2023),35,11.0,23.0,34.0,,,NCAA,,15.0
+874,Predators,Prospects,F,"Nilsson, Felix",C,18,L,Drafted (43 - 2023),36,19.0,22.0,41.0,,,J20 Nationell,,8.0
+875,Predators,Prospects,F,"Campbell, Alexander",LW,22,L,Drafted (65 - 2019),34,14.0,12.0,26.0,,,NCAA,,12.0
+876,Predators,Prospects,F,"Kiiskinen, Jesse",RW,18,R,Drafted (68 - 2023),31,20.0,23.0,43.0,,,U20SM-sarja,,9.0
+877,Predators,Prospects,F,"Ingram, Adam",C,19,L,Drafted (82 - 2022),41,8.0,15.0,23.0,,,NCAA,,9.0
+878,Predators,Prospects,F,"O'Hara, Cole",RW,21,R,Drafted (114 - 2022),32,4.0,13.0,17.0,,,NCAA,,8.0
+879,Predators,Prospects,F,"Muzzatti, Sutter","C, LW, RW",20,L,Drafted (143 - 2023),35,7.0,15.0,22.0,,,NCAA,,10.0
+880,Predators,Prospects,F,"Walther, Isak","LW, RW",22,L,Drafted (179 - 2019),36,9.0,10.0,19.0,,,NCAA,,8.0
+881,Predators,Prospects,F,"Knak, Simon",RW,21,L,Drafted (179 - 2021),50,8.0,15.0,23.0,,,NL,,17.0
+882,Predators,Prospects,F,"Fontaine, Gunnarwolfe",LW,23,L,Drafted (202 - 2020),35,10.0,20.0,30.0,,,NCAA,,14.0
+883,Predators,Prospects,F,"McLane, Chase",C,23,R,Drafted (209 - 2020),21,2.0,3.0,5.0,,,NCAA,,4.0
+884,Predators,Prospects,F,"Strinden, Benjamin","C, LW, RW",21,R,Drafted (210 - 2022),22,3.0,6.0,9.0,,,NCAA,,7.0
+885,Predators,Prospects,F,"Fink, Aiden",RW,18,R,Drafted (218 - 2023),54,41.0,56.0,97.0,,,AJHL,,9.0
+886,Predators,Prospects,D,"Olsson, Anton",LD,20,L,Drafted (72 - 2021),41,3.0,4.0,7.0,,,SHL,,8.0
+887,Predators,Prospects,D,"Kulonummi, Kasper",RD,19,R,Drafted (84 - 2022),36,11.0,32.0,43.0,,,U20SM-sarja,,8.0
+888,Predators,Prospects,D,"Ufko, Ryan",RD,20,R,Drafted (115 - 2021),32,8.0,16.0,24.0,,,NCAA,,12.0
+889,Predators,Prospects,D,"Chistyakov, Semyon",LD,22,L,Drafted (117 - 2019),58,5.0,22.0,27.0,,,KHL,,29.0
+890,Predators,Prospects,D,"Reid, Luke",RD,21,R,Drafted (166 - 2020),35,0.0,5.0,5.0,,,NCAA,,2.0
+891,Predators,Prospects,G,"Jatkola, Juha",G,21,L,Drafted (121 - 2023),40,,,,2.16,0.903,Liiga,,0.0
+892,Predators,Prospects,G,"Haider, Ethan",G,22,L,Drafted (148 - 2019),35,,,,2.5,0.906,NCAA,,0.0
+893,Rangers,Majors,RW,"Kakko, Kaapo",RW,22,L,Drafted (2 - 2019),82,18.0,22.0,40.0,,,NHL,,40.0
+894,Rangers,Majors,LW,"Lafrenière, Alexis","LW, RW",21,L,Drafted (1 - 2020),81,16.0,23.0,39.0,,,NHL,,39.0
+895,Rangers,Majors,LD,"Miller, K'Andre",LD,23,L,Drafted (22 - 2018),79,9.0,34.0,43.0,,,NHL,,43.0
+896,Rangers,Majors,RD,"Schneider, Braden",RD,21,R,Drafted (19 - 2020),81,5.0,13.0,18.0,,,NHL,,18.0
+897,Rangers,Majors,D,"Jones, Zachary",LD,22,L,Drafted (68 - 2019),54,8.0,23.0,31.0,,,AHL,,18.0
+898,Rangers,Minors,F,"Cuylle, Will",LW,21,L,Drafted (60 - 2020),69,25.0,20.0,45.0,,,AHL,,21.0
+899,Rangers,Minors,F,"Othmann, Brennan",LW,20,L,Drafted (16 - 2021),56,29.0,38.0,67.0,,,OHL,,14.0
+900,Rangers,Minors,F,"Korczak, Ryder",C,20,R,Drafted (75 - 2021),48,28.0,41.0,69.0,,,WHL,,17.0
+901,Rangers,Minors,F,"Sýkora, Adam","LW, RW",19,L,Drafted (63 - 2022),38,8.0,13.0,21.0,,,Slovak Extraliga,,13.0
+902,Rangers,Minors,F,"Henriksson, Karl",C,22,L,Drafted (58 - 2019),70,7.0,10.0,17.0,,,AHL,,8.0
+903,Rangers,Minors,F,"McConnell-Barker, Bryce",C,19,L,Drafted (97 - 2022),68,30.0,47.0,77.0,,,OHL,,13.0
+904,Rangers,Minors,F,"Berard, Brett",LW,21,L,Drafted (134 - 2020),36,10.0,14.0,24.0,,,NCAA,,11.0
+905,Rangers,Minors,F,"Edström, Adam",C,22,L,Drafted (161 - 2019),42,9.0,10.0,19.0,,,SHL,,21.0
+906,Rangers,Minors,F,"Rempe, Matthew",C,21,R,Drafted (165 - 2020),53,6.0,4.0,10.0,,,AHL,,6.0
+907,Rangers,Minors,D,"Robertson, Matthew",LD,22,L,Drafted (49 - 2019),57,5.0,18.0,23.0,,,AHL,,13.0
+908,Rangers,Minors,D,"Emberson, Ty",RD,23,R,Traded,69,7.0,20.0,27.0,,,AHL,,12.0
+909,Rangers,Minors,G,"Lindbom, Olof",G,23,L,Drafted (39 - 2018),28,,,,3.01,0.89,ECHL,,0.0
+910,Rangers,Minors,G,"Garand, Dylan",G,21,L,Drafted (103 - 2020),32,,,,3.01,0.894,AHL,,0.0
+911,Rangers,Minors,G,"Boyko, Talyn",G,20,L,Drafted (112 - 2021),40,,,,3.55,0.898,WHL,,0.0
+912,Rangers,Prospects,F,"Perreault, Gabe",RW,18,L,Drafted (23 - 2023),63,53.0,79.0,132.0,,,NTDP,,33.0
+913,Rangers,Prospects,F,"Tärnström, Oliver",C,21,L,Drafted (92 - 2020),43,1.0,2.0,3.0,,,SHL,,3.0
+914,Rangers,Prospects,F,"Lamb, Brody",RW,20,R,Drafted (104 - 2021),39,4.0,4.0,8.0,,,NCAA,,3.0
+915,Rangers,Prospects,F,"Väisänen, Kalle",LW,20,R,Drafted (106 - 2021),47,4.0,1.0,5.0,,,Liiga,,4.0
+916,Rangers,Prospects,F,"Laba, Noah",C,20,R,Drafted (111 - 2022),35,11.0,11.0,22.0,,,NCAA,,10.0
+917,Rangers,Prospects,F,"Chmelar, Jaroslav",RW,20,R,Drafted (144 - 2021),33,7.0,6.0,13.0,,,NCAA,,6.0
+918,Rangers,Prospects,F,"Barbashev, Maxim",LW,19,L,Drafted (161 - 2022),67,32.0,33.0,65.0,,,QMJHL,,9.0
+919,Rangers,Prospects,F,"Roobroeck, Dylan",C,19,L,Drafted (178 - 2023),68,15.0,38.0,53.0,,,OHL,,9.0
+920,Rangers,Prospects,F,"Henricks, Ty",LW,18,L,Drafted (183 - 2023),28,6.0,3.0,9.0,,,USHL,,4.0
+921,Rangers,Prospects,F,"Karpa, Zakary",C,21,L,Drafted (191 - 2022),22,5.0,3.0,8.0,,,NCAA,,6.0
+922,Rangers,Prospects,D,"Fortescue, Drew",LD,18,L,Drafted (90 - 2023),62,1.0,25.0,26.0,,,NTDP,,7.0
+923,Rangers,Prospects,D,"Larsson, Rasmus",LD,19,L,Drafted (152 - 2023),50,16.0,18.0,34.0,,,J20 Nationell,,5.0
+924,Rangers,Prospects,D,"Mancini, Vittorio",RD,21,R,Drafted (159 - 2022),32,0.0,8.0,8.0,,,NCAA,,4.0
+925,Rangers,Prospects,D,"Kjellberg, Simon",LD,23,L,Drafted (163 - 2018),32,4.0,10.0,14.0,,,NCAA,,7.0
+926,Rangers,Prospects,D,"Kempf, Hank",LD,21,L,Drafted (208 - 2021),31,1.0,1.0,2.0,,,NCAA,,1.0
+927,Rangers,Prospects,G,"Ollas, Hugo",G,21,L,Drafted (197 - 2020),21,,,,2.31,0.915,NCAA,,0.0
+928,Red Wings,Majors,RW,"Raymond, Lucas","RW, LW",21,R,Drafted (4 - 2020),74,17.0,28.0,45.0,,,NHL,,45.0
+929,Red Wings,Majors,C,"Veleno, Joseph",C,23,L,Drafted (30 - 2018),81,9.0,11.0,20.0,,,NHL,,20.0
+930,Red Wings,Majors,RD,"Seider, Moritz",RD,22,R,Drafted (6 - 2019),82,5.0,37.0,42.0,,,NHL,,42.0
+931,Red Wings,Majors,F,"Berggren, Jonatan","RW, LW",23,L,Drafted (33 - 2018),67,15.0,13.0,28.0,,,NHL,,28.0
+932,Red Wings,Majors,F,"Söderblom, Elmer","LW, C",22,L,Drafted (159 - 2019),21,5.0,3.0,8.0,,,NHL,,8.0
+933,Red Wings,Majors,D,"Edvinsson, Simon",LD,20,L,Drafted (6 - 2021),52,5.0,22.0,27.0,,,AHL,,17.0
+934,Red Wings,Training Camp,F,"Hillis, Cameron",C,23,R,Traded,45,14.0,36.0,50.0,,,ECHL,,13.0
+935,Red Wings,Minors,F,"Kasper, Marco",C,19,L,Drafted (8 - 2022),52,8.0,15.0,23.0,,,SHL,,21.0
+936,Red Wings,Minors,F,"Danielson, Nate",C,18,R,Drafted (9 - 2023),68,33.0,45.0,78.0,,,WHL,,13.0
+937,Red Wings,Minors,F,"Hanas, Cross",LW,21,L,Drafted (55 - 2020),30,9.0,8.0,17.0,,,AHL,,18.0
+938,Red Wings,Minors,F,"Mazur, Carter",LW,21,R,Drafted (70 - 2021),40,22.0,15.0,37.0,,,NCAA,,15.0
+939,Red Wings,Minors,F,"Lombardi, Amadeus",C,20,L,Drafted (113 - 2022),67,45.0,57.0,102.0,,,OHL,,18.0
+940,Red Wings,Minors,F,"Doucet, Alexandre",C,21,L,Signed to ELC,70,58.0,57.0,115.0,,,QMJHL,,15.0
+941,Red Wings,Minors,D,"McIsaac, Jared",LD,23,L,Drafted (36 - 2018),61,3.0,19.0,22.0,,,AHL,,12.0
+942,Red Wings,Minors,D,"Wallinder, William",LD,21,L,Drafted (32 - 2020),50,7.0,19.0,26.0,,,SHL,,24.0
+943,Red Wings,Minors,D,"Tuomisto, Antti",RD,22,R,Drafted (35 - 2019),60,5.0,15.0,20.0,,,Liiga,,12.0
+944,Red Wings,Minors,D,"Johansson, Albert",LD,22,L,Drafted (60 - 2019),53,5.0,10.0,15.0,,,AHL,,9.0
+945,Red Wings,Minors,D,"Viro, Eemil",LD,21,L,Drafted (70 - 2020),48,1.0,7.0,8.0,,,AHL,,5.0
+946,Red Wings,Minors,G,"Cossa, Sebastian",G,20,L,Drafted (15 - 2021),46,,,,2.56,0.913,ECHL,,0.0
+947,Red Wings,Prospects,F,"James, Dylan",LW,19,L,Drafted (40 - 2022),36,8.0,8.0,16.0,,,NCAA,,7.0
+948,Red Wings,Prospects,F,"Niederbach, Theodor",C,21,R,Drafted (51 - 2020),31,7.0,11.0,18.0,,,HockeyAllsvenskan,,17.0
+949,Red Wings,Prospects,F,"Buchelnikov, Dmitri",LW,20,R,Drafted (52 - 2022),35,15.0,13.0,28.0,,,VHL,,22.0
+950,Red Wings,Prospects,F,"Dower Nilsson, Noah",LW,18,L,Drafted (73 - 2023),37,26.0,28.0,54.0,,,J20 Nationell,,11.0
+951,Red Wings,Prospects,F,"Stange, Sam",RW,22,R,Drafted (97 - 2020),34,3.0,8.0,11.0,,,NCAA,,5.0
+952,Red Wings,Prospects,F,"O'Reilly, Ryan",C,23,R,Drafted (98 - 2018),36,8.0,8.0,16.0,,,NCAA,,7.0
+953,Red Wings,Prospects,F,"Savage, Redmond",C,20,L,Drafted (114 - 2021),32,7.0,7.0,14.0,,,NCAA,,7.0
+954,Red Wings,Prospects,F,"Kilpinen, Maximilian",LW,19,L,Drafted (129 - 2022),48,13.0,16.0,29.0,,,J20 Nationell,,5.0
+955,Red Wings,Prospects,F,"Dower Nilsson, Liam",C,20,L,Drafted (134 - 2021),32,3.0,12.0,15.0,,,HockeyAllsvenskan,,13.0
+956,Red Wings,Prospects,F,"Bicker, Kevin","C, LW, RW",18,L,Drafted (147 - 2023),20,10.0,11.0,21.0,,,DNL U20,,
+957,Red Wings,Prospects,F,"Draper, Kienan",RW,21,R,Drafted (187 - 2020),23,1.0,0.0,1.0,,,NCAA,,1.0
+958,Red Wings,Prospects,F,"Mehlenbacher, Owen","C, LW, RW",19,L,Drafted (201 - 2022),57,19.0,31.0,50.0,,,USHL,,10.0
+959,Red Wings,Prospects,F,"Finnie, Emmitt","C, LW, RW",18,L,Drafted (201 - 2023),64,9.0,26.0,35.0,,,WHL,,6.0
+960,Red Wings,Prospects,F,"Bradley, Chase",LW,21,L,Drafted (203 - 2020),35,10.0,10.0,20.0,,,NCAA,,9.0
+961,Red Wings,Prospects,F,"Ali, Brennan",C,19,L,Drafted (212 - 2022),57,13.0,30.0,43.0,,,USHL,,9.0
+962,Red Wings,Prospects,D,"Sandin Pellikka, Axel",RD,18,R,Drafted (17 - 2023),31,16.0,20.0,36.0,,,J20 Nationell,,9.0
+963,Red Wings,Prospects,D,"Buium, Shai",LD,20,L,Drafted (36 - 2021),38,4.0,17.0,21.0,,,NCAA,,9.0
+964,Red Wings,Prospects,D,"Gibson, Andrew",RD,18,R,Drafted (42 - 2023),45,7.0,14.0,21.0,,,OHL,,6.0
+965,Red Wings,Prospects,D,"Cleveland, Brady",LD,18,L,Drafted (47 - 2023),55,0.0,6.0,6.0,,,NTDP,,2.0
+966,Red Wings,Prospects,D,"Johansson, Anton",RD,19,R,Drafted (105 - 2022),32,6.0,7.0,13.0,,,J20 Nationell,,3.0
+967,Red Wings,Prospects,D,"Keenan, Larry",LD,18,L,Drafted (117 - 2023),49,11.0,26.0,37.0,,,USHS-Prep,,2.0
+968,Red Wings,Prospects,D,"Moore, Cooper",LD,22,L,Drafted (128 - 2019),31,3.0,10.0,13.0,,,NCAA,,7.0
+970,Red Wings,Prospects,D,"Phelan, Jack",RD,19,R,Drafted (137 - 2023),59,1.0,4.0,5.0,,,USHL,,1.0
+971,Red Wings,Prospects,D,"Aucoin, Kyle",LD,21,L,Drafted (156 - 2020),24,0.0,2.0,2.0,,,NCAA,,1.0
+972,Red Wings,Prospects,G,"Augustine, Trey",G,18,L,Drafted (41 - 2023),33,,,,2.13,0.926,NTDP,,0.0
+973,Red Wings,Prospects,G,"Bednar, Jan",G,21,L,Drafted (107 - 2020),10,,,,4.46,0.874,QMJHL,,0.0
+974,Red Wings,Prospects,G,"Guimond, Rudy",G,18,L,Drafted (169 - 2023),28,,,,0.0,0.94,USHS-Prep,*no data for gaa,0.0
+975,Red Wings,Prospects,G,"Gylander, Carter",G,22,L,Drafted (191 - 2019),39,,,,2.46,0.914,NCAA,,0.0
+976,Sabres,Majors,C,"Cozens, Dylan","C, LW",22,R,Drafted (7 - 2019),81,31.0,37.0,68.0,,,NHL,,68.0
+977,Sabres,Majors,C,"Krebs, Peyton","C, LW",22,L,Traded,74,9.0,17.0,26.0,,,NHL,,26.0
+978,Sabres,Majors,RW,"Peterka, John-Jason","LW, RW",21,L,Drafted (34 - 2020),77,12.0,20.0,32.0,,,NHL,,32.0
+979,Sabres,Majors,LD,"Dahlin, Rasmus",LD/RD,23,L,Drafted (1 - 2018),78,15.0,58.0,73.0,,,NHL,,73.0
+980,Sabres,Majors,RD,"Samuelsson, Mattias",LD,23,L,Drafted (32 - 2018),55,2.0,8.0,10.0,,,NHL,,10.0
+981,Sabres,Majors,LD,"Power, Owen",LD/RD,20,L,Drafted (1 - 2021),79,4.0,31.0,35.0,,,NHL,,35.0
+982,Sabres,Majors,G,"Levi, Devon",G,21,L,Traded,34,,,,2.24,0.933,NCAA,,0.0
+983,Sabres,Majors,F,"Quinn, Jack","RW, LW",21,R,Drafted (8 - 2020),75,14.0,23.0,37.0,,,NHL,,37.0
+984,Sabres,Minors,F,"Savoie, Matthew",C,19,R,Drafted (9 - 2022),62,38.0,57.0,95.0,,,WHL,,18.0
+985,Sabres,Minors,F,"Benson, Zach",LW,18,L,Drafted (13 - 2023),60,36.0,62.0,98.0,,,WHL,,19.0
+986,Sabres,Minors,F,"Rosén, Isak",RW,20,L,Drafted (14 - 2021),66,14.0,23.0,37.0,,,AHL,,18.0
+987,Sabres,Minors,F,"Kulich, Jiri","C, LW",19,L,Drafted (28 - 2022),62,24.0,22.0,46.0,,,AHL,,24.0
+988,Sabres,Minors,F,"Kisakov, Alexander",LW,20,L,Drafted (53 - 2021),48,6.0,2.0,8.0,,,AHL,,5.0
+989,Sabres,Minors,F,"Neuchev, Viktor",LW,19,L,Drafted (74 - 2022),57,4.0,7.0,11.0,,,KHL,,12.0
+990,Sabres,Minors,F,"Nadeau, Olivier",RW,20,R,Drafted (97 - 2021),34,22.0,24.0,46.0,,,QMJHL,,13.0
+991,Sabres,Minors,F,"Cederqvist, Filip","LW, RW",23,L,Drafted (143 - 2019),55,9.0,11.0,20.0,,,AHL,,12.0
+992,Sabres,Minors,F,"Kozak, Tyson",C,20,L,Drafted (193 - 2021),55,5.0,5.0,10.0,,,AHL,,6.0
+993,Sabres,Minors,D,"Johnson, Ryan",LD,22,L,Drafted (31 - 2019),40,4.0,14.0,18.0,,,NCAA,,7.0
+994,Sabres,Minors,D,"Komarov, Vsevolod",RD,19,R,Drafted (134 - 2022),62,12.0,27.0,39.0,,,QMJHL,,6.0
+995,Sabres,Minors,D,"Novikov, Nikita",LD,20,L,Drafted (188 - 2021),62,2.0,3.0,5.0,,,KHL,,5.0
+996,Sabres,Loaned,F,"Östlund, Noah",C,19,L,Drafted (16 - 2022),37,8.0,18.0,26.0,,,HockeyAllsvenskan,,20.0
+997,Sabres,Loaned,F,"Wahlberg, Anton",C,18,L,Drafted (39 - 2023),32,14.0,13.0,27.0,,,J20 Nationell,,6.0
+998,Sabres,Prospects,F,"Poltapov, Prokhor",LW,20,R,Drafted (33 - 2021),56,5.0,5.0,10.0,,,KHL,,11.0
+999,Sabres,Prospects,F,"Sardarian, Stiven",RW,20,L,Drafted (88 - 2021),29,2.0,5.0,7.0,,,NCAA,,4.0
+1000,Sabres,Prospects,F,"Huglen, Aaron",C,22,R,Drafted (102 - 2019),38,7.0,10.0,17.0,,,NCAA,,7.0
+1001,Sabres,Prospects,F,"Miedema, Ethan",LW,18,L,Drafted (109 - 2023),68,20.0,32.0,52.0,,,OHL,,9.0
+1002,Sabres,Prospects,F,"Costantini, Matteo",C,21,L,Drafted (131 - 2020),25,2.0,1.0,3.0,,,NCAA,,2.0
+1003,Sabres,Prospects,F,"Marjala, Viljami",LW,20,L,Drafted (159 - 2021),32,18.0,33.0,51.0,,,U20SM-sarja,,11.0
+1004,Sabres,Prospects,F,"von Barnekow Løfberg, William","LW, RW",20,L,Drafted (161 - 2021),37,4.0,2.0,6.0,,,SHL,,8.0
+1005,Sabres,Prospects,F,"Richard, Jake",RW,19,R,Drafted (170 - 2022),57,31.0,31.0,62.0,,,USHL,,13.0
+1006,Sabres,Prospects,F,"Karlsson, Gustav",C,19,L,Drafted (187 - 2022),43,14.0,19.0,33.0,,,J20 Nationell,,6.0
+1007,Sabres,Prospects,F,"Ratkovic Berndtsson, Joel",RW,19,L,Drafted (202 - 2022),34,20.0,10.0,30.0,,,J20 Nationell,,7.0
+1008,Sabres,Prospects,F,"Sjödin, Linus",C,20,L,Drafted (211 - 2022),52,1.0,6.0,7.0,,,SHL,,6.0
+1009,Sabres,Prospects,F,"Konecny, Jakub",C,21,L,Drafted (216 - 2020),45,5.0,6.0,11.0,,,Czechia,,12.0
+1010,Sabres,Prospects,D,"Strbak, Maxim",RD,18,R,Drafted (45 - 2023),46,5.0,13.0,18.0,,,USHL,,5.0
+1011,Sabres,Prospects,D,"McCarthy, Gavin",RD,18,R,Drafted (86 - 2023),42,8.0,19.0,27.0,,,USHL,,8.0
+1012,Sabres,Prospects,D,"Lindgren, Mats",LD,19,L,Drafted (106 - 2022),63,11.0,23.0,34.0,,,WHL,,6.0
+1013,Sabres,Prospects,D,"Keohane, Sean",LD,18,L,Drafted (173 - 2023),32,4.0,12.0,16.0,,,USHS-Prep,,1.0
+1014,Sabres,Prospects,D,"Lyckåsen, Albert",RD,22,R,Drafted (193 - 2020),39,3.0,6.0,9.0,,,HockeyAllsvenskan,,7.0
+1015,Sabres,Prospects,D,"Panocha, Norwin",LD,18,L,Drafted (205 - 2023),34,6.0,16.0,22.0,,,DNL U20,,
+1016,Sabres,Prospects,G,"Leinonen, Topias",G,19,L,Drafted (41 - 2022),23,,,,2.72,0.885,U20SM-sarja,,0.0
+1017,Sabres,Prospects,G,"Ratzlaff, Scott",G,18,L,Drafted (141 - 2023),34,,,,2.15,0.918,WHL,,0.0
+1018,Senators,Majors,C,"Stützle, Tim",C,21,L,Drafted (3 - 2020),78,39.0,51.0,90.0,,,NHL,,90.0
+1019,Senators,Majors,C,"Pinto, Shane",C,22,R,Drafted (32 - 2019),82,20.0,15.0,35.0,,,NHL,,35.0
+1020,Senators,Majors,LD,"Sanderson, Jake",LD,21,L,Drafted (5 - 2020),77,4.0,28.0,32.0,,,NHL,,32.0
+1021,Senators,Majors,F,"Sokolov, Egor",LW,23,R,Drafted (61 - 2020),70,21.0,38.0,59.0,,,AHL,,27.0
+1022,Senators,Majors,D,"Bernard-Docker, Jacob",RD,23,R,Drafted (26 - 2018),41,2.0,4.0,6.0,,,AHL,,5.0
+1023,Senators,Minors,F,"Greig, Ridly","C, LW",21,L,Drafted (28 - 2020),39,15.0,14.0,29.0,,,AHL,,24.0
+1024,Senators,Minors,F,"Boucher, Tyler",RW,20,R,Drafted (10 - 2021),21,10.0,7.0,17.0,,,OHL,,10.0
+1025,Senators,Minors,F,"Järventie, Roby",LW,21,L,Drafted (33 - 2020),40,16.0,14.0,30.0,,,AHL,,24.0
+1026,Senators,Minors,F,"Ostapchuk, Zack",C,20,L,Drafted (39 - 2021),55,31.0,36.0,67.0,,,WHL,,14.0
+1027,Senators,Minors,F,"Pettersson, Oskar",RW,19,R,Drafted (72 - 2022),24,23.0,10.0,33.0,,,J20 Nationell,,10.0
+1028,Senators,Minors,F,"Crookshank, Angus",LW,23,L,Drafted (126 - 2018),71,26.0,21.0,47.0,,,AHL,,21.0
+1030,Senators,Minors,F,"Reinhardt, Cole",LW,23,L,Drafted (181 - 2020),66,11.0,23.0,34.0,,,AHL,,16.0
+1031,Senators,Minors,D,"Kleven, Tyler",LD,21,L,Drafted (44 - 2020),35,8.0,10.0,18.0,,,NCAA,,8.0
+1032,Senators,Minors,D,"Thomson, Lassi",RD,22,R,Drafted (19 - 2019),56,7.0,26.0,33.0,,,AHL,,19.0
+1033,Senators,Minors,D,"Guénette, Maxence",RD,22,R,Drafted (187 - 2019),72,5.0,35.0,40.0,,,AHL,,18.0
+1034,Senators,Minors,D,"Sebrango, Donovan",LD,21,L,Traded,39,4.0,3.0,7.0,,,AHL,,6.0
+1035,Senators,Minors,D,"Hamara, Tomas",LD,19,L,Drafted (87 - 2022),56,2.0,15.0,17.0,,,OHL,,4.0
+1036,Senators,Minors,D,"Donovan, Jorian",LD,19,L,Drafted (136 - 2022),55,12.0,33.0,45.0,,,OHL,,10.0
+1037,Senators,Minors,G,"Søgaard, Mads",G,22,L,Drafted (37 - 2019),22,,,,3.47,0.893,AHL,,0.0
+1038,Senators,Minors,G,"Meriläinen, Leevi",G,21,L,Drafted (71 - 2020),42,,,,2.02,0.918,Liiga,,0.0
+1039,Senators,Minors,G,"Mandolese, Kevin",G,23,L,Drafted (157 - 2018),17,,,,3.33,0.89,AHL,,0.0
+1040,Senators,Prospects,F,"Johansson, Oliver",C,20,L,Drafted (74 - 2021),27,6.0,3.0,9.0,,,HockeyAllsvenskan,,10.0
+1041,Senators,Prospects,F,"Halliday, Stephen",C,21,L,Drafted (104 - 2022),40,9.0,32.0,41.0,,,NCAA,,16.0
+1042,Senators,Prospects,F,"O'Neill, Cameron",RW,19,R,Drafted (143 - 2022),56,9.0,18.0,27.0,,,USHL,,6.0
+1043,Senators,Prospects,F,"Beckner, Owen",C,18,L,Drafted (204 - 2023),53,17.0,33.0,50.0,,,BCHL,,6.0
+1044,Senators,Prospects,F,"Dyck, Tyson",C,19,L,Drafted (206 - 2022),28,5.0,4.0,9.0,,,NCAA,,5.0
+1045,Senators,Prospects,F,"Vantassell, Nicholas",RW,19,R,Drafted (215 - 2023),62,19.0,18.0,37.0,,,USHL,,7.0
+1046,Senators,Prospects,D,"Nordberg, Filip",LD,19,L,Drafted (64 - 2022),33,2.0,4.0,6.0,,,HockeyAllsvenskan,,5.0
+1047,Senators,Prospects,D,"Stanley, Hoyt",RD,18,R,Drafted (108 - 2023),53,4.0,34.0,38.0,,,BCHL,,5.0
+1048,Senators,Prospects,D,"Andonovski, Matthew",LD,18,L,Drafted (140 - 2023),67,0.0,16.0,16.0,,,OHL,,3.0
+1049,Senators,Prospects,D,"Wallberg, Theo",LD,19,L,Drafted (168 - 2022),60,5.0,17.0,22.0,,,USHL,,4.0
+1050,Senators,Prospects,G,"Reidler, Kevin",G,19,L,Drafted (151 - 2022),32,,,,2.89,0.911,J20 Nationell,,0.0
+1051,Senators,Prospects,G,"Nikitin, Vladimir",G,18,L,Drafted (207 - 2023),24,,,,2.06,0.921,Kazakhstan U20,*no translation,
+1052,Senators,Reserve,D,"Tychonick, Jonathan",LD,23,L,Drafted (48 - 2018),35,8.0,18.0,26.0,,,NCAA,,12.0
+1053,Sharks,Majors,LW,"Zadina, Filip","RW, LW",23,L,Signed to SPC,30,3.0,4.0,7.0,,,NHL,,7.0
+1054,Sharks,Minors,F,"Bordeleau, Thomas",C,21,L,Drafted (38 - 2020),65,22.0,19.0,41.0,,,AHL,,20.0
+1055,Sharks,Minors,F,"Eklund, William","C, LW",20,L,Drafted (7 - 2021),54,17.0,24.0,41.0,,,AHL,,24.0
+1056,Sharks,Minors,F,"Raska, Adam","LW, RW",21,L,Drafted (201 - 2020),54,4.0,7.0,11.0,,,AHL,,6.0
+1057,Sharks,Minors,F,"Robins, Tristen",C,21,R,Drafted (56 - 2020),64,17.0,21.0,38.0,,,AHL,,19.0
+1058,Sharks,Minors,F,"Gushchin, Daniil",LW,21,L,Drafted (76 - 2020),67,22.0,23.0,45.0,,,AHL,,21.0
+1059,Sharks,Minors,F,"Wiesblatt, Ozzy",RW,21,R,Drafted (31 - 2020),45,6.0,9.0,15.0,,,AHL,,11.0
+1060,Sharks,Minors,F,"Halttunen, Kasper",RW,18,R,Drafted (36 - 2023),27,0.0,1.0,1.0,,,Liiga,"*also has 18 games with 18 goals, good stats in diff league",1.0
+1061,Sharks,Minors,F,"Coe, Brandon",RW,21,R,Drafted (98 - 2020),56,5.0,11.0,16.0,,,AHL,,9.0
+1062,Sharks,Minors,F,"Cardwell, Ethan",RW,21,R,Drafted (121 - 2021),62,43.0,47.0,90.0,,,OHL,,17.0
+1064,Sharks,Minors,D,"Cicek, Nick",LD,23,L,Signed to ELC,37,1.0,2.0,3.0,,,AHL,,3.0
+1065,Sharks,Minors,D,"Okhotiuk, Nikita",LD,22,L,Traded,20,2.0,4.0,6.0,,,AHL,,10.0
+1066,Sharks,Minors,D,"Thrun, Henry",LD,22,L,Traded,33,7.0,24.0,31.0,,,NCAA,,15.0
+1067,Sharks,Minors,D,"Mukhamadullin, Shakir",LD,21,L,Traded,67,6.0,19.0,25.0,,,KHL,,24.0
+1069,Sharks,Minors,D,"Guryev, Artem",LD,20,L,Drafted (135 - 2021),47,7.0,9.0,16.0,,,OHL,,4.0
+1070,Sharks,Minors,D,"Pulli, Valtteri",LD,22,L,Signed to ELC,53,3.0,14.0,17.0,,,Liiga,,12.0
+1071,Sharks,Minors,G,"Chrona, Magnus",G,23,L,Traded,32,,,,2.19,0.916,NCAA,,0.0
+1072,Sharks,Minors,G,"Romanov, Georgi",G,23,L,Signed to ELC,31,,,,2.81,0.907,VHL,,0.0
+1073,Sharks,Loaned,F,"Bystedt, Filip",C,19,L,Drafted (27 - 2022),45,7.0,13.0,20.0,,,SHL,,21.0
+1074,Sharks,Prospects,F,"Smith, Will",C,18,R,Drafted (4 - 2023),60,51.0,76.0,127.0,,,NTDP,,34.0
+1075,Sharks,Prospects,F,"Musty, Quentin",LW,18,L,Drafted (26 - 2023),53,26.0,52.0,78.0,,,OHL,,17.0
+1076,Sharks,Prospects,F,"Lund, Cameron",C,19,R,Drafted (34 - 2022),35,7.0,16.0,23.0,,,NCAA,,10.0
+1077,Sharks,Prospects,F,"Svoboda, Brandon",C,18,R,Drafted (71 - 2023),59,16.0,10.0,26.0,,,USHL,,5.0
+1078,Sharks,Prospects,F,"Spiridonov, Yegor",C,22,R,Drafted (108 - 2019),24,1.0,1.0,2.0,,,KHL,,5.0
+1079,Sharks,Prospects,F,"Muldowney, Joey",RW,19,R,Drafted (172 - 2022),61,15.0,14.0,29.0,,,USHL,,6.0
+1080,Sharks,Prospects,F,"Jacobsson, Theo",C,20,L,Drafted (177 - 2021),45,6.0,5.0,11.0,,,HockeyAllsvenskan,,7.0
+1081,Sharks,Prospects,F,"Young, Alex",C,22,R,Drafted (196 - 2020),40,21.0,18.0,39.0,,,NCAA,,16.0
+1082,Sharks,Prospects,F,"Klee, David",C,18,L,Drafted (196 - 2023),57,3.0,10.0,13.0,,,USHL,,3.0
+1083,Sharks,Prospects,F,"Rimashevsky, Yegor",RW,18,L,Drafted (203 - 2023),29,13.0,13.0,26.0,,,MHL,,11.0
+1084,Sharks,Prospects,F,"Spitserov, Timofei",RW,21,L,Drafted (210 - 2020),24,4.0,2.0,6.0,,,NCAA,,4.0
+1085,Sharks,Prospects,F,"Laubach, Reese",C,19,R,Drafted (217 - 2022),50,11.0,13.0,24.0,,,USHL,,6.0
+1086,Sharks,Prospects,D,"Hävelid, Mattias",RD,19,R,Drafted (45 - 2022),25,4.0,2.0,6.0,,,SHL,,11.0
+1087,Sharks,Prospects,D,"Fisher, Michael",RD,19,R,Drafted (76 - 2022),14,0.0,0.0,0.0,,,USHL,,0.0
+1088,Sharks,Prospects,D,"Cagnoni, Luca",LD,18,L,Drafted (123 - 2023),67,17.0,47.0,64.0,,,WHL,,11.0
+1089,Sharks,Prospects,D,"Landén, Axel",RD,18,R,Drafted (130 - 2023),44,10.0,6.0,16.0,,,J20 Nationell,,3.0
+1090,Sharks,Prospects,D,"Pohlkamp, Eric",RD,19,R,Drafted (132 - 2023),59,16.0,35.0,51.0,,,USHL,,10.0
+1091,Sharks,Prospects,D,"Furlong, Jake",LD,19,L,Drafted (140 - 2022),67,7.0,43.0,50.0,,,QMJHL,,7.0
+1092,Sharks,Prospects,D,"Barnett, Eli",RD,20,R,Drafted (195 - 2022),52,4.0,5.0,9.0,,,BCHL,,1.0
+1093,Sharks,Prospects,D,"Kashnikov, Evgenii",LD,20,L,Drafted (199 - 2021),66,3.0,7.0,10.0,,,KHL,,10.0
+1094,Sharks,Prospects,G,"Beaupit, Mason",G,19,L,Drafted (108 - 2022),31,,,,3.74,0.875,WHL,*combined goalie stats from 2 teams,0.0
+1095,Sharks,Reserve,F,"Kaut, Martin",RW,23,R,Traded,36,4.0,4.0,8.0,,,NHL,,8.0
+1096,Stars,Majors,C,"Johnston, Wyatt",C,20,R,Drafted (23 - 2021),82,24.0,17.0,41.0,,,NHL,,41.0
+1097,Stars,Majors,RW,"Dellandrea, Ty","RW, C",23,R,Drafted (13 - 2018),82,9.0,19.0,28.0,,,NHL,,28.0
+1098,Stars,Majors,LD,"Harley, Thomas",LD,22,L,Drafted (18 - 2019),66,10.0,24.0,34.0,,,AHL,,16.0
+1099,Stars,Majors,RD,"Lundkvist, Nils",RD,23,R,Traded,60,6.0,10.0,16.0,,,NHL,,16.0
+1100,Stars,Minors,F,"Blümel, Matej",LW,23,L,Signed to ELC,58,19.0,25.0,44.0,,,AHL,,24.0
+1101,Stars,Minors,F,"Bäck, Oskar","C, RW",23,L,Drafted (75 - 2018),66,5.0,22.0,27.0,,,AHL,,13.0
+1102,Stars,Minors,F,"Bourque, Mavrik",C,21,R,Drafted (30 - 2020),70,20.0,27.0,47.0,,,AHL,,21.0
+1103,Stars,Minors,F,"Stankoven, Logan",C,20,R,Drafted (47 - 2021),48,34.0,63.0,97.0,,,WHL,,23.0
+1104,Stars,Minors,F,"Stranges, Antonio","C, LW",21,L,Drafted (123 - 2020),19,4.0,8.0,12.0,,,AHL,,20.0
+1105,Stars,Minors,F,"Damiani, Riley",C,23,R,Drafted (137 - 2018),59,13.0,18.0,31.0,,,AHL,,17.0
+1106,Stars,Minors,F,"Arcuri, Francesco",C,20,L,Drafted (175 - 2021),71,48.0,43.0,91.0,,,OHL,,15.0
+1107,Stars,Minors,F,"Seminoff, Matthew",RW,19,R,Drafted (179 - 2022),62,31.0,51.0,82.0,,,WHL,,15.0
+1108,Stars,Minors,F,"McDonald, Kyle",RW,21,R,Signed to ELC,43,34.0,18.0,52.0,,,OHL,,14.0
+1109,Stars,Minors,F,"Wheatcroft, Chase",LW,21,L,Signed to ELC,68,47.0,60.0,107.0,,,WHL,,18.0
+1110,Stars,Minors,D,"Bichsel, Lian",LD,19,L,Drafted (18 - 2022),42,1.0,5.0,6.0,,,SHL,,7.0
+1111,Stars,Minors,D,"Grushnikov, Artem",LD,20,L,Drafted (48 - 2021),65,8.0,9.0,17.0,,,OHL,,3.0
+1112,Stars,Minors,D,"Kyrou, Christian",RD,20,R,Drafted (50 - 2022),64,20.0,57.0,77.0,,,OHL,,14.0
+1113,Stars,Minors,D,"White, Gavin",RD,20,R,Drafted (115 - 2022),54,12.0,29.0,41.0,,,OHL,,9.0
+1114,Stars,Minors,G,"Poirier, Rémi",G,21,L,Drafted (185 - 2020),23,,,,2.06,0.928,ECHL,,0.0
+1115,Stars,Prospects,F,"Martino, Ayrton",LW,20,L,Drafted (73 - 2021),37,9.0,29.0,38.0,,,NCAA,,16.0
+1116,Stars,Prospects,F,"Ertel, Justin",LW,20,L,Drafted (79 - 2021),46,14.0,22.0,36.0,,,OHL,,9.0
+1117,Stars,Prospects,F,"Gardiner, Brad",C,18,R,Drafted (79 - 2023),68,19.0,20.0,39.0,,,OHL,,7.0
+1118,Stars,Prospects,F,"Ljungman, Daniel",C,21,L,Drafted (154 - 2020),48,4.0,7.0,11.0,,,HockeyAllsvenskan,,7.0
+1119,Stars,Prospects,F,"MacDonell, Angus",C,18,L,Drafted (189 - 2023),64,29.0,12.0,41.0,,,OHL,,8.0
+1120,Stars,Prospects,F,"Sjöberg, Albert",RW,20,R,Drafted (207 - 2021),46,9.0,4.0,13.0,,,HockeyAllsvenskan,,8.0
+1121,Stars,Prospects,F,"Bradshaw, Sebastian",LW,18,L,Drafted (221 - 2023),59,31.0,31.0,62.0,,,18U AAA,,
+1122,Stars,Prospects,D,"Bertucci, Tristan",LD,18,L,Drafted (61 - 2023),63,11.0,39.0,50.0,,,OHL,,9.0
+1123,Stars,Prospects,D,"Fegaras, George",RD,19,R,Drafted (83 - 2022),61,4.0,23.0,27.0,,,USHL,,5.0
+1124,Stars,Prospects,D,"Minnetian, Aram",RD,18,R,Drafted (125 - 2023),62,7.0,24.0,31.0,,,NTDP,,8.0
+1125,Stars,Prospects,D,"Bar, Jack",RD,20,R,Drafted (138 - 2021),32,1.0,4.0,5.0,,,NCAA,,2.0
+1126,Stars,Prospects,G,"Mayorov, Maxim",G,19,L,Drafted (147 - 2022),25,,,,2.81,0.915,MHL,*combined goalie stats from 2 teams,0.0
+1127,Stars,Prospects,G,"Tiefensee, Arno",G,21,L,Drafted (157 - 2023),23,,,,2.43,0.91,DEL,,0.0
+1128,Wild,Majors,RW,"Boldy, Matthew","RW, LW",22,L,Drafted (12 - 2019),81,31.0,32.0,63.0,,,NHL,,63.0
+1129,Wild,Majors,C,"Rossi, Marco",C,21,L,Drafted (9 - 2020),53,16.0,35.0,51.0,,,AHL,,31.0
+1130,Wild,Majors,RD,"Faber, Brock",RD,21,R,Traded,38,4.0,23.0,27.0,,,NCAA,,11.0
+1131,Wild,Majors,RD,"Addison, Calen",RD,23,R,Traded,62,3.0,26.0,29.0,,,NHL,,29.0
+1132,Wild,Minors,F,"Beckman, Adam",LW,22,L,Drafted (75 - 2019),53,24.0,12.0,36.0,,,AHL,,22.0
+1133,Wild,Minors,F,"Öhgren, Liam",LW,19,L,Drafted (19 - 2022),36,11.0,9.0,20.0,,,HockeyAllsvenskan,,16.0
+1134,Wild,Minors,F,"Firstov, Vladislav",LW,22,L,Drafted (42 - 2019),47,11.0,15.0,26.0,,,KHL,,35.0
+1135,Wild,Minors,F,"Haight, Hunter",C,19,R,Drafted (47 - 2022),62,21.0,39.0,60.0,,,OHL,,11.0
+1136,Wild,Minors,F,"Bankier, Caedan",C,20,L,Drafted (86 - 2021),57,37.0,48.0,85.0,,,WHL,,17.0
+1137,Wild,Minors,F,"Milne, Michael",LW,20,L,Drafted (89 - 2022),57,7.0,6.0,13.0,,,AHL,,7.0
+1138,Wild,Minors,F,"Novak, Pavel",RW,21,R,Drafted (146 - 2020),62,29.0,43.0,72.0,,,WHL,*no stats last season,13.0
+1139,Wild,Minors,F,"Cajkovic, Maxim",RW,22,R,Traded,41,10.0,17.0,27.0,,,ECHL,,8.0
+1140,Wild,Minors,D,"Lambos, Carson",LD,20,L,Drafted (26 - 2021),61,12.0,36.0,48.0,,,WHL,,9.0
+1141,Wild,Minors,D,"O'Rourke, Ryan",LD,21,L,Drafted (39 - 2020),67,0.0,9.0,9.0,,,AHL,,4.0
+1142,Wild,Minors,D,"Hunt, Daemon",LD,21,L,Drafted (65 - 2020),59,2.0,9.0,11.0,,,AHL,,6.0
+1143,Wild,Minors,D,"Masters, Kyle",RD,20,R,Drafted (118 - 2021),66,11.0,54.0,65.0,,,WHL,,11.0
+1144,Wild,Minors,D,"Spacek, David",RD,20,R,Drafted (153 - 2022),58,13.0,44.0,57.0,,,QMJHL,,9.0
+1145,Wild,Minors,G,"Wallstedt, Jesper",G,20,L,Drafted (20 - 2021),38,,,,2.68,0.908,AHL,,0.0
+1146,Wild,Minors,G,"Jones, Hunter",G,22,L,Drafted (59 - 2019),38,,,,3.07,0.905,ECHL,,0.0
+1147,Wild,Prospects,F,"Stramel, Charlie","C, LW, RW",18,R,Drafted (21 - 2023),33,5.0,7.0,12.0,,,NCAA,,6.0
+1148,Wild,Prospects,F,"Yurov, Danila",RW,19,L,Drafted (24 - 2022),59,6.0,6.0,12.0,,,KHL,,13.0
+1149,Wild,Prospects,F,"Khusnutdinov, Marat",C,21,L,Drafted (37 - 2020),63,11.0,30.0,41.0,,,KHL,,41.0
+1150,Wild,Prospects,F,"Kumpulainen, Rasmus",C,18,L,Drafted (53 - 2023),41,11.0,23.0,34.0,,,U20SM-sarja,,6.0
+1151,Wild,Prospects,F,"Lorenz, Rieger","LW, C",19,L,Drafted (56 - 2022),37,2.0,7.0,9.0,,,NCAA,,4.0
+1152,Wild,Prospects,F,"Heidt, Riley","C, LW, RW",18,L,Drafted (64 - 2023),68,25.0,72.0,97.0,,,WHL,,16.0
+1153,Wild,Prospects,F,"Guskov, Matvei",C,22,L,Drafted (149 - 2019),37,3.0,6.0,9.0,,,KHL,,15.0
+1154,Wild,Prospects,F,"Petrovský, Servác",C,19,L,Drafted (185 - 2022),62,24.0,31.0,55.0,,,OHL,,10.0
+1155,Wild,Prospects,F,"Clark, James",LW,18,L,Drafted (213 - 2023),62,19.0,28.0,47.0,,,USHL,,9.0
+1156,Wild,Prospects,D,"Peart, Jack",LD,20,L,Drafted (54 - 2021),39,3.0,21.0,24.0,,,NCAA,,10.0
+1157,Wild,Prospects,D,"Healey, Ryan",RD,19,R,Drafted (121 - 2022),34,2.0,6.0,8.0,,,NCAA,,4.0
+1158,Wild,Prospects,D,"Pionk, Aaron",LD,20,L,Drafted (149 - 2023),60,12.0,24.0,36.0,,,USHL,,7.0
+1159,Wild,Prospects,D,"Parker, Kalem",RD,18,R,Drafted (181 - 2023),68,6.0,32.0,38.0,,,WHL,,6.0
+1160,Wild,Prospects,D,"Benoit, Nate",LD,20,L,Drafted (182 - 2021),58,6.0,19.0,25.0,,,USHL,,5.0
