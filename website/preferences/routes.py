@@ -1,10 +1,10 @@
 from flask import Blueprint, render_template, request
 import pandas as pd
 
-preferences = Blueprint("preferences", __name__)
+preferences_blueprint = Blueprint("preferences", __name__)
 
 
-@preferences.route("/<team_abrv>")
+@preferences_blueprint.route("/<team_abrv>", methods=["GET"])
 def render_preferences_page(team_abrv):
     df_players = pd.read_csv("PLAYER_IDS.csv")
     team_ids_df = pd.read_csv("TEAM_IDS.csv")
@@ -20,7 +20,7 @@ def render_preferences_page(team_abrv):
     )
 
 
-@preferences.route("/preferences/submit_inputs", methods=["POST"])
+@preferences_blueprint.route("/preferences/submit_inputs", methods=["POST"])
 def submit_preferences():
     input_info = request.get_json()
     df_min_max_constraints = pd.DataFrame(input_info["min_max_constraints"])

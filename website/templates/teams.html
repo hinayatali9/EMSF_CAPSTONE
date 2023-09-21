@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teams.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="ribbon d-flex justify-content-center align-items-center">
+        <img src="{{ url_for('static', filename='img/nhl_logo.png') }}" alt="NHL Logo" width="55">
+        <h1 class="mx-auto">NHL Draft Pick Recommender</h1>
+    </div>
+    <br>
+    <div class="container">
+        <form action="/submit_team" method="post">
+            <div class="list-container mx-auto">
+                <ul id="team-list" class="list-group">
+                    {% for team in teams %}
+                    <li class="list-group-item">
+                        <input type="radio" id="{{ team['name'] }}" name="team" value="{{ team['abrv'] }}">
+                        <img src="{{ url_for('static', filename='img/'+ team['abrv'] +'.svg') }}" alt="{{ team['name'] }}" width="55">
+                        <span class="team-name">{{ team['name'] }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <input id="submit" type="submit" class="btn btn-primary float-right" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="{{ url_for('static', filename='js/teams.js') }}"></script>
+</body>
+</html>

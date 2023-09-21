@@ -1,0 +1,39 @@
+.ribbon {
+    background-color: #3584e4;
+    padding: 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.ribbon img {
+    position: absolute;
+    left: 2%;
+}
+
+.list-group-item img {
+    margin-right: 10px;
+}
+
+.list-group-item.selected {
+    background-color: #f0f0f0;
+}
+
+.list-container {
+    width: 50%;
+}
+
+#team-list {
+    align-content: center;
+    width: 100%;
+}
+
+#team-list .list-group-item {
+    font-size: 1.5em;
+}
+
+#submit {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
