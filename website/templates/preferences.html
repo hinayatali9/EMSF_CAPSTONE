@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/preferences.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
@@ -26,31 +26,36 @@
                 <td><b>Goalie</b></td>
                 <td><input type="number" min="0" step="1" max="100" value="0" id="goalie_min"
                         oninput="validateValues('goalie_min', 'goalie_max')"></td>
-                <td><input type="number" min="0" step="1" max="100" value="100" id="goalie_max"></td>
+                <td><input type="number" min="0" step="1" max="100" value="100" id="goalie_max"
+                        oninput="validateValues('goalie_min', 'goalie_max')"></td>
             </tr>
             <tr>
                 <td><b>Left Defense</b></td>
                 <td><input type="number" min="0" step="1" max="100" value="0" id="ld_min"
                         oninput="validateValues('ld_min', 'ld_max')"></td>
-                <td><input type="number" min="0" step="1" max="100" value="100" id="ld_max"></td>
+                <td><input type="number" min="0" step="1" max="100" value="100" id="ld_max"
+                        oninput="validateValues('ld_min', 'ld_max')"></td>
             </tr>
             <tr>
                 <td><b>Right Defense</b></td>
                 <td><input type="number" min="0" step="1" max="100" value="0" id="rd_min"
                         oninput="validateValues('rd_min', 'rd_max')"></td>
-                <td><input type="number" min="0" step="1" max="100" value="100" id="rd_max"></td>
+                <td><input type="number" min="0" step="1" max="100" value="100" id="rd_max"
+                        oninput="validateValues('rd_min', 'rd_max')"></td>
             </tr>
             <tr>
                 <td><b>Left Forward</b></td>
                 <td><input type="number" min="0" step="1" max="100" value="0" id="lf_min"
                         oninput="validateValues('lf_min', 'lf_max')"></td>
-                <td><input type="number" min="0" step="1" max="100" value="100" id="lf_max"></td>
+                <td><input type="number" min="0" step="1" max="100" value="100" id="lf_max"
+                        oninput="validateValues('lf_min', 'lf_max')"></td>
             </tr>
             <tr>
                 <td><b>Right Forward</b></td>
                 <td><input type="number" min="0" step="1" max="100" value="0" id="rf_min"
                         oninput="validateValues('rf_min', 'rf_max')"></td>
-                <td><input type="number" min="0" step="1" max="100" value="100" id="rf_max"></td>
+                <td><input type="number" min="0" step="1" max="100" value="100" id="rf_max"
+                        oninput="validateValues('rf_min', 'rf_max')"></td>
             </tr>
         </table>
         <br>
@@ -74,7 +79,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/preferences.js') }}"></script>
 </body>
 
 </html>
