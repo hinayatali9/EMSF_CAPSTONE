@@ -20,13 +20,13 @@ $(function () {
                 "rf": $(rf_max)[0].value,
             }
         }
-        min_number_of_picks = $(goalie_min)[0].value + $(ld_min)[0].value + $(rd_min)[0].value + $(lf_min)[0].value + $(rf_min)[0].value
-        if(min_number_of_picks > 10){ // CHANGE GIVEN TEAM
+        min_number_of_picks = parseInt($(goalie_min)[0].value) + parseInt($(ld_min)[0].value) + parseInt($(rd_min)[0].value) + parseInt($(lf_min)[0].value) + $(rf_min)[0].value
+        if(min_number_of_picks > parseInt($(num_picks)[0].getAttribute("value") )){ // CHANGE GIVEN TEAM
             alert("Not enough draft picks available for min number of picks selected")
         }
         else{
             $.ajax({
-                url: '/submit_inputs',
+                url: '/submit_preferences',
                 type: 'post',
                 contentType: 'application/json',
                 data: JSON.stringify(
@@ -44,7 +44,7 @@ $(function () {
     });
 });
 
-function validateValues(id1, id2) {
+function validateValues(id1, id2, max_picks) {
     var input1 = document.getElementById(id1);
     var input2 = document.getElementById(id2);
 

@@ -8,7 +8,7 @@
 
 <body>
     <div class="ribbon d-flex justify-content-center align-items-center">
-        <img src="{{ url_for('static', filename='img/nhl_logo.png') }}" alt="NHL Logo" width="40">
+        <img src="{{ url_for('static', filename='img/'+ team_abrv +'.svg') }}" alt="NHL Logo" width="55">
         <h1 class="mx-auto">NHL Draft Pick Recommender</h1>
     </div>
     <br>
@@ -16,6 +16,8 @@
         <h2>1. Pick constraints</h2>
         <p>Edit the table below to assign constraints to the draft picks. If no min, leave it at 0. If no max, leave it
             at 100. If min is more than max, it will be set to the same value as max.</p>
+        <p>Your total number of picks is: <b>{{ num_picks }}</b></p>
+        <div id="num_picks" value="{{ num_picks }}"></div>
         <table id="min-max-table">
             <tr>
                 <th>Position</th>

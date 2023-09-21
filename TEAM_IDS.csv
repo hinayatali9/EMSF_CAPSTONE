@@ -1,33 +1,33 @@
-﻿TEAM_ID,TEAM_NAME
-1,Chicago Blackhawks
-2,Anaheim Ducks
-3,Columbus Blue Jackets
-4,San Jose Sharks
-5,Montreal Canadiens
-6,Arizona Coyotes
-7,Philadelphia Flyers
-8,Washington Capitals
-9,Detroit Red Wings
-10,St. Louis Blues
-11,Vancouver Canucks
-12,Ottawa Senators
-13,Buffalo Sabres
-14,Pittsburgh Penguins
-15,Nashville Predators
-16,Calgary Flames
-17,New York Islanders
-18,Winnipeg Jets
-19,Tampa Bay Lightning
-20,Seattle Kraken
-21,Minnesota Wild
-22,Los Angeles Kings
-23,New York Rangers
-24,Edmonton Oilers
-25,Toronto Maple Leafs
-26,New Jersey Devils
-27,Colorado Avalanche
-28,Boston Bruins
-29,Dallas Stars
-30,Carolina Hurricanes
-31,Florida Panthers
-32,Vegas Golden Knights
+﻿TEAM_ID,TEAM_NAME,TEAM_ABRV
+1,Chicago Blackhawks,CHI
+2,Anaheim Ducks,ANA
+3,Columbus Blue Jackets,CBJ
+4,San Jose Sharks,SJS
+5,Montreal Canadiens,MTL
+6,Arizona Coyotes,ARI
+7,Philadelphia Flyers,PHI
+8,Washington Capitals,WSH
+9,Detroit Red Wings,DET
+10,St. Louis Blues,STL
+11,Vancouver Canucks,VAN
+12,Ottawa Senators,OTT
+13,Buffalo Sabres,BUF
+14,Pittsburgh Penguins,PIT
+15,Nashville Predators,NSH
+16,Calgary Flames,CGY
+17,New York Islanders,NYI
+18,Winnipeg Jets,WPG
+19,Tampa Bay Lightning,TBL
+20,Seattle Kraken,SEA
+21,Minnesota Wild,MIN
+22,Los Angeles Kings,LAK
+23,New York Rangers,NYR
+24,Edmonton Oilers,EDM
+25,Toronto Maple Leafs,TOR
+26,New Jersey Devils,NJD
+27,Colorado Avalanche,COL
+28,Boston Bruins,BOS
+29,Dallas Stars,DAL
+30,Carolina Hurricanes,CAR
+31,Florida Panthers,FLA
+32,Vegas Golden Knights,VGK
