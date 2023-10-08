@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
+import cvxpy as cp
 
 x = 224  # Number of players to select
-num_simulations = 1000  # Number of simulations
 
 def simulate_player_selection(parameters, x):
     selected_players = []
@@ -39,12 +39,11 @@ def get_next_pick_probability(players_ids_removed):
     #     selected_players = simulate_player_selection(player_ability_parameters_df['ABILITY_PARAMS'], num_players_left)
     #     simulation_results.append(selected_players)
 
-def get_pick_probability_by_pick(players_ids_removed):
+def get_pick_probability_by_pick(players_ids_removed, num_simulations):
     player_ability_parameters_df=pd.read_csv('/Users/hinayatali/Desktop/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv')
     player_ability_parameters_df=player_ability_parameters_df.loc[~player_ability_parameters_df['PLAYER_ID'].isin(players_ids_removed)]
     params=player_ability_parameters_df['ABILITY_PARAMS']
     simulation_results = []
-    num_simulations=1000
     for _ in range(num_simulations):
         selected_players = simulate_player_selection(params, x-len(players_ids_removed))
         simulation_results.append(selected_players)
@@ -77,8 +76,8 @@ def get_pick_probability_by_pick(players_ids_removed):
     heatmap_array=pd.concat([player_ability_parameters_df[['PLAYER_NAME', 'PLAYER_ID']], heatmap_array], axis=1)
     return heatmap_array
 
-def probability_available_pick_x(players_ids_removed):
-    df_players=get_pick_probability_by_pick(players_ids_removed)
+def probability_available_pick_x(players_ids_removed, num_simulations):
+    df_players=get_pick_probability_by_pick(players_ids_removed, num_simulations)
     probability_available_pick_x=df_players.copy()
     column_numbers=probability_available_pick_x.columns[2:]
     accumulated_probability=0
@@ -91,3 +90,113 @@ def probability_available_pick_x(players_ids_removed):
             accumulated_probability-=df_players[column_numbers[i]]
     return probability_available_pick_x
 
+def get_pick_values(df, pick_numbers_left, picks_taken):
+    player_dict={}
+    df=df.sort_values('PICK_VALUE', ascending=False)
+    player_id_values=df[['PLAYER_ID', 'PICK_VALUE']]
+    list_of_remaining_picks=pick_numbers_left[1:]
+    list_of_cols=[]
+    list_of_new_cols=[]
+    for i in list_of_remaining_picks:
+        list_of_cols.append("PICK_" + str(i))
+        list_of_new_cols.append("SUM_PROB_" + str(i))
+    df_subset = df.groupby('POS').head(4)
+    for i, row in df_subset.iterrows():
+        id=(row['PLAYER_ID'],row['POS'], row['TEAM_NEED'])
+        player_dict[id]=row['PICK_VALUE']
+        new_df=probability_available_pick_x(picks_taken+[int(row['PLAYER_ID'])], 100)
+        df_values=pd.merge(new_df, player_id_values, how='left', on=['PLAYER_ID'])
+        df_values=df_values.sort_values('PICK_VALUE', ascending=False)
+        df_values[list_of_new_cols]=df_values[list_of_cols].cumsum()
+        for j in range(len(list_of_new_cols)):
+            calculating_pick_value=df_values.loc[df_values[list_of_new_cols[j]]<1]
+            pick_value=(calculating_pick_value['PICK_VALUE']*calculating_pick_value[list_of_cols[j]]).sum()
+            player_dict[id]+=pick_value
+    data_list = [{'PLAYER_ID': key[0], 'GROUPED_POS': key[1], 'TEAM_NEED': key[2], 'VALUE': value} for key, value in player_dict.items()]
+    df_new = pd.DataFrame(data_list, index=None)
+    return df_new
+
+def objective(df, pos_const, user_weight):
+
+  # Define variables
+  x = cp.Variable(len(df.index), boolean=True)
+
+  # Define objective
+  obj_lp = cp.Maximize(x@df['VALUE']*user_weight+x@df['TEAM_NEED']*(1-user_weight))
+
+  # Define constraints
+  cons_lp = []  # Initialize constraint list
+
+  for position, max_players in pos_const.items():
+    cons_lp.append(cp.sum(x[df['GROUPED_POS'] == position]) <= max_players)
+  cons_lp.append(sum(x)==1)
+
+  prob_lp = cp.Problem(obj_lp,cons_lp)
+  sol = prob_lp.solve()
+
+  x_np_array_lp = x.value.astype(float)  # extract the x values as a np array
+  x_values_lp = pd.Series(x_np_array_lp, index = df.index)  # convert the np array to a Datafram
+  selected = np.where(x_values_lp == 1)[0]  # get assignments
+
+  # Print selected player
+  return sol, int(df.iloc[selected]['PLAYER_ID'])
+
+def get_value(row, team, external_df):
+    if row['POS'] in ['LW', 'RW', 'C']:
+        return external_df.loc[team, 'df_F']
+    elif row['POS'] == 'LD':
+        return external_df.loc[team, 'df_LD']
+    elif row['POS'] == 'RD':
+        return external_df.loc[team, 'df_RD']
+    else:
+        return external_df.loc[team, 'df_G']
+    
+def name_player(player_id, player_names):
+    return str(player_names.loc[player_names["PLAYER_ID"]==player_id]['PLAYER_NAME'].reset_index(drop=True)[0])
+
+def determine_optimal_pick(player_rankings, player_position, team_needs, player_names, team, pick_numbers_left, picks_taken, pos_const, user_weight):
+    # player_rankings=player_rankings.drop(['PLAYER_NAME'], axis=1)
+    pick_probs=probability_available_pick_x(picks_taken, 100)
+    new_tab=pd.merge(pick_probs, player_rankings, how='left', on=['PLAYER_ID'])
+    new_tab=pd.merge(new_tab, player_position[['PLAYER_ID','POS']], how='left', on=['PLAYER_ID'])
+    new_tab['TEAM_NEED']=new_tab.apply(get_value, axis=1, team=team, external_df=team_needs)
+    pick_values=get_pick_values(new_tab, pick_numbers_left, picks_taken)
+    return objective(pick_values, pos_const, user_weight)
+
+def simulate_draft(player_rankings, player_position, team_needs, player_names, team,  pick_numbers_left, picks_taken, pos_const, user_weight):
+    l_player_val=[]
+    players_drafted=[]
+    for i in range(len(player_rankings)):
+        l_player_val.append(np.exp(-0.420*(i**0.391)))
+    player_rankings['PICK_VALUE']=l_player_val
+    player_rankings=player_rankings.drop(['PLAYER_NAME'], axis=1)
+    picks_taken=[]
+    for i in range(1, x+1):
+        if i in pick_numbers_left:
+            returned=determine_optimal_pick(player_rankings, player_position, team_needs, player_names, team, pick_numbers_left, picks_taken, pos_const, user_weight)
+            print(returned)
+            print(print(f"You selected {name_player(returned[1], player_names)}"))
+            picks_taken.append(returned[1])
+            players_drafted.append(returned[1])
+            pick_numbers_left.pop(0)
+        else:
+            print(f"The probability the top three players on your list are available at pick {pick_numbers_left[0]} are as follows: ")
+            players=probability_available_pick_x(picks_taken, 300)
+            sorted_players=pd.merge(players, player_rankings, how='left', on=['PLAYER_ID']).sort_values(by='PICK_VALUE', ascending=False)
+            print(sorted_players[["PLAYER_NAME", "PICK_"+str(pick_numbers_left[0])]].head(3).to_string(index=False))
+            player_taken=simulate_one_player_taken(picks_taken)
+            picks_taken.append(player_taken)
+            print(f"{name_player(player_taken, player_names)} was selected")
+            
+def simulate_one_player_taken(picks_taken):
+    player_ability_parameters_df=pd.read_csv('/Users/hinayatali/Desktop/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv')
+    player_ability_parameters_df=player_ability_parameters_df.loc[~player_ability_parameters_df['PLAYER_ID'].isin(picks_taken)]
+    params=player_ability_parameters_df['ABILITY_PARAMS']
+    choice_probabilities = [np.exp(param) for param in params]
+    total_probability = sum(choice_probabilities)
+    normalized_probabilities = [prob / total_probability for prob in choice_probabilities]
+    selected_player = np.random.choice(range(len(params)), p=normalized_probabilities)
+    return player_ability_parameters_df.iloc[selected_player]['PLAYER_ID']
+
+    
+    
