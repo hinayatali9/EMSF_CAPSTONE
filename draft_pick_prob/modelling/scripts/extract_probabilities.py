@@ -199,4 +199,16 @@ def simulate_one_player_taken(picks_taken):
     return player_ability_parameters_df.iloc[selected_player]['PLAYER_ID']
 
     
-    
+def probability_available_pick_specified(players_ids_removed, num_simulations, pick_number):
+    df_players=get_pick_probability_by_pick(players_ids_removed, num_simulations)
+    probability_available_pick_x=df_players.copy()
+    column_numbers=probability_available_pick_x.columns[2:]
+    accumulated_probability=0
+    for i in range(len(column_numbers)):
+        if i==0:
+            probability_available_pick_x[column_numbers[i]]=1
+            accumulated_probability=1-df_players[column_numbers[i]]
+        else:
+            probability_available_pick_x[column_numbers[i]]=accumulated_probability
+            accumulated_probability-=df_players[column_numbers[i]]
+    return probability_available_pick_x[['PLAYER_ID', 'PICK_'+str(pick_number)]]   
