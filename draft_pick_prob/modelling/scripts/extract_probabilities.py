@@ -5,6 +5,10 @@ import cvxpy as cp
 x = 224  # Number of players to select
 
 def simulate_player_selection(parameters, x):
+    """
+    @param {list} parameters - list of player parameters
+    @returns the list of selections given the set of parameters
+    """
     selected_players = []
     remaining_parameters = parameters.copy()
     indices=[i for i in range(len(parameters))]
@@ -26,6 +30,10 @@ def simulate_player_selection(parameters, x):
 
 
 def get_next_pick_probability(players_ids_removed):
+    """
+    @param {list} players_ids_removed - the list of players that have been taken
+    @returns the probability of each player being selected next
+    """
     player_ability_parameters_df=pd.read_csv('/Users/hinayatali/Desktop/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv')
     player_ability_parameters_df=player_ability_parameters_df.loc[~player_ability_parameters_df['PLAYER_ID'].isin(players_ids_removed)]
     params=player_ability_parameters_df['ABILITY_PARAMS']
@@ -40,6 +48,11 @@ def get_next_pick_probability(players_ids_removed):
     #     simulation_results.append(selected_players)
 
 def get_pick_probability_by_pick(players_ids_removed, num_simulations):
+    """
+    @param {list} players_ids_removed - the list of players that have been taken
+    @param {int} int - number of draft simulations to complete
+    @returns the probability of the player being selected at each future pick number
+    """
     player_ability_parameters_df=pd.read_csv('/Users/hinayatali/Desktop/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv')
     player_ability_parameters_df=player_ability_parameters_df.loc[~player_ability_parameters_df['PLAYER_ID'].isin(players_ids_removed)]
     params=player_ability_parameters_df['ABILITY_PARAMS']
@@ -77,6 +90,11 @@ def get_pick_probability_by_pick(players_ids_removed, num_simulations):
     return heatmap_array
 
 def probability_available_pick_x(players_ids_removed, num_simulations):
+    """
+    @param {list} players_ids_removed - list of player ids that have been selected
+    @param {int} num_simulations - number of simulations that have to take place
+    @returns the probability a player will be available by any given pick
+    """
     df_players=get_pick_probability_by_pick(players_ids_removed, num_simulations)
     probability_available_pick_x=df_players.copy()
     column_numbers=probability_available_pick_x.columns[2:]
@@ -91,6 +109,12 @@ def probability_available_pick_x(players_ids_removed, num_simulations):
     return probability_available_pick_x
 
 def get_pick_values(df, pick_numbers_left, picks_taken):
+    """
+    @param {dataframe} df - the dataframe of every player's pick probability, value given ranking, position, and team need
+    @param {list} pick_numbers_left - the remaining picks the team has
+    @param {list} picks_taken - the player ids that have already been taken
+    @returns a dataframe with each player's player id, position, team need at that position, and the total expected pick value of selecting this player
+    """
     player_dict={}
     df=df.sort_values('PICK_VALUE', ascending=False)
     player_id_values=df[['PLAYER_ID', 'PICK_VALUE']]
@@ -117,31 +141,44 @@ def get_pick_values(df, pick_numbers_left, picks_taken):
     return df_new
 
 def objective(df, pos_const, user_weight):
+    """
+    @param {dataframe} df - the dataframe of values output from get_pick_values
+    @param {dict} pos_const - dictionary of positional constraints
+    @param {int} user_weight - the emphasis the user wants to place on team need versus pick value
+    @returns the player ID of the optimal selection
+    """
 
-  # Define variables
-  x = cp.Variable(len(df.index), boolean=True)
+    # Define variables
+    x = cp.Variable(len(df.index), boolean=True)
 
-  # Define objective
-  obj_lp = cp.Maximize(x@df['VALUE']*user_weight+x@df['TEAM_NEED']*(1-user_weight))
+    # Define objective
+    obj_lp = cp.Maximize(x@df['VALUE']*user_weight+x@df['TEAM_NEED']*(1-user_weight))
 
-  # Define constraints
-  cons_lp = []  # Initialize constraint list
+    # Define constraints
+    cons_lp = []  # Initialize constraint list
 
-  for position, max_players in pos_const.items():
-    cons_lp.append(cp.sum(x[df['GROUPED_POS'] == position]) <= max_players)
-  cons_lp.append(sum(x)==1)
+    for position, max_players in pos_const.items():
+        cons_lp.append(cp.sum(x[df['GROUPED_POS'] == position]) <= max_players)
+    cons_lp.append(sum(x)==1)
 
-  prob_lp = cp.Problem(obj_lp,cons_lp)
-  sol = prob_lp.solve()
+    prob_lp = cp.Problem(obj_lp,cons_lp)
+    sol = prob_lp.solve()
 
-  x_np_array_lp = x.value.astype(float)  # extract the x values as a np array
-  x_values_lp = pd.Series(x_np_array_lp, index = df.index)  # convert the np array to a Datafram
-  selected = np.where(x_values_lp == 1)[0]  # get assignments
+    x_np_array_lp = x.value.astype(float)  # extract the x values as a np array
+    x_values_lp = pd.Series(x_np_array_lp, index = df.index)  # convert the np array to a Datafram
+    selected = np.where(x_values_lp == 1)[0]  # get assignments
 
-  # Print selected player
-  return sol, int(df.iloc[selected]['PLAYER_ID'])
+    # Print selected player
+    return int(df.iloc[selected]['PLAYER_ID'])
+#   return sol, df.iloc[selected]['PLAYER_ID']
 
 def get_value(row, team, external_df):
+    """
+    @param {row} row - the row of player information
+    @param {str} team - the team abbreviation
+    @param {dataframe} external_df - the dataframe of team needs to use to return values
+    @returns the team need for a given player
+    """
     if row['POS'] in ['LW', 'RW', 'C']:
         return external_df.loc[team, 'df_F']
     elif row['POS'] == 'LD':
@@ -152,9 +189,25 @@ def get_value(row, team, external_df):
         return external_df.loc[team, 'df_G']
     
 def name_player(player_id, player_names):
+    """
+    @param {int} player_id - the player id in question
+    @param {dataframe} player_names - mapping of player id to player name in a dataframe
+    @returns the player's name given the player id
+    """
     return str(player_names.loc[player_names["PLAYER_ID"]==player_id]['PLAYER_NAME'].reset_index(drop=True)[0])
 
-def determine_optimal_pick(player_rankings, player_position, team_needs, player_names, team, pick_numbers_left, picks_taken, pos_const, user_weight):
+def determine_optimal_pick(player_rankings, player_position, team_needs, team, pick_numbers_left, picks_taken, pos_const, user_weight):
+    """
+    @param {dataframe} player_rankings - the rankings of the player input by the user in a pandas dataframe
+    @param {dataframe} player_position - dataframe of each player's position
+    @param {dataframe} team_needs - dataframe of each team's needs at each position
+    @param {str} team - player's team abbreviation
+    @param {list} pick_numbers_left - the team's picks remaining
+    @param {list} picks_taken - the list of player ids that have already been taken
+    @param {dict} pos_const - a dictionary containing the positional constraints input by the user
+    @param {float} user_weight - the emphasis a team wants to place on position versus player value
+    @returns the player id of the optimal selection
+    """
     # player_rankings=player_rankings.drop(['PLAYER_NAME'], axis=1)
     pick_probs=probability_available_pick_x(picks_taken, 100)
     new_tab=pd.merge(pick_probs, player_rankings, how='left', on=['PLAYER_ID'])
@@ -164,6 +217,18 @@ def determine_optimal_pick(player_rankings, player_position, team_needs, player_
     return objective(pick_values, pos_const, user_weight)
 
 def simulate_draft(player_rankings, player_position, team_needs, player_names, team,  pick_numbers_left, picks_taken, pos_const, user_weight):
+    """
+    @param {dataframe} player_rankings - the rankings of the player input by the user in a pandas dataframe
+    @param {dataframe} player_position - dataframe of each player's position
+    @param {dataframe} team_needs - dataframe of each team's needs at each position
+    @param {dataframe} player_names - mapped dataframe of player id to player name
+    @param {str} team - player's team abbreviation
+    @param {list} pick_numbers_left - the team's picks remaining
+    @param {list} picks_taken - the list of player ids that have already been taken
+    @param {dict} pos_const - a dictionary containing the positional constraints input by the user
+    @param {float} user_weight - the emphasis a team wants to place on position versus player value
+    @will simulate the entire draft through print statements
+    """
     l_player_val=[]
     players_drafted=[]
     for i in range(len(player_rankings)):
@@ -189,6 +254,10 @@ def simulate_draft(player_rankings, player_position, team_needs, player_names, t
             print(f"{name_player(player_taken, player_names)} was selected")
             
 def simulate_one_player_taken(picks_taken):
+    """
+    @param {list} picks_taken - the player ids of the players already taken
+    @returns a randomly selected player based on the probabilities calculated
+    """
     player_ability_parameters_df=pd.read_csv('/Users/hinayatali/Desktop/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv')
     player_ability_parameters_df=player_ability_parameters_df.loc[~player_ability_parameters_df['PLAYER_ID'].isin(picks_taken)]
     params=player_ability_parameters_df['ABILITY_PARAMS']
@@ -200,6 +269,12 @@ def simulate_one_player_taken(picks_taken):
 
     
 def probability_available_pick_specified(players_ids_removed, num_simulations, pick_number):
+    """
+    @param {list} player_ids_removed - list of player ids that have been taken
+    @param {int} num_simulations - number of simulations to run
+    @param {int} pick_number - the pick number that will be checked for pick probability
+    @returns the probability each player is available by the pick specified
+    """
     df_players=get_pick_probability_by_pick(players_ids_removed, num_simulations)
     probability_available_pick_x=df_players.copy()
     column_numbers=probability_available_pick_x.columns[2:]
