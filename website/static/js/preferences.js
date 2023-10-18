@@ -9,15 +9,18 @@ $(function () {
                 "goalie": $(goalie_min)[0].value,
                 "ld": $(ld_min)[0].value,
                 "rd": $(rd_min)[0].value,
-                "lf": $(lf_min)[0].value,
-                "rf": $(rf_min)[0].value,
+                "lw": $(lw_min)[0].value,
+                "rw": $(rw_min)[0].value,
+                "centre": $(centre_min)[0].value,
             },
             "max_picks": {
                 "goalie": $(goalie_max)[0].value,
                 "ld": $(ld_max)[0].value,
                 "rd": $(rd_max)[0].value,
-                "lf": $(lf_max)[0].value,
-                "rf": $(rf_max)[0].value,
+                "lw": $(lw_max)[0].value,
+                "rw": $(rw_max)[0].value,
+                "rw": $(rw_max)[0].value,
+                "centre": $(centre_max)[0].value,
             }
         }
         min_number_of_picks = parseInt($(goalie_min)[0].value) + parseInt($(ld_min)[0].value) + parseInt($(rd_min)[0].value) + parseInt($(lf_min)[0].value) + $(rf_min)[0].value
@@ -44,7 +47,7 @@ $(function () {
     });
 });
 
-function validateValues(id1, id2, max_picks) {
+function validateValues(id1, id2) {
     var input1 = document.getElementById(id1);
     var input2 = document.getElementById(id2);
 

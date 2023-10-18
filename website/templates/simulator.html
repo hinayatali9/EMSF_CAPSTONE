@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/simulator.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="ribbon d-flex justify-content-center align-items-center">
+        <img src="{{ url_for('static', filename='img/'+ team_abrv +'.svg') }}" alt="Selected Team Logo" width="55">
+        <h1 class="mx-auto">NHL Draft Pick Recommender</h1>
+    </div>
+    <div id="quadrant2" class="quadrant">
+        <!-- Quadrant 2 -->
+        <h2>Draft board</h2>
+        <div class="list-container mx-auto">
+            <ol id="team-list" class="list-group">
+                {% for pick in draft_picks %}
+                <li class="list-group-item">
+                    <img src="{{ url_for('static', filename='img/'+ pick['team_abrv'] +'.svg') }}"
+                        alt="{{ pick['team_name'] }}" width="55">
+                    <span>{{ pick['player_name'] }}</span>
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+        <button id="nextPick" class="btn btn-primary float-right">Next Pick</button>
+        <button id="yourNextPick" class="btn btn-primary float-right">Your Next Pick</button>
+    </div>
+    <div id="quadrant1" class="quadrant">
+        <!-- Quadrant 1 -->
+        <h2>Your ranking of available</h2>
+        <div class="list-container mx-auto">
+            <ul id="players-team-ranking" class="list-group">
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <div class="row">
+                            <div class="col">
+                                <!-- Player Position -->
+                                <p class="mb-0"><b>Position</b></p>
+                            </div>
+                            <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0"><b>Name</b></p>
+                            </div>
+                            <div class="col text-end">
+                                <!-- Pick Prob. -->
+                                <p class="mb-0"><b>Pick Prob.</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {% for player in players_team_ranking %}
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <input class="form-check-input me-1" type="radio" id="{{ player['id'] }}" name="player"
+                            value="{{ player['id'] }}">
+                        <div class="row">
+                            <div class="col">
+                                <!-- Player Position -->
+                                <p class="mb-0">{{ player['position'] }}</p>
+                            </div>
+                            <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0">{{ player['name'] }}</p>
+                            </div>
+                            <div class="col text-end">
+                                <!-- Pick Prob. -->
+                                <p class="mb-0">{{ player['pick_prob'] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div id="quadrant3" class="quadrant">
+        <!-- Quadrant 3 -->
+        <h2>Player Suggestion</h2>
+        <ul id="players-team-ranking" class="list-group"></ul>
+        <li class="list-group-item">
+            <div class="form-check">
+                <div class="row">
+                    <div class="col">
+                        <!-- Player Position -->
+                        <p class="mb-0"><b>Position</b></p>
+                    </div>
+                    <div class="col">
+                        <!-- Player Name -->
+                        <p class="mb-0"><b>Name</b></p>
+                    </div>
+                    <div class="col text-end">
+                        <!-- Pick Prob. -->
+                        <p class="mb-0"><b>Pick Prob.</b></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        {% for player in suggested_player %}
+        <!-- Only one entry in the list, but loop so there is no html list when no suggestion -->
+        <li class="list-group-item">
+            <div class="form-check">
+                <input class="form-check-input me-1" type="radio" id="{{ player['id'] }}" name="player"
+                    value="{{ player['id'] }}">
+                <div class="row">
+                    <div class="col">
+                        <!-- Player Position -->
+                        <p class="mb-0">{{ player['position'] }}</p>
+                    </div>
+                    <div class="col">
+                        <!-- Player Name -->
+                        <p class="mb-0">{{ player['name'] }}</p>
+                    </div>
+                    <div class="col text-end">
+                        <!-- Pick Prob. -->
+                        <p class="mb-0">{{ player['pick_prob'] }}</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+        </ul>
+        <br>
+        <h2>Your next pick: {{ next_pick_number }}</h2>
+    </div>
+    <div id="quadrant4" class="quadrant">
+        <!-- Quadrant 4 -->
+        <h2>Sorted by pick prob.:</h2>
+        <!-- Add your list of players here -->
+        <div class="list-container mx-auto">
+            <ul id="players-pick-prob-ranking" class="list-group"></ul>
+            <li class="list-group-item">
+                <div class="form-check">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Player Position -->
+                            <p class="mb-0"><b>Position</b></p>
+                        </div>
+                        <div class="col">
+                            <!-- Player Name -->
+                            <p class="mb-0"><b>Name</b></p>
+                        </div>
+                        <div class="col text-end">
+                            <!-- Pick Prob. -->
+                            <p class="mb-0"><b>Pick Prob.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {% for player in players_pick_prob_ranking %}
+            <li class="list-group-item">
+                <div class="form-check">
+                    <input class="form-check-input me-1" type="radio" id="{{ player['id'] }}" name="player"
+                        value="{{ player['id'] }}">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Player Position -->
+                            <p class="mb-0">{{ player['position'] }}</p>
+                        </div>
+                        <div class="col">
+                            <!-- Player Name -->
+                            <p class="mb-0">{{ player['name'] }}</p>
+                        </div>
+                        <div class="col text-end">
+                            <!-- Pick Prob. -->
+                            <p class="mb-0">{{ player['pick_prob'] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <button id="draftButton" class="btn btn-primary float-right">Draft</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/simulator.js') }}"></script>
+</body>
+
+</html>
