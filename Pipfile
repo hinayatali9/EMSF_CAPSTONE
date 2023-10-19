@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 pandas = "*"
 flask = "*"
+numpy = "*"
+scipy = "*"
+cvxpy = "*"
 
 [dev-packages]
 flake8 = "*"
