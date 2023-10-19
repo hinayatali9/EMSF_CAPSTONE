@@ -1,3 +1,9 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 60vh 10vh 35vh;
+}
+
 .ribbon {
     background-color: #3584e4;
     padding: 10px;
@@ -13,9 +19,35 @@
 }
 
 #player-list {
+    overflow: auto;
+    max-height: 40vh;
     counter-reset: list-counter;
     cursor: move;
     width: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#player-list::-webkit-scrollbar {
+    display: none;
+}
+
+#player-list:hover::-webkit-scrollbar {
+    display: block;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#player-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#player-list:hover {
+    -ms-overflow-style: auto;  /* IE and Edge */
+    scrollbar-width: auto;  /* Firefox */
+}
+
+.list-group-item.selected {
+    background-color: #f0f0f0;
 }
 
 #player-list .list-group-item {

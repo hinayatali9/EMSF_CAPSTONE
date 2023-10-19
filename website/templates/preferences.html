@@ -8,11 +8,11 @@
 
 <body>
     <div class="ribbon d-flex justify-content-center align-items-center">
-        <img src="{{ url_for('static', filename='img/'+ team_abrv +'.svg') }}" alt="NHL Logo" width="55">
+        <img src="{{ url_for('static', filename='img/'+ team_abrv +'.svg') }}" alt="Selected Team Logo" width="55">
         <h1 class="mx-auto">NHL Draft Pick Recommender</h1>
     </div>
-    <br>
-    <div class="container">
+    <div class="constraint container">
+        <br>
         <h2>1. Pick constraints</h2>
         <p>Edit the table below to assign constraints to the draft picks. If no min, leave it at 0. If no max, leave it
             at the total number of picks available. If min is more than max, it will be set to the same value as max.</p>
@@ -46,20 +46,29 @@
                         oninput="validateValues('rd_min', 'rd_max')"></td>
             </tr>
             <tr>
-                <td><b>Left Forward</b></td>
-                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="0" id="lf_min"
-                        oninput="validateValues('lf_min', 'lf_max')"></td>
-                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="{{ num_picks }}" id="lf_max"
-                        oninput="validateValues('lf_min', 'lf_max')"></td>
+                <td><b>Left Wing</b></td>
+                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="0" id="lw_min"
+                        oninput="validateValues('lw_min', 'lw_max')"></td>
+                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="{{ num_picks }}" id="lw_max"
+                        oninput="validateValues('lw_min', 'lw_max')"></td>
             </tr>
             <tr>
-                <td><b>Right Forward</b></td>
-                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="0" id="rf_min"
-                        oninput="validateValues('rf_min', 'rf_max')"></td>
-                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="{{ num_picks }}" id="rf_max"
-                        oninput="validateValues('rf_min', 'rf_max')"></td>
+                <td><b>Right Wing</b></td>
+                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="0" id="rw_min"
+                        oninput="validateValues('rw_min', 'rw_max')"></td>
+                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="{{ num_picks }}" id="rw_max"
+                        oninput="validateValues('rw_min', 'rw_max')"></td>
+            </tr>
+            <tr>
+                <td><b>Centre</b></td>
+                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="0" id="centre_min"
+                        oninput="validateValues('centre_min', 'centre_max')"></td>
+                <td><input type="number" min="0" step="1" max="{{ num_picks }}" value="{{ num_picks }}" id="centre_max"
+                        oninput="validateValues('centre_min', 'centre_max')"></td>
             </tr>
         </table>
+    </div>
+    <div class="constraint container">
         <br>
         <h2>2. Set your preference for pick recommendation</h2>
         <div class="slidecontainer" style="display: flex; align-items: center;">
@@ -67,6 +76,8 @@
             <input type="range" min="1" max="5" value="3" class="slider" id="positional-weight">
             <p style="margin-left: 10px; font-size: 1.3em">Team Positional Need</p>
         </div>
+    </div>
+    <div class="constraint container">
         <br>
         <h2>3. Reorder the ranking to your liking</h2>
         <br>
@@ -76,8 +87,8 @@
                 <li class="list-group-item">{{ player }}</li>
                 {% endfor %}
             </ol>
-            <button id="submit" class="btn btn-primary float-right">Submit</button>
         </div>
+        <button id="submit" class="btn btn-primary float-right">Submit</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

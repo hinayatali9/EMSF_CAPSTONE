@@ -9,10 +9,10 @@
         <img src="{{ url_for('static', filename='img/nhl_logo.png') }}" alt="NHL Logo" width="55">
         <h1 class="mx-auto">NHL Draft Pick Recommender</h1>
     </div>
-    <br>
     <div class="container">
         <form action="/submit_team" method="post">
             <div class="list-container mx-auto">
+                <br>
                 <ul id="team-list" class="list-group">
                     {% for team in teams %}
                     <li class="list-group-item">
@@ -22,8 +22,8 @@
                     </li>
                     {% endfor %}
                 </ul>
-                <input id="submit" type="submit" class="btn btn-primary float-right" value="Submit">
             </div>
+            <input id="submit" type="submit" class="btn btn-primary float-right" value="Next">
         </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
