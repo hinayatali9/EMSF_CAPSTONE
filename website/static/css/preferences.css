@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 53vh 10vh 35vh;
+    grid-template-rows: 10vh 60vh 10vh 35vh;
 }
 
 .ribbon {

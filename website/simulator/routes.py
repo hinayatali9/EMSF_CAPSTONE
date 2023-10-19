@@ -35,7 +35,7 @@ def draft_simulator(team_abrv):
     suggested_player = [
         {"id": 1, "position": "C", "name": "Connor Bedard", "pick_prob": 1}
     ]  # only one entry, use list to ignore html if empty
-    next_pick_number = 1
+    next_pick_number = 19
 
     players_pick_prob_ranking = sorted(
         players_team_ranking, key=lambda x: x["pick_prob"]
