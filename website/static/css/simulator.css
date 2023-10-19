@@ -1,12 +1,10 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 45vh 45vh;
+    grid-template-rows: 10vh auto auto;
 }
 
 .quadrant {
-    margin-top: 10px;
-    margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -22,14 +20,13 @@ body {
 }
 
 .ribbon img {
-    position: absolute;
     left: 2%;
 }
 
 .list-container {
     overflow: auto;
     width: 100%;
-    max-height: 33vh;
+    max-height: 30vh;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
