@@ -1,0 +1,278 @@
+Team,Type,POS,Name,Specific POS,AGE,SH,ACQUIRED,GP,G,A,P,GAA,SV%,League,Notes,NHL eP,Goalie Equivalency,PLAYER_ID
+COL,Prospects,F,Calum Ritchie,C,18,R,Drafted (27 - 2023),59,24,35,59,,,OHL,,12,0,23
+COL,Prospects,F,Maros Jedlicka,C,20,L,Drafted (219 - 2023),39,17,18,35,,,Slovak Extraliga,,22,0,276
+COL,Prospects,D,Mikhail Gulyayev,LD,18,L,Drafted (31 - 2023),22,2,23,25,,,MHL,,13,0,34
+COL,Prospects,D,Nikita Ishimnikov,RD,18,R,Drafted (155 - 2023),41,11,7,18,,,MHL,,5,0,209
+COL,Prospects,D,Jeremy Hanzel,LD,20,L,Drafted (187 - 2023),66,13,35,48,,,WHL,,8,0,179
+CHI,Majors,C,Connor Bedard,C,18,R,Drafted (1 - 2023),57,71,72,143,,,WHL,,29,0,1
+CHI,Prospects,F,Oliver Moore,C,18,L,Drafted (19 - 2023),61,31,44,75,,,NTDP,"*After high school, only has national teams",20,0,18
+CHI,Prospects,F,Roman Kantserov,RW,18,L,Drafted (44 - 2023),45,27,27,54,,,MHL,*no translation,14,0,94
+CHI,Prospects,F,Martin Misiak,RW,18,L,Drafted (55 - 2023),27,6,11,17,,,USHL,"*no translation, has another team with slightly more games but much worse stats",7,0,82
+CHI,Prospects,F,Nick Lardis,RW,18,L,Drafted (67 - 2023),69,37,28,65,,,OHL,,11,0,78
+CHI,Prospects,F,Jiri Felcman,C,18,L,Drafted (93 - 2023),40,10,21,31,,,U20 Elit,,3,0,226
+CHI,Prospects,F,Alex Pharand,C,18,R,Drafted (99 - 2023),67,18,21,39,,,OHL,,7,0,70
+CHI,Prospects,F,Marcel Marcel,LW,19,L,Drafted (131 - 2023),52,14,18,32,,,QMJHL,,6,0,237
+CHI,Prospects,F,Milton Oscarson,C,20,L,Drafted (167 - 2023),45,1,2,3,,,SHL,,3,0,129
+CHI,Prospects,D,Janne Peltonen,LD,18,L,Drafted (195 - 2023),40,3,6,9,,,U20SM-sarja,,2,0,162
+CHI,Prospects,G,Adam Gajan,G,19,L,Drafted (35 - 2023),34,0,0,0,2.57,0.917,NAHL,,0,0.862711737,56
+STL,Loaned,F,Dalibor Dvorsky,C,18,L,Drafted (10 - 2023),38,6,8,14,,,HockeyAllsvenskan,,11,0,6
+STL,Prospects,F,Otto Stenberg,C,18,L,Drafted (25 - 2023),29,11,15,26,,,J20 Nationell,*has SHL for less games,7,0,35
+STL,Prospects,F,Juraj Pekarcik,LW,17,L,Drafted (76 - 2023),30,0,3,3,,,Slovak Extraliga,,2,0,48
+STL,Prospects,F,Jakub Stancl,LW,18,L,Drafted (106 - 2023),35,11,6,17,,,J20 Nationell,,4,0,137
+STL,Prospects,F,Nikita Susuyev,RW,18,L,Drafted (202 - 2023),38,11,17,28,,,MHL,,9,0,145
+STL,Prospects,D,Theo Lindstein,LD,18,L,Drafted (29 - 2023),32,1,1,2,,,SHL,,3,0,39
+STL,Prospects,D,Quinton Burns,LD,18,L,Drafted (74 - 2023),54,2,27,29,,,OHL,,6,0,73
+STL,Prospects,D,Paul Fischer,LD,18,L,Drafted (138 - 2023),22,2,4,6,,,USHL,*U18 Naional team has more games,3,0,122
+STL,Prospects,D,Matthew Mayich,LD,18,L,Drafted (170 - 2023),64,5,17,22,,,OHL,,4,0,257
+CBJ,Majors,C,Adam Fantilli,C,18,L,Drafted (3 - 2023),36,30,35,65,,,NCAA,,29,0,2
+CBJ,Prospects,F,Gavin Brindley,C,18,R,Drafted (34 - 2023),41,12,26,38,,,NCAA,,15,0,30
+CBJ,Prospects,F,William Whitelaw,RW,18,R,Drafted (66 - 2023),62,36,25,61,,,USHL,,12,0,90
+CBJ,Prospects,F,Luca Pinelli,C,18,L,Drafted (114 - 2023),67,29,34,63,,,OHL,,11,0,103
+CBJ,Prospects,F,Oiva Keskinen,C,19,L,Drafted (194 - 2023),38,20,21,41,,,U20SM-sarja,,7,0,268
+CBJ,Prospects,F,Tyler Peddle,LW,18,L,Drafted (224 - 2023),64,24,17,41,,,QMJHL,,6,0,110
+CBJ,Prospects,D,Andrew Strathmann,LD,18,L,Drafted (98 - 2023),56,3,35,38,,,USHL,,8,0,63
+CBJ,Prospects,G,Melvin Strahl,G,18,L,Drafted (156 - 2023),23,0,0,0,3.35,0.883,J20 Nationell,,0,0.852971469,249
+BOS,Prospects,F,Christopher Pelosi,C,18,L,Drafted (92 - 2023),43,13,6,19,,,USHL,,5,0,225
+BOS,Prospects,F,Beckett Hendrickson,LW,18,L,Drafted (124 - 2023),21,7,9,16,,,USHL,*U18 Naional team has more games,9,0,105
+BOS,Prospects,F,Ryan Walsh,C,20,R,Drafted (188 - 2023),61,30,49,79,,,USHL,,15,0,265
+BOS,Prospects,F,Casper NÃ¤ssÃ©n,RW,19,R,Drafted (214 - 2023),48,23,17,40,,,J20 Nationell,,6,0,151
+BOS,Prospects,D,Kristian Kostadinski,LD,18,L,Drafted (220 - 2023),43,2,8,10,,,J20 Nationell,,2,0,177
+MTL,Minors,D,David Reinbacher,RD,18,R,Drafted (5 - 2023),46,3,19,22,,,NL,,18,0,5
+MTL,Prospects,F,Florian Xhekaj,LW,19,L,Drafted (101 - 2023),68,13,12,25,,,OHL,,4,0,227
+MTL,Prospects,F,Samuel Harris,LW,19,L,Drafted (133 - 2023),56,30,26,56,,,USHL,,12,0,238
+MTL,Prospects,F,Filip Eriksson,C,18,L,Drafted (165 - 2023),11,5,5,10,,,J20 Nationell,,7,0,216
+MTL,Prospects,D,Bogdan Konyushkov,RD,20,R,Drafted (110 - 2023),64,2,23,25,,,KHL,,25,0,188
+MTL,Prospects,D,Luke Mittelstadt,LD,20,L,Drafted (197 - 2023),38,5,16,21,,,NCAA,,9,0,218
+MTL,Prospects,G,Jacob Fowler,G,18,L,Drafted (69 - 2023),40,,,,2.27,0.921,USHL,,0,0.870630426,72
+MTL,Prospects,G,Quentin Miller,G,18,L,Drafted (128 - 2023),20,,,,2.11,0.911,QMJHL,,0,0.863866986,235
+MTL,Prospects,G,Yevgeni Volokhin,G,18,L,Drafted (144 - 2023),31,,,,2.12,0.927,MHL,,0,0.872899346,244
+VAN,Prospects,F,Ty Mueller,C,20,L,Drafted (105 - 2023),34,12,13,25,,,NCAA,,12,0,230
+VAN,Prospects,F,Vilmer Alriksson,LW,18,L,Drafted (107 - 2023),43,12,9,21,,,J20 Nationell,,4,0,231
+VAN,Prospects,F,Matthew Perkins,LW,19,L,Drafted (119 - 2023),60,15,29,44,,,USHL,,9,0,233
+VAN,Prospects,D,Tom Willander,RD,18,R,Drafted (11 - 2023),39,4,21,25,,,J20 Nationell,,5,0,10
+VAN,Prospects,D,Hunter Brzustewicz,RD,18,R,Drafted (75 - 2023),68,6,51,57,,,OHL,,10,0,66
+VAN,Prospects,D,Sawyer Mynio,LD,18,L,Drafted (89 - 2023),68,5,26,31,,,WHL,,5,0,125
+VAN,Prospects,D,Aiden Celebrini,RD,18,R,Drafted (171 - 2023),47,5,16,21,,,AJHL,,2,0,258
+WSH,Minors,F,Andrew Cristall,LW,18,L,Drafted (40 - 2023),54,39,56,95,,,WHL,,20,0,45
+WSH,Prospects,F,Ryan Leonard,RW,18,R,Drafted (8 - 2023),57,51,43,94,,,NTDP,,26,0,7
+WSH,Prospects,F,Patrick Thomas,C,19,L,Drafted (104 - 2023),66,17,39,56,,,OHL,,10,0,229
+WSH,Prospects,F,Brett Hyland,LW,20,L,Drafted (200 - 2023),42,26,21,47,,,WHL,,13,0,270
+WSH,Prospects,D,Cameron Allen,RD,18,R,Drafted (136 - 2023),62,5,20,25,,,OHL,,5,0,95
+WSH,Prospects,G,Antoine Keller,G,18,L,Drafted (206 - 2023),25,,,,3.4,0,U20 Elit,*SV% is blank,0,0.84,214
+ARI,Training Camp,D,Terrell Goldsmith,LD,18,L,Drafted (102 - 2023),58,3,6,9,,,WHL,,2,0,228
+ARI,Training Camp,D,Justin Kipkie,LD,18,L,Drafted (160 - 2023),67,8,25,33,,,WHL,,6,0,252
+ARI,Prospects,F,Daniil But,RW,18,R,Drafted (12 - 2023),32,18,14,32,,,MHL,,12,0,17
+ARI,Prospects,F,Jonathan Castagna,C,18,L,Drafted (70 - 2023),50,29,43,72,,,CAHS,,2,0,88
+ARI,Prospects,F,Noel Nordh,RW,18,L,Drafted (72 - 2023),38,13,14,27,,,J20 Nationell,,5,0,112
+ARI,Prospects,F,Tanner Ludtke,C,18,L,Drafted (81 - 2023),57,32,34,66,,,USHL,,14,0,100
+ARI,Prospects,F,Vadim Moroz,RW,19,R,Drafted (88 - 2023),39,5,9,14,,,KHL,,23,0,156
+ARI,Prospects,F,Samu Bau,C,19,L,Drafted (162 - 2023),25,1,1,2,,,Liiga,,3,0,194
+ARI,Prospects,D,Dmitri Simashev,LD,18,L,Drafted (6 - 2023),33,1,11,12,,,MHL,,4,0,13
+ARI,Prospects,G,Michael Hrabal,G,18,L,Drafted (38 - 2023),31,,,,2.86,0.908,USHL,,0,0.865714432,26
+ARI,Prospects,G,Melker Thelin,G,18,L,Drafted (134 - 2023),15,,,,2.11,0.93,HockeyEttan,,0,0.869713633,239
+ARI,Prospects,G,Carsen Musser,G,18,L,Drafted (166 - 2023),28,,,,3.07,0.89,NTDP,*US National 18 Team,0,0.862022716,173
+NJD,Prospects,F,Lenni HÃ¤meenaho,RW,18,R,Drafted (58 - 2023),51,9,12,21,,,Liiga,,15,0,58
+NJD,Prospects,F,Cam Squires,RW,18,R,Drafted (122 - 2023),67,30,34,64,,,QMJHL,,9,0,134
+NJD,Prospects,F,Cole Brown,RW,18,L,Drafted (164 - 2023),60,17,25,42,,,OHL,,8,0,254
+NJD,Prospects,D,Chase Cheslock,RD,18,R,Drafted (154 - 2023),28,4,27,31,,,USHS-MN,,2,0,120
+NJD,Prospects,D,Daniil Karpovich,LD,18,L,Drafted (186 - 2023),47,10,25,35,,,MHL,,9,0,127
+ANA,Majors,C,Leo Carlsson,C,18,L,Drafted (2 - 2023),44,10,15,25,,,SHL,,26,0,3
+ANA,Prospects,F,Nico Myatovic,LW,18,L,Drafted (33 - 2023),68,30,30,60,,,WHL,,10,0,50
+ANA,Prospects,F,Carey Terrance,C,18,L,Drafted (59 - 2023),67,30,17,47,,,OHL,,8,0,55
+ANA,Prospects,F,Coulson Pitre,RW,18,R,Drafted (65 - 2023),59,25,35,60,,,OHL,,12,0,53
+ANA,Prospects,F,Yegor Sidorov,RW,19,L,Drafted (85 - 2023),53,40,36,76,,,WHL,,17,0,107
+ANA,Prospects,D,Konnor Smith,LD,18,L,Drafted (97 - 2023),65,3,12,15,,,OHL,,3,0,106
+ANA,Prospects,D,Rodwin Dionicio,LD,19,L,Drafted (129 - 2023),50,15,35,50,,,OHL,,12,0,208
+ANA,Prospects,D,Vojtech Port,RD,18,R,Drafted (161 - 2023),48,4,13,17,,,WHL,,4,0,253
+ANA,Prospects,G,Damian Clara,G,18,L,Drafted (60 - 2023),35,,,,2.79,0.903,J20 Nationell,,0,0.85900471,60
+CGY,Minors,F,Samuel Honzek,LW,18,L,Drafted (16 - 2023),43,23,33,56,,,WHL,,15,0,15
+CGY,Prospects,F,Aydar Suniev,LW,18,L,Drafted (80 - 2023),50,45,45,90,,,BCHL,,12,0,115
+CGY,Prospects,F,Jaden Lipinski,C,18,R,Drafted (112 - 2023),66,19,32,51,,,WHL,,9,0,116
+CGY,Prospects,D,Ã‰tienne Morin,LD,18,L,Drafted (48 - 2023),67,21,51,72,,,QMJHL,,10,0,25
+CGY,Prospects,D,Axel Hurtig,LD,18,L,Drafted (208 - 2023),34,2,6,8,,,J20 Nationell,,2,0,181
+CGY,Prospects,G,Yegor Yegorov,G,18,L,Drafted (176 - 2023),15,,,,2.29,0.915,MHL,,0,0.868361506,261
+PHI,Minors,D,Oliver Bonk,RD,18,R,Drafted (22 - 2023),67,10,30,40,,,OHL,,7,0,22
+PHI,Prospects,F,Matvei Michkov,RW,18,L,Drafted (7 - 2023),30,9,11,20,,,KHL,,42,0,8
+PHI,Prospects,F,Denver Barkey,C,18,L,Drafted (95 - 2023),61,22,37,59,,,OHL,,11,0,114
+PHI,Prospects,F,Cole Knuble,RW,19,R,Drafted (103 - 2023),57,30,36,66,,,USHL,,14,0,143
+PHI,Prospects,F,Alex Ciernik,RW,18,L,Drafted (120 - 2023),25,3,9,12,,,HockeyAllsvenskan,,14,0,75
+PHI,Prospects,F,Ryan MacPherson,C,18,L,Drafted (172 - 2023),49,25,36,61,,,GOJHL,,3,0,259
+PHI,Prospects,D,Carter Sotheran,RD,18,R,Drafted (135 - 2023),68,4,19,23,,,WHL,,4,0,149
+PHI,Prospects,D,Matteo Mann,RD,18,R,Drafted (199 - 2023),45,0,5,5,,,QMJHL,,1,0,119
+PHI,Prospects,G,Carson Bjarnason,G,18,L,Drafted (51 - 2023),47,,,,3.08,0.9,WHL,,0,0.86252998,51
+PHI,Prospects,G,Yegor Zavragin,G,18,L,Drafted (87 - 2023),21,,,,2.49,0.92,MHL,,0,0.870252273,163
+CAR,Minors,F,Felix Unger SÃ¶rum,RW,18,R,Drafted (62 - 2023),42,10,36,46,,,J20 Nationell,,8,0,76
+CAR,Prospects,F,Bradly Nadeau,LW,18,R,Drafted (30 - 2023),54,45,68,113,,,BCHL,,14,0,31
+CAR,Prospects,F,Jayden Perron,RW,18,R,Drafted (94 - 2023),61,24,48,72,,,USHL,,14,0,67
+CAR,Prospects,F,Alexander Rykov,RW,18,L,Drafted (100 - 2023),20,4,7,11,,,VHL,,15,0,79
+CAR,Prospects,F,Stanislav Yarovoi,LW,20,R,Drafted (126 - 2023),45,9,7,16,,,KHL,,23,0,234
+CAR,Prospects,F,Timur Mukhanov,LW,18,R,Drafted (163 - 2023),31,4,4,8,,,VHL,,7,0,104
+CAR,Prospects,F,Michael Emerson,C,19,R,Drafted (190 - 2023),60,30,34,64,,,USHL,,13,0,97
+CAR,Prospects,D,Charles-Alexis Legault,RD,20,R,Drafted (139 - 2023),40,2,7,9,,,NCAA,,4,0,201
+CAR,Prospects,G,Ruslan Khazheyev,G,18,L,Drafted (158 - 2023),23,,,,2.38,0.923,MHL,,0,0.871386733,117
+CAR,Prospects,G,Yegor Velmakin,G,20,L,Drafted (222 - 2023),21,,,,2.29,0.915,NMHL,,0,0.860676073,278
+NYI,Prospects,F,Danny Nelson,C,18,L,Drafted (49 - 2023),62,21,26,47,,,NTDP,,12,0,32
+NYI,Prospects,F,Jesse Nurmi,LW,18,L,Drafted (113 - 2023),41,21,29,50,,,U20SM-sarja,,8,0,99
+NYI,Prospects,F,Justin Gill,C,20,L,Drafted (145 - 2023),68,44,49,93,,,QMJHL,,13,0,245
+NYI,Prospects,D,Zachary Schulz,LD,18,L,Drafted (177 - 2023),52,1,9,10,,,NTDP,,3,0,138
+NYI,Prospects,D,Dennis Good Bogg,LD,19,L,Drafted (209 - 2023),39,4,24,28,,,J20 Nationell,,5,0,274
+WPG,Prospects,F,Colby Barlow,LW,18,L,Drafted (18 - 2023),59,46,33,79,,,OHL,,16,0,16
+WPG,Prospects,F,Zach Nehring,RW,18,R,Drafted (82 - 2023),54,39,46,85,,,USHS-Prep,,4,0,85
+WPG,Prospects,F,Jacob Julien,C,19,L,Drafted (146 - 2023),40,9,7,16,,,OHL,,5,0,246
+WPG,Prospects,F,Connor Levis,RW,18,R,Drafted (210 - 2023),68,27,40,67,,,WHL,,11,0,123
+WPG,Prospects,G,Thomas Milic,G,20,L,Drafted (151 - 2023),33,,,,2.08,0.928,WHL,,0,0.873043971,248
+LAK,Minors,D,Jakub Dvorak,LD,18,L,Drafted (54 - 2023),24,0,2,2,,,Czechia,,4,0,54
+LAK,Prospects,F,Koehn Ziemmer,RW,18,R,Drafted (78 - 2023),68,41,48,89,,,WHL,,15,0,59
+LAK,Prospects,F,Ryan Conmy,RW,18,R,Drafted (182 - 2023),60,33,29,62,,,USHL,,12,0,182
+LAK,Prospects,D,Matthew Mania,RD,18,R,Drafted (150 - 2023),67,10,28,38,,,OHL,,7,0,142
+LAK,Prospects,G,Hampton Slukynsky,G,18,L,Drafted (118 - 2023),30,,,,1.47,0.941,USHS-MN,,0,0.855646853,232
+VGK,Minors,F,David Edstrom,C,18,L,Drafted (32 - 2023),28,15,13,28,,,J20 Nationell,,7,0,21
+VGK,Prospects,F,Mathieu Cataford,C,18,R,Drafted (77 - 2023),68,31,44,75,,,QMJHL,,10,0,62
+VGK,Prospects,F,Tuomas Uronen,RW,18,R,Drafted (192 - 2023),39,20,23,43,,,U20SM-sarja,,8,0,98
+VGK,Prospects,D,Arttu KÃ¤rki,LD,18,L,Drafted (96 - 2023),36,13,26,39,,,U20SM-sarja,,7,0,68
+SEA,Minors,F,Eduard Sale,LW,18,L,Drafted (20 - 2023),43,7,7,14,,,Czechia,,16,0,28
+SEA,Prospects,F,Carson Rehkopf,LW,18,L,Drafted (50 - 2023),68,30,29,59,,,OHL,,10,0,37
+SEA,Prospects,F,Oscar Fisker MÃ¸lgaard,C,18,L,Drafted (52 - 2023),41,4,3,7,,,SHL,,8,0,42
+SEA,Prospects,F,Andrei Loshko,RW,18,L,Drafted (116 - 2023),67,22,48,70,,,QMJHL,,10,0,148
+SEA,Prospects,F,Zeb ForsfjÃ¤ll,C,18,L,Drafted (180 - 2023),34,8,14,22,,,J20 Nationell,,5,0,101
+SEA,Prospects,F,Zaccharya Wisdom,RW,19,R,Drafted (212 - 2023),59,28,20,48,,,USHL,,10,0,96
+SEA,Prospects,D,Lukas Dragicevic,RD,18,R,Drafted (57 - 2023),68,15,60,75,,,WHL,,13,0,36
+SEA,Prospects,D,Caden Price,LD,18,L,Drafted (84 - 2023),65,5,35,40,,,WHL,,7,0,83
+SEA,Prospects,D,Kaden Hammell,RD,18,R,Drafted (148 - 2023),67,8,18,26,,,WHL,,4,0,158
+SEA,Prospects,G,Visa VedenpÃ¤Ã¤,G,18,L,Drafted (168 - 2023),31,,,,2.63,0.886,U20SM-sarja,,0,0.853252471,255
+TOR,Minors,F,Easton Cowan,C,18,L,Drafted (28 - 2023),68,20,33,53,,,OHL,,9,0,61
+TOR,Prospects,F,Hudson Malinoski,C,19,L,Drafted (153 - 2023),44,16,54,70,,,AJHL,,8,0,124
+TOR,Prospects,D,Noah Chadwick,LD,18,L,Drafted (185 - 2023),67,5,15,20,,,WHL,,3,0,264
+TBL,Prospects,F,Ethan Gauthier,RW,18,R,Drafted (37 - 2023),66,30,39,69,,,QMJHL,,10,0,46
+TBL,Prospects,F,Jayson Shaugabay,RW,18,R,Drafted (115 - 2023),31,33,63,96,,,USHS-MN,,6,0,126
+TBL,Prospects,F,Jack Harvey,C,20,L,Drafted (193 - 2023),62,40,34,74,,,USHL,,14,0,267
+TBL,Prospects,F,Ethan Hay,C,18,L,Drafted (211 - 2023),64,17,11,28,,,OHL,,5,0,184
+TBL,Prospects,D,Warren Clark,RD,19,R,Drafted (179 - 2023),55,6,32,38,,,MJHL,,3,0,263
+EDM,Prospects,F,Matt Copponi,C,20,R,Drafted (216 - 2023),37,14,15,29,,,NCAA,,12,0,171
+EDM,Prospects,D,Beau Akey,RD,18,R,Drafted (56 - 2023),66,11,36,47,,,OHL,,8,0,41
+EDM,Prospects,G,Nathaniel Day,G,18,L,Drafted (184 - 2023),32,,,,3.91,0.874,OHL,,0,0.852902093,166
+FLA,Prospects,F,Gracyn Sawchyn,C,18,R,Drafted (63 - 2023),58,18,40,58,,,WHL,,12,0,80
+FLA,Prospects,F,Stepan Zvyagin,LW,19,L,Drafted (198 - 2023),37,14,19,33,,,MHL,,10,0,269
+FLA,Prospects,D,Albert Wikman,LD,18,L,Drafted (127 - 2023),43,2,10,12,,,J20 Nationell,,2,0,89
+FLA,Prospects,D,Luke Coughlin,LD,18,L,Drafted (191 - 2023),37,5,14,19,,,QMJHL,,5,0,219
+FLA,Prospects,G,Olof Glifford,G,18,L,Drafted (159 - 2023),11,,,,2.56,0.929,J18 Nationell,,0,0.855156154,251
+PIT,Minors,D,Emil Pieniniemi,LD,18,L,Drafted (91 - 2023),31,1,12,13,,,U20SM-sarja,,3,0,65
+PIT,Prospects,F,Brayden Yager,C,18,R,Drafted (14 - 2023),67,28,50,78,,,WHL,,13,0,19
+PIT,Prospects,F,Mikhail Ilyin,C,18,L,Drafted (142 - 2023),28,4,22,26,,,MHL,,11,0,242
+PIT,Prospects,F,Cooper Foster,C,18,L,Drafted (174 - 2023),63,19,17,36,,,OHL,,7,0,260
+PIT,Prospects,F,Emil JÃ¤rventie,LW,18,L,Drafted (217 - 2023),21,8,11,19,,,U20SM-sarja,,6,0,154
+PIT,Prospects,D,Kalle Kangas,LD,18,L,Drafted (223 - 2023),42,1,8,9,,,U20SM-sarja,,1,0,167
+NSH,Training Camp,F,Kalan Lind,LW,18,L,Drafted (46 - 2023),43,16,28,44,,,WHL,,12,0,40
+NSH,Training Camp,F,Joey Willis,C,18,L,Drafted (111 - 2023),68,15,29,44,,,OHL,,8,0,224
+NSH,Training Camp,F,Austin Roest,C,19,R,Drafted (175 - 2023),60,32,46,78,,,WHL,,15,0,133
+NSH,Training Camp,D,Tanner Molendyk,LD,18,L,Drafted (24 - 2023),67,9,28,37,,,WHL,,6,0,27
+NSH,Training Camp,D,Dylan MacKinnon,RD,18,R,Drafted (83 - 2023),61,6,17,23,,,QMJHL,,3,0,87
+NSH,Prospects,F,Matthew Wood,RW,18,R,Drafted (15 - 2023),35,11,23,34,,,NCAA,,15,0,12
+NSH,Prospects,F,Felix Nilsson,C,18,L,Drafted (43 - 2023),36,19,22,41,,,J20 Nationell,,8,0,43
+NSH,Prospects,F,Jesse Kiiskinen,RW,18,R,Drafted (68 - 2023),31,20,23,43,,,U20SM-sarja,,9,0,74
+NSH,Prospects,F,Sutter Muzzatti,C,20,L,Drafted (143 - 2023),35,7,15,22,,,NCAA,,10,0,243
+NSH,Prospects,F,Aiden Fink,RW,18,R,Drafted (218 - 2023),54,41,56,97,,,AJHL,,9,0,71
+NSH,Prospects,G,Juha Jatkola,G,21,L,Drafted (121 - 2023),40,,,,2.16,0.903,Liiga,,0,0.881836933,183
+NYR,Prospects,F,Gabe Perreault,RW,18,L,Drafted (23 - 2023),63,53,79,132,,,NTDP,,33,0,9
+NYR,Prospects,F,Dylan Roobroeck,C,19,L,Drafted (178 - 2023),68,15,38,53,,,OHL,,9,0,262
+NYR,Prospects,F,Ty Henricks,LW,18,L,Drafted (183 - 2023),28,6,3,9,,,USHL,,4,0,210
+NYR,Prospects,D,Drew Fortescue,LD,18,L,Drafted (90 - 2023),62,1,25,26,,,NTDP,,7,0,108
+NYR,Prospects,D,Rasmus Larsson,LD,19,L,Drafted (152 - 2023),50,16,18,34,,,J20 Nationell,,5,0,189
+DET,Minors,F,Nate Danielson,C,18,R,Drafted (9 - 2023),68,33,45,78,,,WHL,,13,0,11
+DET,Prospects,F,Noah Dower Nilsson,LW,18,L,Drafted (73 - 2023),37,26,28,54,,,J20 Nationell,,11,0,84
+DET,Prospects,F,Kevin Bicker,C,18,L,Drafted (147 - 2023),20,10,11,21,,,DNL U20,,2,0,247
+DET,Prospects,F,Emmitt Finnie,C,18,L,Drafted (201 - 2023),64,9,26,35,,,WHL,,6,0,271
+DET,Prospects,D,Axel Sandin Pellikka,RD,18,R,Drafted (17 - 2023),31,16,20,36,,,J20 Nationell,,9,0,20
+DET,Prospects,D,Andrew Gibson,RD,18,R,Drafted (42 - 2023),45,7,14,21,,,OHL,,6,0,57
+DET,Prospects,D,Brady Cleveland,LD,18,L,Drafted (47 - 2023),55,0,6,6,,,NTDP,,2,0,118
+DET,Prospects,D,Larry Keenan,LD,18,L,Drafted (117 - 2023),49,11,26,37,,,USHS-Prep,,2,0,91
+DET,Prospects,D,Jack Phelan,RD,19,R,Drafted (137 - 2023),59,1,4,5,,,USHL,,1,0,240
+DET,Prospects,G,Trey Augustine,G,18,L,Drafted (41 - 2023),33,,,,2.13,0.926,NTDP,,0,0.877879071,52
+DET,Prospects,G,Rudy Guimond,G,18,L,Drafted (169 - 2023),28,,,,0,0.94,USHS-Prep,*no data for gaa,0,0.856733201,256
+BUF,Minors,F,Zach Benson,LW,18,L,Drafted (13 - 2023),60,36,62,98,,,WHL,,19,0,14
+BUF,Loaned,F,Anton Wahlberg,C,18,L,Drafted (39 - 2023),32,14,13,27,,,J20 Nationell,,6,0,33
+BUF,Prospects,F,Ethan Miedema,LW,18,L,Drafted (109 - 2023),68,20,32,52,,,OHL,,9,0,64
+BUF,Prospects,D,Maxim Strbak,RD,18,R,Drafted (45 - 2023),46,5,13,18,,,USHL,,5,0,38
+BUF,Prospects,D,Gavin McCarthy,RD,18,R,Drafted (86 - 2023),42,8,19,27,,,USHL,,8,0,69
+BUF,Prospects,D,Sean Keohane,LD,18,L,Drafted (173 - 2023),32,4,12,16,,,USHS-Prep,,1,0,139
+BUF,Prospects,D,Norwin Panocha,LD,18,L,Drafted (205 - 2023),34,6,16,22,,,DNL U20,,1,0,207
+BUF,Prospects,G,Scott Ratzlaff,G,18,L,Drafted (141 - 2023),34,,,,2.15,0.918,WHL,,0,0.869288974,136
+OTT,Prospects,F,Owen Beckner,C,18,L,Drafted (204 - 2023),53,17,33,50,,,BCHL,,6,0,272
+OTT,Prospects,F,Nicholas Vantassell,RW,19,R,Drafted (215 - 2023),62,19,18,37,,,USHL,,7,0,144
+OTT,Prospects,D,Hoyt Stanley,RD,18,R,Drafted (108 - 2023),53,4,34,38,,,BCHL,,5,0,77
+OTT,Prospects,D,Matthew Andonovski,LD,18,L,Drafted (140 - 2023),67,0,16,16,,,OHL,,3,0,241
+OTT,Prospects,G,Vladimir Nikitin,G,18,L,Drafted (207 - 2023),24,,,,2.06,0.921,Kazakhstan U20,*no translation,,,273
+SJS,Minors,F,Kasper Halttunen,RW,18,R,Drafted (36 - 2023),27,0,1,1,,,Liiga,"*also has 18 games with 18 goals, good stats in diff league",1,0,44
+SJS,Prospects,F,Will Smith,C,18,R,Drafted (4 - 2023),60,51,76,127,,,NTDP,,34,0,4
+SJS,Prospects,F,Quentin Musty,LW,18,L,Drafted (26 - 2023),53,26,52,78,,,OHL,,17,0,24
+SJS,Prospects,F,Brandon Svoboda,C,18,R,Drafted (71 - 2023),59,16,10,26,,,USHL,,5,0,86
+SJS,Prospects,F,David Klee,C,18,L,Drafted (196 - 2023),57,3,10,13,,,USHL,,3,0,200
+SJS,Prospects,F,Yegor Rimashevsky,RW,18,L,Drafted (203 - 2023),29,13,13,26,,,MHL,,11,0,109
+SJS,Prospects,D,Luca Cagnoni,LD,18,L,Drafted (123 - 2023),67,17,47,64,,,WHL,,11,0,47
+SJS,Prospects,D,Axel LandÃ©n,RD,18,R,Drafted (130 - 2023),44,10,6,16,,,J20 Nationell,,3,0,236
+SJS,Prospects,D,Eric Pohlkamp,RD,19,R,Drafted (132 - 2023),59,16,35,51,,,USHL,,10,0,212
+DAL,Prospects,F,Brad Gardiner,C,18,R,Drafted (79 - 2023),68,19,20,39,,,OHL,,7,0,121
+DAL,Prospects,F,Angus MacDonell,C,18,L,Drafted (189 - 2023),64,29,12,41,,,OHL,,8,0,266
+DAL,Prospects,F,Sebastian Bradshaw,LW,18,L,Drafted (221 - 2023),59,31,31,62,,,18U AAA,,,0,277
+DAL,Prospects,D,Tristan Bertucci,LD,18,L,Drafted (61 - 2023),63,11,39,50,,,OHL,,9,0,81
+DAL,Prospects,D,Aram Minnetian,RD,18,R,Drafted (125 - 2023),62,7,24,31,,,NTDP,,8,0,93
+DAL,Prospects,G,Arno Tiefensee,G,21,L,Drafted (157 - 2023),23,,,,2.43,0.91,DEL,,0,0.881530712,250
+MIN,Prospects,F,Charlie Stramel,C,18,R,Drafted (21 - 2023),33,5,7,12,,,NCAA,,6,0,29
+MIN,Prospects,F,Rasmus Kumpulainen,C,18,L,Drafted (53 - 2023),41,11,23,34,,,U20SM-sarja,,6,0,92
+MIN,Prospects,F,Riley Heidt,C,18,L,Drafted (64 - 2023),68,25,72,97,,,WHL,,16,0,49
+MIN,Prospects,F,James Clark,LW,18,L,Drafted (213 - 2023),62,19,28,47,,,USHL,,9,0,275
+MIN,Prospects,D,Aaron Pionk,LD,20,L,Drafted (149 - 2023),60,12,24,36,,,USHL,,7,0,146
+MIN,Prospects,D,Kalem Parker,RD,18,R,Drafted (181 - 2023),68,6,32,38,,,WHL,,6,0,147
+None,None,C,Frantisek Dej,C,18,L,None,24,8,13,21,,,Slovakia2,,7,0,102
+None,None,C,Luke Mcnamara,C,18,L,None,67,8,19,27,,,OHL,,5,0,111
+None,None,C,Gabriel Szturc,C,20,L,None,56,24,55,79,,,WHL,,16,0,113
+None,None,G,Max Lundgren,G,21,L,None,41,,,0,2.65,0.913,USHL,,0,0.867605199,128
+None,None,D,Matteo Fabrizi,LD,18,L,None,67,5,7,12,,,WHL,,2,0,130
+None,None,C,Joseph Connor,C,18,L,None,28,21,23,44,,,USHS-Prep,,4,0,131
+None,None,C,Jake Fisher,C,18,L,None,29,34,29,63,,,USHS-MN,,4,0,132
+None,None,G,Alexander Hellnemo,G,19,L,None,23,,,0,2.31,0.916,J20 Nationell,,0,0.862926317,135
+None,None,D,Samuel Mayer,LD,20,L,None,68,9,39,48,,,OHL,,8,0,140
+None,None,C,Anthony Romani,C,18,R,None,66,23,20,43,,,OHL,,8,0,141
+None,None,G,Stephen Peck,G,18,L,None,28,,,0,,,USHS-Prep,,0,0.699441116,150
+None,None,C,Ivan Anoshko,C,19,L,None,53,21,32,53,,,MHL,,12,0,152
+None,None,D,Francesco Dell'Elce,LD,18,L,None,51,20,42,62,,,CAHS,,2,0,153
+None,None,C,Petter Vesterheim,C,19,L,None,41,12,27,39,,,J20 Nationell,,7,0,155
+None,None,RW,Tanner Adams,RW,18,R,None,49,12,21,33,,,USHL,,8,0,157
+None,None,D,Mazden Leslie,RD,18,R,None,66,12,38,50,,,WHL,,9,0,159
+None,None,RW,Deagan Mcmillan,RW,18,R,None,65,17,30,47,,,WHL,,8,0,160
+None,None,C,Benjamin Poitras,C,18,R,None,61,14,23,37,,,USHL,,7,0,161
+None,None,D,Michael Hagens,LD,18,L,None,60,9,17,26,,,USHL,,5,0,164
+None,None,LW,Ethan Gardula,LW,18,L,None,32,18,33,51,,,USHS-Prep,,4,0,165
+None,None,C,Ty Halaburda,C,18,R,None,66,21,16,37,,,WHL,,6,0,168
+None,None,C,Tommaso De Luca,C,18,L,None,65,16,33,49,,,WHL,,9,0,169
+None,None,D,Konstantin Volochko,RD,18,R,None,46,8,12,20,,,MHL,,5,0,170
+None,None,D,Jordan Tourigny,RD,18,R,None,67,6,35,41,,,QMJHL,,6,0,172
+None,None,C,Teddy Townsend,C,18,L,None,27,14,25,39,,,USHS-MN,,3,0,174
+None,None,D,Chris Able,RD,18,R,None,62,2,18,20,,,USHL,,4,0,175
+None,None,D,Ryan Koering,LD,18,L,None,27,6,10,16,,,USHS-MN,,1,0,176
+None,None,RW,Gavyn Thoreson,RW,18,L,None,31,41,56,97,,,USHS-MN,,6,0,178
+None,None,RW,Adam Cedzo,RW,18,R,None,39,23,23,46,,,Czechia U20,,7,0,180
+None,None,C,Dominik Petr,C,18,L,None,18,1,0,1,,,U20SM-sarja,,0,0,185
+None,None,D,Hugo Hell,LD,18,L,None,46,3,11,14,,,J20 Nationell,,2,0,186
+None,None,G,Stanislav Berezhnoy,G,20,L,None,30,,,0,2.46,0.92,MHL,,0,0.870252273,187
+None,None,RW,Hannes Hellberg,RW,19,L,None,42,34,23,57,,,J20 Nationell,,10,0,190
+None,None,C,Alexander Weiermair,C,18,R,None,55,11,15,26,,,NTDP,,8,0,191
+None,None,D,Saige Weinstein,LD,18,L,None,57,4,14,18,,,WHL,,4,0,192
+None,None,D,Zachary Sharp,LD,18,L,None,57,5,7,12,,,USHL,,2,0,193
+None,None,D,Anton MacDonald,LD,18,L,None,31,7,11,18,,,Division 2,,2,0,195
+None,None,LW,Ondrej Molnar,LW,18,L,None,34,4,15,19,,,OHL,,7,0,196
+None,None,RW,Wiliam Vote,RW,18,R,None,61,16,29,45,,,NTDP,,12,0,197
+None,None,D,Joe Palodichuk,LD,20,L,None,44,8,21,29,,,USHL,,8,0,198
+None,None,LW,Michael Deangelo,LW,18,L,None,52,11,24,35,,,USHL,,8,0,199
+None,None,G,Samuel Urban,G,18,L,None,14,,,0,4.51,0.897,Slovakia2,,0,0.85820434,202
+None,None,C,Samuel Fiala,C,18,R,None,44,19,9,28,,,Czechia U20,,4,0,203
+None,None,G,Lukas Matecha,G,18,L,None,32,,,0,2.54,0.918,Czechia U20,,0,0.861218294,204
+None,None,LW,Hunter Anderson,LW,18,L,None,54,59,56,115,,,USHS-Prep,,5,0,205
+None,None,RW,Chase Pirtle,RW,18,R,None,47,20,24,44,,,18U AAA,,,0,206
+None,None,G,Nils Wallstrom,G,20,L,None,46,,,0,2.89,0.919,NAHL,,0,0.863301652,211
+None,None,RW,Christian Maro,RW,18,L,None,27,10,16,26,,,USHS-Prep,,2,0,215
+None,None,G,Kristers Steinbergs,G,18,L,None,25,,,0,2.76,0.922,J18 Nationell,,0,0.853964097,217
+None,None,C,Eli Sebastian,C,19,L,None,62,17,31,48,,,USHL,,9,0,220
+None,None,C,Artyom Kashtanov,C,18,L,None,43,15,25,40,,,MHL,,11,0,221
+None,None,F,Josh Giuliani,,19,R,None,60,20,15,35,,,NAHL,,4,0,222
+None,None,C,Nikita Nedopekin,C,18,L,None,37,14,18,32,,,MHL,,10,0,223
