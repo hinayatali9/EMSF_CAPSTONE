@@ -1,12 +1,10 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 45vh 45vh;
+    grid-template-rows: 10vh auto auto;
 }
 
 .quadrant {
-    margin-top: 10px;
-    margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -22,14 +20,13 @@ body {
 }
 
 .ribbon img {
-    position: absolute;
     left: 2%;
 }
 
 .list-container {
     overflow: auto;
     width: 100%;
-    max-height: 33vh;
+    max-height: 30vh;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -37,9 +34,9 @@ body {
     display: none;
 }
 
-.list-container:hover::-webkit-scrollbar {
+/* .list-container:hover::-webkit-scrollbar {
     display: block;
-}
+} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .list-container {
@@ -47,10 +44,10 @@ body {
     scrollbar-width: none;  /* Firefox */
 }
 
-.list-container:hover {
-    -ms-overflow-style: auto;  /* IE and Edge */
-    scrollbar-width: auto;  /* Firefox */
-}
+/* .list-container:hover {
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+} */
 
 .list-group-item.selected {
     background-color: #f0f0f0;
@@ -81,4 +78,23 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
+}
+
+.draft-button {
+    visibility: hidden;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+.draft-button-header {
+    visibility: hidden;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.list-group-item:hover .draft-button {
+    visibility: visible;
 }

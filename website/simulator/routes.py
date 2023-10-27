@@ -4,7 +4,7 @@ import pandas as pd
 simulator_blueprint = Blueprint("simulator", __name__)
 
 
-@simulator_blueprint.route("/draft_simulator/<team_abrv>", methods=["GET"])
+@simulator_blueprint.route("/<team_abrv>/draft_simulator", methods=["GET"])
 def draft_simulator(team_abrv):
     # Fetch your data here
     df_player_positions = pd.read_csv("PLAYER_POSITIONS.csv")
