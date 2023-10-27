@@ -201,7 +201,7 @@ OTT,Prospects,F,Owen Beckner,C,18,L,Drafted (204 - 2023),53,17,33,50,,,BCHL,,6,0
 OTT,Prospects,F,Nicholas Vantassell,RW,19,R,Drafted (215 - 2023),62,19,18,37,,,USHL,,7,0,144
 OTT,Prospects,D,Hoyt Stanley,RD,18,R,Drafted (108 - 2023),53,4,34,38,,,BCHL,,5,0,77
 OTT,Prospects,D,Matthew Andonovski,LD,18,L,Drafted (140 - 2023),67,0,16,16,,,OHL,,3,0,241
-OTT,Prospects,G,Vladimir Nikitin,G,18,L,Drafted (207 - 2023),24,,,,2.06,0.921,Kazakhstan U20,*no translation,,,273
+OTT,Prospects,G,Vladimir Nikitin,G,18,L,Drafted (207 - 2023),24,,,,2.06,0.921,Kazakhstan U20,*no translation,0,0,273
 SJS,Minors,F,Kasper Halttunen,RW,18,R,Drafted (36 - 2023),27,0,1,1,,,Liiga,"*also has 18 games with 18 goals, good stats in diff league",1,0,44
 SJS,Prospects,F,Will Smith,C,18,R,Drafted (4 - 2023),60,51,76,127,,,NTDP,,34,0,4
 SJS,Prospects,F,Quentin Musty,LW,18,L,Drafted (26 - 2023),53,26,52,78,,,OHL,,17,0,24
@@ -213,7 +213,7 @@ SJS,Prospects,D,Axel LandÃ©n,RD,18,R,Drafted (130 - 2023),44,10,6,16,,,J20 Nat
 SJS,Prospects,D,Eric Pohlkamp,RD,19,R,Drafted (132 - 2023),59,16,35,51,,,USHL,,10,0,212
 DAL,Prospects,F,Brad Gardiner,C,18,R,Drafted (79 - 2023),68,19,20,39,,,OHL,,7,0,121
 DAL,Prospects,F,Angus MacDonell,C,18,L,Drafted (189 - 2023),64,29,12,41,,,OHL,,8,0,266
-DAL,Prospects,F,Sebastian Bradshaw,LW,18,L,Drafted (221 - 2023),59,31,31,62,,,18U AAA,,,0,277
+DAL,Prospects,F,Sebastian Bradshaw,LW,18,L,Drafted (221 - 2023),59,31,31,62,,,18U AAA,,0,0,277
 DAL,Prospects,D,Tristan Bertucci,LD,18,L,Drafted (61 - 2023),63,11,39,50,,,OHL,,9,0,81
 DAL,Prospects,D,Aram Minnetian,RD,18,R,Drafted (125 - 2023),62,7,24,31,,,NTDP,,8,0,93
 DAL,Prospects,G,Arno Tiefensee,G,21,L,Drafted (157 - 2023),23,,,,2.43,0.91,DEL,,0,0.881530712,250
@@ -268,7 +268,7 @@ None,None,G,Samuel Urban,G,18,L,None,14,,,0,4.51,0.897,Slovakia2,,0,0.85820434,2
 None,None,C,Samuel Fiala,C,18,R,None,44,19,9,28,,,Czechia U20,,4,0,203
 None,None,G,Lukas Matecha,G,18,L,None,32,,,0,2.54,0.918,Czechia U20,,0,0.861218294,204
 None,None,LW,Hunter Anderson,LW,18,L,None,54,59,56,115,,,USHS-Prep,,5,0,205
-None,None,RW,Chase Pirtle,RW,18,R,None,47,20,24,44,,,18U AAA,,,0,206
+None,None,RW,Chase Pirtle,RW,18,R,None,47,20,24,44,,,18U AAA,,0,0,206
 None,None,G,Nils Wallstrom,G,20,L,None,46,,,0,2.89,0.919,NAHL,,0,0.863301652,211
 None,None,RW,Christian Maro,RW,18,L,None,27,10,16,26,,,USHS-Prep,,2,0,215
 None,None,G,Kristers Steinbergs,G,18,L,None,25,,,0,2.76,0.922,J18 Nationell,,0,0.853964097,217

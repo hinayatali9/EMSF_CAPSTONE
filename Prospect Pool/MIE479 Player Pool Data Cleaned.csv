@@ -1035,7 +1035,7 @@ OTT,Prospects,D,"Stanley, Hoyt",RD,18,R,Drafted (108 - 2023),53,4,34,38,,,BCHL,,
 OTT,Prospects,D,"Andonovski, Matthew",LD,18,L,Drafted (140 - 2023),67,0,16,16,,,OHL,,3,0
 OTT,Prospects,D,"Wallberg, Theo",LD,19,L,Drafted (168 - 2022),60,5,17,22,,,USHL,,4,0
 OTT,Prospects,G,"Reidler, Kevin",G,19,L,Drafted (151 - 2022),32,,,,2.89,0.911,J20 Nationell,,0,0.861418006
-OTT,Prospects,G,"Nikitin, Vladimir",G,18,L,Drafted (207 - 2023),24,,,,2.06,0.921,Kazakhstan U20,*no translation,,
+OTT,Prospects,G,"Nikitin, Vladimir",G,18,L,Drafted (207 - 2023),24,,,,2.06,0.921,Kazakhstan U20,*no translation,0,0
 OTT,Reserve,D,"Tychonick, Jonathan",LD,23,L,Drafted (48 - 2018),35,8,18,26,,,NCAA,,12,0
 SJS,Majors,LW,"Zadina, Filip","RW, LW",23,L,Signed to SPC,30,3,4,7,,,NHL,,7,0
 SJS,Minors,F,"Bordeleau, Thomas",C,21,L,Drafted (38 - 2020),65,22,19,41,,,AHL,,20,0
@@ -1103,7 +1103,7 @@ DAL,Prospects,F,"Gardiner, Brad",C,18,R,Drafted (79 - 2023),68,19,20,39,,,OHL,,7
 DAL,Prospects,F,"Ljungman, Daniel",C,21,L,Drafted (154 - 2020),48,4,7,11,,,HockeyAllsvenskan,,7,0
 DAL,Prospects,F,"MacDonell, Angus",C,18,L,Drafted (189 - 2023),64,29,12,41,,,OHL,,8,0
 DAL,Prospects,F,"Sjöberg, Albert",RW,20,R,Drafted (207 - 2021),46,9,4,13,,,HockeyAllsvenskan,,8,0
-DAL,Prospects,F,"Bradshaw, Sebastian",LW,18,L,Drafted (221 - 2023),59,31,31,62,,,18U AAA,,,0
+DAL,Prospects,F,"Bradshaw, Sebastian",LW,18,L,Drafted (221 - 2023),59,31,31,62,,,18U AAA,,0,0
 DAL,Prospects,D,"Bertucci, Tristan",LD,18,L,Drafted (61 - 2023),63,11,39,50,,,OHL,,9,0
 DAL,Prospects,D,"Fegaras, George",RD,19,R,Drafted (83 - 2022),61,4,23,27,,,USHL,,5,0
 DAL,Prospects,D,"Minnetian, Aram",RD,18,R,Drafted (125 - 2023),62,7,24,31,,,NTDP,,8,0
