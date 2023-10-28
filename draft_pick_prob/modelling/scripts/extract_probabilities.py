@@ -258,9 +258,9 @@ def update_prospect_ranker(player_IDs):
   df_weight = {19: 0.85, 20: 0.7, 21: 0.55, 22: 0.4, 23: 0.25}
   draft_order = []
 
-  df_draft = pd.read_csv(url2)
-  df_2023 = pd.read_csv(url3)
-  df1 = pd.read_csv(url)
+  df_draft = pd.read_csv("../draft_info/draft_pick_numbers.csv")
+  df_2023 = pd.read_csv("../Prospect Pool/MIE479 2023 Player Pool Data Cleaned.csv")
+  df1 = pd.read_csv("../Prospect Pool/MIE479 Player Pool Data Cleaned.csv")
 
   # Define the replacement mapping
   replacement_mapping = {
