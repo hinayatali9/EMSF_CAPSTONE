@@ -113,3 +113,40 @@ def group_ranker(rank_dfs, weights):
     result[key] = 1 - result[key] # flips percentiles around for optimization model
 
   return result
+
+def update_prospect_ranker(player_IDs):
+
+  df_weight = {19: 0.85, 20: 0.7, 21: 0.55, 22: 0.4, 23: 0.25}
+  draft_order = []
+
+  df_draft = pd.read_csv("../draft_info/draft_pick_numbers.csv")
+  df_2023 = pd.read_csv("../Prospect Pool/MIE479 2023 Player Pool Cleaned.csv")
+  df1 = pd.read_csv("../Prospect Pool/MIE479 Player Pool Data Cleaned.csv")
+
+  # Define the replacement mapping
+  replacement_mapping = {
+    'Colorado Avalanche': 'COL', 'Chicago Blackhawks': 'CHI', 'St. Louis Blues': 'STL', 'Columbus Blue Jackets': 'CBJ', 'Boston Bruins':'BOS', 'Montreal Canadiens':'MTL',
+    'Vancouver Canucks': 'VAN', 'Washington Capitals': 'WSH', 'Arizona Coyotes': 'ARI', 'New Jersey Devils': 'NJD', 'Anaheim Ducks': 'ANA', 'Calgary Flames': 'CGY', 'Philadelphia Flyers': 'PHI',
+    'Carolina Hurricanes': 'CAR', 'New York Islanders': 'NYI', 'Winnipeg Jets': 'WPG', 'Los Angeles Kings': 'LAK', 'Vegas Golden Knights': 'VGK', 'Seattle Kraken': 'SEA',
+    'Toronto Maple Leafs': 'TOR', 'Tampa Bay Lightning': 'TBL', 'Edmonton Oilers': 'EDM', 'Florida Panthers': 'FLA', 'Pittsburgh Penguins': 'PIT', 'Nashville Predators': 'NSH',
+    'New York Rangers': 'NYR', 'Detroit Red Wings': 'DET', 'Buffalo Sabres': 'BUF', 'Ottawa Senators': 'OTT', 'San Jose Sharks': 'SJS', 'Dallas Stars': 'DAL', 'Minnesota Wild': 'MIN'
+  }
+
+  # Use the .loc function to replace values
+  df_draft.loc[df_draft['TEAM_NAME'].isin(replacement_mapping.keys()), 'TEAM_NAME'] = df_draft['TEAM_NAME'].map(replacement_mapping)
+  df_draft = df_draft['TEAM_NAME']
+
+  for i in df_draft[0:len(player_IDs)]:
+    draft_order.append(i)
+
+  for ID in range(len(player_IDs)):
+    filtered_row = df_2023[df_2023['PLAYER_ID'] == player_IDs[ID]]
+    filtered_row['Team'] = draft_order[ID]
+    filtered_row.drop(columns = 'PLAYER_ID', inplace = True)
+    df1 = pd.concat([df1, filtered_row], ignore_index = True)
+
+  rank_pre_proc = rank_pre_processing(df1)
+  indiv_ranks = score_and_rank(rank_pre_proc)
+  ranks_new = group_ranker(indiv_ranks, df_weight)
+
+  return ranks_new
