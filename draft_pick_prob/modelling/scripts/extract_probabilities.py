@@ -40,7 +40,7 @@ def get_next_pick_probability(players_ids_removed: list):
     @returns the probability of each player being selected next
     """
     player_ability_parameters_df = pd.read_csv(
-        "/Users/hinayatali/Desktop/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv"
+        "/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv"
     )
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
@@ -66,7 +66,7 @@ def get_pick_probability_by_pick(players_ids_removed: list, num_simulations: int
     @returns the probability of the player being selected at each future pick number
     """
     player_ability_parameters_df = pd.read_csv(
-        "/Users/hinayatali/Desktop/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv"
+        "/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv"
     )
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
@@ -372,9 +372,9 @@ def update_prospect_ranker(player_IDs):
     df_weight = {19: 0.85, 20: 0.7, 21: 0.55, 22: 0.4, 23: 0.25}
     draft_order = []
 
-    df_draft = pd.read_csv("../draft_info/draft_pick_numbers.csv")
-    df_2023 = pd.read_csv("../Prospect Pool/MIE479 2023 Player Pool Data Cleaned.csv")
-    df1 = pd.read_csv("../Prospect Pool/MIE479 Player Pool Data Cleaned.csv")
+    df_draft = pd.read_csv("/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/draft_info/draft_pick_numbers.csv")
+    df_2023 = pd.read_csv("/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/Prospect Pool/MIE479 2023 Player Pool Cleaned.csv")
+    df1 = pd.read_csv("/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/Prospect Pool/Initial Prospect Pool.csv")
 
     # Define the replacement mapping
     replacement_mapping = {
@@ -525,6 +525,10 @@ def determine_optimal_pick(
     @returns the player id of the optimal selection
     """
     # player_rankings=player_rankings.drop(['PLAYER_NAME'], axis=1)
+    l_player_val=[]
+    for i in range(len(player_rankings)):
+        l_player_val.append(np.exp(-0.420*(i**0.391)))
+    player_rankings['PICK_VALUE']=l_player_val
     pick_probs = probability_available_pick_x(picks_taken, 100)
     new_tab = pd.merge(pick_probs, player_rankings, how="left", on=["PLAYER_ID"])
     new_tab = pd.merge(
@@ -611,7 +615,7 @@ def simulate_one_player_taken(picks_taken: list):
     @returns a randomly selected player based on the probabilities calculated
     """
     player_ability_parameters_df = pd.read_csv(
-        "/Users/hinayatali/Desktop/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv"
+        "./EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv"
     )
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(picks_taken)
