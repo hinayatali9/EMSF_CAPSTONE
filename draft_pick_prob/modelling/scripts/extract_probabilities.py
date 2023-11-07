@@ -4,6 +4,7 @@ import cvxpy as cp
 
 x = 224  # Number of players to select
 
+personal_path = '/Users/Gabriel/Documents/GitHub/EMSF_CAPSTONE/'
 
 def simulate_player_selection(parameters: list, x):
     """
@@ -40,7 +41,7 @@ def get_next_pick_probability(players_ids_removed: list):
     @returns the probability of each player being selected next
     """
     player_ability_parameters_df = pd.read_csv(
-        "/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv"
+        str(personal_path) + 'draft_pick_prob/player_ability_params/player_parameters.csv'
     )
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
@@ -66,7 +67,7 @@ def get_pick_probability_by_pick(players_ids_removed: list, num_simulations: int
     @returns the probability of the player being selected at each future pick number
     """
     player_ability_parameters_df = pd.read_csv(
-        "/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv"
+        str(personal_path) + "draft_pick_prob/player_ability_params/player_parameters.csv"
     )
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
@@ -372,9 +373,9 @@ def update_prospect_ranker(player_IDs):
     df_weight = {19: 0.85, 20: 0.7, 21: 0.55, 22: 0.4, 23: 0.25}
     draft_order = []
 
-    df_draft = pd.read_csv("/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/draft_info/draft_pick_numbers.csv")
-    df_2023 = pd.read_csv("/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/Prospect Pool/MIE479 2023 Player Pool Cleaned.csv")
-    df1 = pd.read_csv("/Users/hinayatali/Desktop/School/MIE479/EMSF_CAPSTONE/Prospect Pool/Initial Prospect Pool.csv")
+    df_draft = pd.read_csv(str(personal_path) + "draft_info/draft_pick_numbers.csv")
+    df_2023 = pd.read_csv(str(personal_path) + "Prospect Pool/MIE479 2023 Player Pool Cleaned.csv")
+    df1 = pd.read_csv(str(personal_path) + "Prospect Pool/Initial Prospect Pool.csv")
 
     # Define the replacement mapping
     replacement_mapping = {
