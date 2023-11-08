@@ -434,8 +434,76 @@ def update_prospect_ranker(player_IDs):
 
     return ranks_new
 
+def pos_constraints(max_pos_const: dict, min_pos_const: dict, picks_taken: list, pick_numbers_left: list, team: str):
+  
+    draft_order = []
+    needs = []
 
-def objective(df: pd.DataFrame, pos_const: dict, user_weight: float):
+    df_draft = pd.read_csv(str(personal_path) + "draft_info/draft_pick_numbers.csv")
+    df_2023 = pd.read_csv(str(personal_path) + "Prospect Pool/MIE479 2023 Player Pool Cleaned.csv")
+
+    # Define the replacement mapping
+    replacement_mapping = {
+        "Colorado Avalanche": "COL",
+        "Chicago Blackhawks": "CHI",
+        "St. Louis Blues": "STL",
+        "Columbus Blue Jackets": "CBJ",
+        "Boston Bruins": "BOS",
+        "Montreal Canadiens": "MTL",
+        "Vancouver Canucks": "VAN",
+        "Washington Capitals": "WSH",
+        "Arizona Coyotes": "ARI",
+        "New Jersey Devils": "NJD",
+        "Anaheim Ducks": "ANA",
+        "Calgary Flames": "CGY",
+        "Philadelphia Flyers": "PHI",
+        "Carolina Hurricanes": "CAR",
+        "New York Islanders": "NYI",
+        "Winnipeg Jets": "WPG",
+        "Los Angeles Kings": "LAK",
+        "Vegas Golden Knights": "VGK",
+        "Seattle Kraken": "SEA",
+        "Toronto Maple Leafs": "TOR",
+        "Tampa Bay Lightning": "TBL",
+        "Edmonton Oilers": "EDM",
+        "Florida Panthers": "FLA",
+        "Pittsburgh Penguins": "PIT",
+        "Nashville Predators": "NSH",
+        "New York Rangers": "NYR",
+        "Detroit Red Wings": "DET",
+        "Buffalo Sabres": "BUF",
+        "Ottawa Senators": "OTT",
+        "San Jose Sharks": "SJS",
+        "Dallas Stars": "DAL",
+        "Minnesota Wild": "MIN",
+    }
+
+    # Use the .loc function to replace values
+    df_draft.loc[df_draft["TEAM_NAME"].isin(replacement_mapping.keys()), "TEAM_NAME"] = df_draft["TEAM_NAME"].map(replacement_mapping)
+    df_draft = df_draft["TEAM_NAME"]
+
+    for i in df_draft[0:len(picks_taken)]:
+        draft_order.append(i)
+
+    for pick in range(len(picks_taken)):
+        if draft_order[pick] == team:
+            specific_pos = df_2023[df_2023['PLAYER_ID'] == picks_taken[pick]]['Specific POS'].values[0]
+
+            # Decrease the maximum position constraint
+            if max_pos_const.get(specific_pos, 0) > 0:
+                max_pos_const[specific_pos] -= 1
+  
+            if min_pos_const.get(specific_pos, 0) > 0:
+                min_pos_const[specific_pos] -= 1
+
+    if len(pick_numbers_left) == sum(min_pos_const.values()):
+        for key, item in min_pos_const.items():
+            if item == 0:
+                needs.append(key)
+
+    return max_pos_const, needs
+
+def objective(df: pd.DataFrame, max_pos_const: dict, min_pos_const: dict, picks_taken: list, pick_numbers_left: list, team: str, user_weight: float):
     """
     @param {dataframe} df - the dataframe of values output from get_pick_values
     @param {dict} pos_const - dictionary of positional constraints
@@ -454,8 +522,15 @@ def objective(df: pd.DataFrame, pos_const: dict, user_weight: float):
     # Define constraints
     cons_lp = []  # Initialize constraint list
 
-    for position, max_players in pos_const.items():
+    max, need = pos_constraints(max_pos_const, min_pos_const, picks_taken, pick_numbers_left, team)
+    print(need)
+    for position, max_players in max.items():
         cons_lp.append(cp.sum(x[df["GROUPED_POS"] == position]) <= max_players)
+
+    if len(need) > 0:
+        for i in need:
+            cons_lp.append(cp.sum(x[df["GROUPED_POS"] == i]) == 0)
+
     cons_lp.append(sum(x) == 1)
 
     prob_lp = cp.Problem(obj_lp, cons_lp)
@@ -464,7 +539,7 @@ def objective(df: pd.DataFrame, pos_const: dict, user_weight: float):
     x_np_array_lp = x.value.astype(float)  # extract the x values as a np array
     x_values_lp = pd.Series(
         x_np_array_lp, index=df.index
-    )  # convert the np array to a Datafram
+    )  # convert the np array to a Dataframe
     selected = np.where(x_values_lp == 1)[0]  # get assignments
 
     # Print selected player
@@ -511,7 +586,8 @@ def determine_optimal_pick(
     team: str,
     pick_numbers_left: list,
     picks_taken: list,
-    pos_const: dict,
+    max_pos_const: dict, 
+    min_pos_const: dict,
     user_weight: float,
 ):
     """
@@ -540,7 +616,7 @@ def determine_optimal_pick(
         get_value, axis=1, team=team, external_df=team_needs
     )
     pick_values = get_pick_values(new_tab, pick_numbers_left, picks_taken)
-    return objective(pick_values, pos_const, user_weight)
+    return objective(pick_values, max_pos_const, min_pos_const, picks_taken, pick_numbers_left, team, user_weight)
 
 
 def simulate_draft(
