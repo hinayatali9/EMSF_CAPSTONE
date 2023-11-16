@@ -1,10 +1,12 @@
 import numpy as np
 import pandas as pd
 import cvxpy as cp
+import os
 
 x = 224  # Number of players to select
 
-personal_path = '/Users/Gabriel/Documents/GitHub/EMSF_CAPSTONE/'
+personal_path = os.getcwd()
+personal_path= personal_path[:(personal_path.find("EMSF_CAPSTONE")+ len("EMSF_CAPSTONE/"))]
 
 def simulate_player_selection(parameters: list, x):
     """
@@ -523,7 +525,7 @@ def objective(df: pd.DataFrame, max_pos_const: dict, min_pos_const: dict, picks_
     cons_lp = []  # Initialize constraint list
 
     max, need = pos_constraints(max_pos_const, min_pos_const, picks_taken, pick_numbers_left, team)
-    print(need)
+
     for position, max_players in max.items():
         cons_lp.append(cp.sum(x[df["GROUPED_POS"] == position]) <= max_players)
 
