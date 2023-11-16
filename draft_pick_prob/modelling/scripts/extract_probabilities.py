@@ -2,13 +2,20 @@ import numpy as np
 import pandas as pd
 import cvxpy as cp
 import os
+import numba
+from collections import Counter
 
 x = 224  # Number of players to select
 
 personal_path = os.getcwd()
 personal_path= personal_path[:(personal_path.find("EMSF_CAPSTONE")+ len("EMSF_CAPSTONE/"))]
 
-def simulate_player_selection(parameters: list, x):
+UNIVERSAL_DF=pd.read_csv(
+        str(personal_path) + "draft_pick_prob/player_ability_params/player_parameters.csv"
+    )
+
+# @numba.jit(nopython=True)
+def simulate_player_selection(parameters: list, x: int):
     """
     @param {list} parameters - list of player parameters
     @returns the list of selections given the set of parameters
@@ -694,7 +701,7 @@ def simulate_one_player_taken(picks_taken: list):
     @returns a randomly selected player based on the probabilities calculated
     """
     player_ability_parameters_df = pd.read_csv(
-        "./EMSF_CAPSTONE/draft_pick_prob/player_ability_params/player_parameters.csv"
+        str(personal_path)+"draft_pick_prob/player_ability_params/player_parameters.csv"
     )
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(picks_taken)
@@ -718,18 +725,6 @@ def probability_available_pick_specified(
     @param {int} pick_number - the pick number that will be checked for pick probability
     @returns the probability each player is available by the pick specified
     """
-    # df_players = get_pick_probability_by_pick(players_ids_removed, num_simulations)
-    # probability_available_pick_x = df_players.copy()
-    # column_numbers = probability_available_pick_x.columns[2:]
-    # accumulated_probability = 0
-    # for i in range(len(column_numbers)):
-    #     if i == 0:
-    #         probability_available_pick_x[column_numbers[i]] = 1
-    #         accumulated_probability = 1 - df_players[column_numbers[i]]
-    #     else:
-    #         probability_available_pick_x[column_numbers[i]] = accumulated_probability
-    #         accumulated_probability -= df_players[column_numbers[i]]
-    # return probability_available_pick_x[["PLAYER_ID", "PICK_" + str(pick_number)]]
     return get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick_number)
 
 def get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick_number):
@@ -738,22 +733,47 @@ def get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick
     @param {int} int - number of draft simulations to complete
     @returns the probability of the player being selected at each future pick number
     """
-    player_ability_parameters_df = pd.read_csv(
-        str(personal_path) + "draft_pick_prob/player_ability_params/player_parameters.csv"
-    )
+    player_ability_parameters_df = UNIVERSAL_DF
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
     ]
     params = player_ability_parameters_df["ABILITY_PARAMS"]
+    player_ids=list(player_ability_parameters_df["PLAYER_ID"])
     df_new=player_ability_parameters_df[['PLAYER_ID', "ABILITY_PARAMS"]]
     df_new['order']=range(1,len(params)+1)
     df_new['PICK_'+str(pick_number)]=1
     simulation_results = []
-    for _ in range(num_simulations):
-        selected_players=simulate_player_selection(params, pick_number-len(players_ids_removed)-1)
-        simulation_results.append(selected_players)
-    for j in simulation_results:
-        for k in j:
-            df_new.loc[((df_new['order']==k)), 'PICK_'+str(pick_number)]-=1/num_simulations
+    simulation_results=simulate_player_selection_vectorized(params, player_ids, pick_number-len(players_ids_removed)-1, num_simulations)
+    counter = Counter(simulation_results)
+    for element, count in counter.items():
+        df_new.loc[df_new['PLAYER_ID']==element, 'PICK_'+str(pick_number)]-=count/num_simulations
     df_new.loc[df_new['PICK_'+str(pick_number)]<0, 'PICK_'+str(pick_number)]=0
     return df_new[['PLAYER_ID','PICK_'+str(pick_number)]]
+
+def simulate_player_selection_vectorized(parameters: list, player_ids, x: int, num_simulations: int):
+    selected_players = []
+    sims=[]
+    for _ in range(num_simulations):
+        selected_players = []
+        remaining_parameters = parameters.copy()
+        indices = [i for i in range(len(parameters))]
+        player_ids_remaining=player_ids
+        for _ in range(x):
+            # Calculate choice probabilities based on the exponents of parameters
+            choice_probabilities = [np.exp(param) for param in remaining_parameters]
+            # Normalize choice probabilities
+            total_probability = sum(choice_probabilities)
+            normalized_probabilities = [
+                prob / total_probability for prob in choice_probabilities
+            ]
+            # Select a player based on the probabilities
+            selected_player = np.random.choice(
+                range(len(remaining_parameters)), p=normalized_probabilities
+            )
+            # Add the selected player to the list and remove the corresponding parameter
+            selected_players.append(player_ids_remaining[selected_player])
+            indices.pop(selected_player)
+            player_ids_remaining=np.delete(player_ids_remaining, selected_player)
+            remaining_parameters = np.delete(remaining_parameters, selected_player)
+        sims=sims+selected_players
+    return sims
