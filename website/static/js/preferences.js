@@ -29,7 +29,7 @@ $(function () {
         }
         else {
             $.ajax({
-                url: '/submit_preferences',
+                url: window.location.pathname + '/submit_preferences',
                 type: 'post',
                 contentType: 'application/json',
                 data: JSON.stringify(
@@ -39,8 +39,8 @@ $(function () {
                         "min_max_constraints": min_max_constraints
                     }
                 ),
-                success: function () {
-                    alert("Inputs taken successfully!");
+                success: function(data) {
+                    window.location.href = data.url;
                 }
             });
         }
