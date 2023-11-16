@@ -729,6 +729,7 @@ def probability_available_pick_specified(
     #     else:
     #         probability_available_pick_x[column_numbers[i]] = accumulated_probability
     #         accumulated_probability -= df_players[column_numbers[i]]
+    # return probability_available_pick_x[["PLAYER_ID", "PICK_" + str(pick_number)]]
     return get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick_number)
 
 def get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick_number):
@@ -749,7 +750,7 @@ def get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick
     df_new['PICK_'+str(pick_number)]=1
     simulation_results = []
     for _ in range(num_simulations):
-        selected_players=simulate_player_selection(params, pick_number-len(players_ids_removed))
+        selected_players=simulate_player_selection(params, pick_number-len(players_ids_removed)-1)
         simulation_results.append(selected_players)
     for j in simulation_results:
         for k in j:
