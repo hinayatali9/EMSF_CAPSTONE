@@ -718,15 +718,41 @@ def probability_available_pick_specified(
     @param {int} pick_number - the pick number that will be checked for pick probability
     @returns the probability each player is available by the pick specified
     """
-    df_players = get_pick_probability_by_pick(players_ids_removed, num_simulations)
-    probability_available_pick_x = df_players.copy()
-    column_numbers = probability_available_pick_x.columns[2:]
-    accumulated_probability = 0
-    for i in range(len(column_numbers)):
-        if i == 0:
-            probability_available_pick_x[column_numbers[i]] = 1
-            accumulated_probability = 1 - df_players[column_numbers[i]]
-        else:
-            probability_available_pick_x[column_numbers[i]] = accumulated_probability
-            accumulated_probability -= df_players[column_numbers[i]]
-    return probability_available_pick_x[["PLAYER_ID", "PICK_" + str(pick_number)]]
+    # df_players = get_pick_probability_by_pick(players_ids_removed, num_simulations)
+    # probability_available_pick_x = df_players.copy()
+    # column_numbers = probability_available_pick_x.columns[2:]
+    # accumulated_probability = 0
+    # for i in range(len(column_numbers)):
+    #     if i == 0:
+    #         probability_available_pick_x[column_numbers[i]] = 1
+    #         accumulated_probability = 1 - df_players[column_numbers[i]]
+    #     else:
+    #         probability_available_pick_x[column_numbers[i]] = accumulated_probability
+    #         accumulated_probability -= df_players[column_numbers[i]]
+    return get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick_number)
+
+def get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick_number):
+    """
+    @param {list} players_ids_removed - the list of players that have been taken
+    @param {int} int - number of draft simulations to complete
+    @returns the probability of the player being selected at each future pick number
+    """
+    player_ability_parameters_df = pd.read_csv(
+        str(personal_path) + "draft_pick_prob/player_ability_params/player_parameters.csv"
+    )
+    player_ability_parameters_df = player_ability_parameters_df.loc[
+        ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
+    ]
+    params = player_ability_parameters_df["ABILITY_PARAMS"]
+    df_new=player_ability_parameters_df[['PLAYER_ID', "ABILITY_PARAMS"]]
+    df_new['order']=range(1,len(params)+1)
+    df_new['PICK_'+str(pick_number)]=1
+    simulation_results = []
+    for _ in range(num_simulations):
+        selected_players=simulate_player_selection(params, pick_number-len(players_ids_removed))
+        simulation_results.append(selected_players)
+    for j in simulation_results:
+        for k in j:
+            df_new.loc[((df_new['order']==k)), 'PICK_'+str(pick_number)]-=1/num_simulations
+    df_new.loc[df_new['PICK_'+str(pick_number)]<0, 'PICK_'+str(pick_number)]=0
+    return df_new[['PLAYER_ID','PICK_'+str(pick_number)]]
