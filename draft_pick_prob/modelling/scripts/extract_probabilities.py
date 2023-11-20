@@ -157,32 +157,28 @@ def get_pick_values(df: pd.DataFrame, pick_numbers_left: list, picks_taken: list
     @returns a dataframe with each player's player id, position, team need at that position,
     and the total expected pick value of selecting this player
     """
-    player_dict = {}
-    df = df.sort_values("PICK_VALUE", ascending=False)
-    player_id_values = df[["PLAYER_ID", "PICK_VALUE"]]
-    list_of_remaining_picks = pick_numbers_left[1:]
+    players=list(df['PLAYER_ID'])
+    positions=list(df['POS'])
+    team_needs=list(df['TEAM_NEED'])
+    print(players)
+    dict_player_value={}
     list_of_cols = []
-    list_of_new_cols = []
+    list_of_remaining_picks = pick_numbers_left[1:]
+    number_differences=[]
     for i in list_of_remaining_picks:
         list_of_cols.append("PICK_" + str(i))
-        list_of_new_cols.append("SUM_PROB_" + str(i))
-    df_subset = df.groupby("POS").head(4)
-    for i, row in df_subset.iterrows():
-        id = (row["PLAYER_ID"], row["POS"], row["TEAM_NEED"])
-        player_dict[id] = row["PICK_VALUE"]
-        new_df = probability_available_pick_x(
-            picks_taken + [int(row["PLAYER_ID"])], 100
-        )
-        df_values = pd.merge(new_df, player_id_values, how="left", on=["PLAYER_ID"])
-        df_values = df_values.sort_values("PICK_VALUE", ascending=False)
-        df_values[list_of_new_cols] = df_values[list_of_cols].cumsum()
-        for j in range(len(list_of_new_cols)):
-            calculating_pick_value = df_values.loc[df_values[list_of_new_cols[j]] < 1]
-            pick_value = (
-                calculating_pick_value["PICK_VALUE"]
-                * calculating_pick_value[list_of_cols[j]]
-            ).sum()
-            player_dict[id] += pick_value
+        number_differences.append(i-pick_numbers_left[0])
+    for i in range(len(players)):
+        dict_player_value[(players[i], positions[i], team_needs[i])]=float(df.loc[df['PLAYER_ID']==players[i]]['PICK_VALUE'])
+        test_df=df.loc[df['PLAYER_ID']!=players[i]]
+        additional_player_value=0
+        for j in range(len(number_differences)):
+            smaller_df=test_df.head(number_differences[j])
+            storing_value=1
+            for _, row in smaller_df.iterrows():
+                additional_player_value+=storing_value*row['PICK_VALUE']*row[list_of_cols[j]]
+                storing_value=storing_value*(1-row[list_of_cols[j]])
+        dict_player_value[(players[i], positions[i], team_needs[i])]+=additional_player_value
     data_list = [
         {
             "PLAYER_ID": key[0],
@@ -190,7 +186,7 @@ def get_pick_values(df: pd.DataFrame, pick_numbers_left: list, picks_taken: list
             "TEAM_NEED": key[2],
             "VALUE": value,
         }
-        for key, value in player_dict.items()
+        for key, value in dict_player_value.items()
     ]
     df_new = pd.DataFrame(data_list, index=None)
     return df_new
@@ -615,16 +611,15 @@ def determine_optimal_pick(
     for i in range(len(player_rankings)):
         l_player_val.append(np.exp(-0.420*(i**0.391)))
     player_rankings['PICK_VALUE']=l_player_val
-    pick_probs = probability_available_pick_x(picks_taken, 100)
-    new_tab = pd.merge(pick_probs, player_rankings, how="left", on=["PLAYER_ID"])
+    pick_probs = checking_probability_picks(picks_taken, 1000, pick_numbers_left, player_rankings)
     new_tab = pd.merge(
-        new_tab, player_position[["PLAYER_ID", "POS"]], how="left", on=["PLAYER_ID"]
+        pick_probs, player_position[["PLAYER_ID", "POS"]], how="left", on=["PLAYER_ID"]
     )
     team_needs = update_prospect_ranker(picks_taken)
     new_tab["TEAM_NEED"] = new_tab.apply(
         get_value, axis=1, team=team, external_df=team_needs
     )
-    pick_values = get_pick_values(new_tab, pick_numbers_left, picks_taken)
+    pick_values=get_pick_values(new_tab, pick_numbers_left, picks_taken)
     return objective(pick_values, max_pos_const, min_pos_const, picks_taken, pick_numbers_left, team, user_weight)
 
 
@@ -744,6 +739,7 @@ def get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick
     df_new['PICK_'+str(pick_number)]=1
     simulation_results = []
     simulation_results=simulate_player_selection_vectorized(params, player_ids, pick_number-len(players_ids_removed)-1, num_simulations)
+    simulation_results= [item for sublist in simulation_results for item in sublist]
     counter = Counter(simulation_results)
     for element, count in counter.items():
         df_new.loc[df_new['PLAYER_ID']==element, 'PICK_'+str(pick_number)]-=count/num_simulations
@@ -775,5 +771,25 @@ def simulate_player_selection_vectorized(parameters: list, player_ids, x: int, n
             indices.pop(selected_player)
             player_ids_remaining=np.delete(player_ids_remaining, selected_player)
             remaining_parameters = np.delete(remaining_parameters, selected_player)
-        sims=sims+selected_players
+        sims.append(selected_players)
     return sims
+
+def checking_probability_picks(players_ids_removed: list, num_simulations: int, picks: int, starting_df):
+    player_ability_parameters_df = UNIVERSAL_DF
+    player_ability_parameters_df = player_ability_parameters_df.loc[
+        ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
+    ]
+    params = player_ability_parameters_df["ABILITY_PARAMS"]
+    player_ids=list(player_ability_parameters_df["PLAYER_ID"])
+    pick_availability=simulate_player_selection_vectorized(params,player_ids, picks[-1]-(len(players_ids_removed)-1), 1000)
+    for i in picks:
+        simulation_results= [item for sublist in pick_availability for item in sublist[0:(i-len(players_ids_removed)-1)]]
+        counter = Counter(simulation_results)
+        df_new=player_ability_parameters_df[['PLAYER_ID']]
+        df_new['PICK_'+str(i)]=1
+        for element, count in counter.items():
+            df_new.loc[df_new['PLAYER_ID']==element, 'PICK_'+str(i)]-=count/num_simulations
+        df_new.loc[df_new['PICK_'+str(i)]<0, 'PICK_'+str(i)]=0
+        starting_df=pd.merge(starting_df, df_new, how='left', on=['PLAYER_ID'])
+    starting_df=starting_df.dropna()
+    return starting_df
