@@ -62,10 +62,6 @@ def get_next_pick_probability(players_ids_removed: list):
     ]
     player_ability_parameters_df["NEXT_PICK_PROB"] = normalized_probabilities
     return player_ability_parameters_df
-    # num_players_left=224-len(players_ids_removed)
-    # for _ in range(num_simulations):
-    #     selected_players = simulate_player_selection(player_ability_parameters_df['ABILITY_PARAMS'], num_players_left)
-    #     simulation_results.append(selected_players)
 
 
 def get_pick_probability_by_pick(players_ids_removed: list, num_simulations: int):
