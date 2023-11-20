@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import cvxpy as cp
 import os
-import numba
+from numba import jit
 from collections import Counter
 
 x = 224  # Number of players to select
@@ -14,7 +14,6 @@ UNIVERSAL_DF=pd.read_csv(
         str(personal_path) + "draft_pick_prob/player_ability_params/player_parameters.csv"
     )
 
-# @numba.jit(nopython=True)
 def simulate_player_selection(parameters: list, x: int):
     """
     @param {list} parameters - list of player parameters
@@ -746,6 +745,26 @@ def get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick
     df_new.loc[df_new['PICK_'+str(pick_number)]<0, 'PICK_'+str(pick_number)]=0
     return df_new[['PLAYER_ID','PICK_'+str(pick_number)]]
 
+def checking_probability_picks(players_ids_removed: list, num_simulations: int, picks: int, starting_df):
+    player_ability_parameters_df = UNIVERSAL_DF
+    player_ability_parameters_df = player_ability_parameters_df.loc[
+        ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
+    ]
+    params = player_ability_parameters_df["ABILITY_PARAMS"]
+    player_ids=list(player_ability_parameters_df["PLAYER_ID"])
+    pick_availability=simulate_player_selection_vectorized(params,player_ids, picks[-1]-(len(players_ids_removed)-1), 1000)
+    for i in picks:
+        simulation_results= [item for sublist in pick_availability for item in sublist[0:(i-len(players_ids_removed)-1)]]
+        counter = Counter(simulation_results)
+        df_new=player_ability_parameters_df[['PLAYER_ID']]
+        df_new['PICK_'+str(i)]=1
+        for element, count in counter.items():
+            df_new.loc[df_new['PLAYER_ID']==element, 'PICK_'+str(i)]-=count/num_simulations
+        df_new.loc[df_new['PICK_'+str(i)]<0, 'PICK_'+str(i)]=0
+        starting_df=pd.merge(starting_df, df_new, how='left', on=['PLAYER_ID'])
+    starting_df=starting_df.dropna()
+    return starting_df
+
 def simulate_player_selection_vectorized(parameters: list, player_ids, x: int, num_simulations: int):
     selected_players = []
     sims=[]
@@ -773,23 +792,3 @@ def simulate_player_selection_vectorized(parameters: list, player_ids, x: int, n
             remaining_parameters = np.delete(remaining_parameters, selected_player)
         sims.append(selected_players)
     return sims
-
-def checking_probability_picks(players_ids_removed: list, num_simulations: int, picks: int, starting_df):
-    player_ability_parameters_df = UNIVERSAL_DF
-    player_ability_parameters_df = player_ability_parameters_df.loc[
-        ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
-    ]
-    params = player_ability_parameters_df["ABILITY_PARAMS"]
-    player_ids=list(player_ability_parameters_df["PLAYER_ID"])
-    pick_availability=simulate_player_selection_vectorized(params,player_ids, picks[-1]-(len(players_ids_removed)-1), 1000)
-    for i in picks:
-        simulation_results= [item for sublist in pick_availability for item in sublist[0:(i-len(players_ids_removed)-1)]]
-        counter = Counter(simulation_results)
-        df_new=player_ability_parameters_df[['PLAYER_ID']]
-        df_new['PICK_'+str(i)]=1
-        for element, count in counter.items():
-            df_new.loc[df_new['PLAYER_ID']==element, 'PICK_'+str(i)]-=count/num_simulations
-        df_new.loc[df_new['PICK_'+str(i)]<0, 'PICK_'+str(i)]=0
-        starting_df=pd.merge(starting_df, df_new, how='left', on=['PLAYER_ID'])
-    starting_df=starting_df.dropna()
-    return starting_df
