@@ -86,7 +86,7 @@
     <div id="quadrant3" class="quadrant">
         <!-- Quadrant 3 -->
         <h2>Player Suggestion</h2>
-        <ul id="players-team-ranking" class="list-group">
+        <ul id="suggested_player" class="list-group">
             <li class="list-group-item">
                 <div class="form-check">
                     <div class="row">
@@ -136,7 +136,7 @@
             {% endfor %}
         </ul>
         <br>
-        <h2>Your next pick: {{ next_pick_number }}</h2>
+        <h2 id="nex_pick_number">Your next pick: {{ next_pick_number }}</h2>
     </div>
     <div id="quadrant4" class="quadrant">
         <!-- Quadrant 4 -->
@@ -195,6 +195,7 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
     <script src="{{ url_for('static', filename='js/simulator.js') }}"></script>
 </body>
 

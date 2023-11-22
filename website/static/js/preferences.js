@@ -6,21 +6,20 @@ $(function () {
         var positional_weight = $("#positional-weight")[0].value
         var min_max_constraints = {
             "min_picks": {
-                "goalie": $(goalie_min)[0].value,
-                "ld": $(ld_min)[0].value,
-                "rd": $(rd_min)[0].value,
-                "lw": $(lw_min)[0].value,
-                "rw": $(rw_min)[0].value,
-                "centre": $(centre_min)[0].value,
+                "G": $(goalie_min)[0].value,
+                "LD": $(ld_min)[0].value,
+                "RD": $(rd_min)[0].value,
+                "LW": $(lw_min)[0].value,
+                "RW": $(rw_min)[0].value,
+                "C": $(centre_min)[0].value,
             },
             "max_picks": {
-                "goalie": $(goalie_max)[0].value,
-                "ld": $(ld_max)[0].value,
-                "rd": $(rd_max)[0].value,
-                "lw": $(lw_max)[0].value,
-                "rw": $(rw_max)[0].value,
-                "rw": $(rw_max)[0].value,
-                "centre": $(centre_max)[0].value,
+                "G": $(goalie_max)[0].value,
+                "LD": $(ld_max)[0].value,
+                "RD": $(rd_max)[0].value,
+                "LW": $(lw_max)[0].value,
+                "RW": $(rw_max)[0].value,
+                "C": $(centre_max)[0].value,
             }
         }
         min_number_of_picks = parseInt($(goalie_min)[0].value) + parseInt($(ld_min)[0].value) + parseInt($(rd_min)[0].value) + parseInt($(lw_min)[0].value) + $(rw_min)[0].value + parseInt($(centre_min)[0].value)

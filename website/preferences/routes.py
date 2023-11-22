@@ -15,7 +15,7 @@ def render_preferences_page(team_abrv: str):
     return render_template(
         "preferences.html",
         players=df_players["PLAYER_NAME"],
-        num_picks=int(num_picks.loc[0]),
+        num_picks=int(num_picks.loc[0]) if not num_picks.empty else 0,
         team_abrv=team_abrv,
     )
 
@@ -25,7 +25,7 @@ def submit_preferences(team_abrv: str):
     input_info = request.get_json()
     session['min_max_constraints'] = pd.DataFrame(input_info["min_max_constraints"]).to_json()
     session['new_order'] = input_info["new_order"]
-    session['positional_weight'] = int(input_info["positional_weight"])/5
+    session['positional_weight'] = 1 - int(input_info["positional_weight"])/5
     session['player_ids_picked'] = []
     session['current_pick'] = 1
 

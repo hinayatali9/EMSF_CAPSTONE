@@ -2,17 +2,21 @@ import numpy as np
 import pandas as pd
 import cvxpy as cp
 import os
-from numba import jit
 from collections import Counter
 
 x = 224  # Number of players to select
 
 personal_path = os.getcwd()
-personal_path= personal_path[:(personal_path.find("EMSF_CAPSTONE")+ len("EMSF_CAPSTONE/"))]
+personal_path = personal_path[
+    : (personal_path.find("EMSF_CAPSTONE") + len("EMSF_CAPSTONE/"))
+].replace("\\", "/")
+if personal_path[-1] != '/':
+    personal_path += "/"
 
-UNIVERSAL_DF=pd.read_csv(
-        str(personal_path) + "draft_pick_prob/player_ability_params/player_parameters.csv"
-    )
+UNIVERSAL_DF = pd.read_csv(
+    str(personal_path) + "draft_pick_prob/player_ability_params/player_parameters.csv"
+)
+
 
 def simulate_player_selection(parameters: list, x: int):
     """
@@ -49,7 +53,8 @@ def get_next_pick_probability(players_ids_removed: list):
     @returns the probability of each player being selected next
     """
     player_ability_parameters_df = pd.read_csv(
-        str(personal_path) + 'draft_pick_prob/player_ability_params/player_parameters.csv'
+        str(personal_path)
+        + "draft_pick_prob/player_ability_params/player_parameters.csv"
     )
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
@@ -71,7 +76,8 @@ def get_pick_probability_by_pick(players_ids_removed: list, num_simulations: int
     @returns the probability of the player being selected at each future pick number
     """
     player_ability_parameters_df = pd.read_csv(
-        str(personal_path) + "draft_pick_prob/player_ability_params/player_parameters.csv"
+        str(personal_path)
+        + "draft_pick_prob/player_ability_params/player_parameters.csv"
     )
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
@@ -152,28 +158,34 @@ def get_pick_values(df: pd.DataFrame, pick_numbers_left: list, picks_taken: list
     @returns a dataframe with each player's player id, position, team need at that position,
     and the total expected pick value of selecting this player
     """
-    players=list(df['PLAYER_ID'])
-    positions=list(df['POS'])
-    team_needs=list(df['TEAM_NEED'])
+    players = list(df["PLAYER_ID"])
+    positions = list(df["POS"])
+    team_needs = list(df["TEAM_NEED"])
     print(players)
-    dict_player_value={}
+    dict_player_value = {}
     list_of_cols = []
     list_of_remaining_picks = pick_numbers_left[1:]
-    number_differences=[]
+    number_differences = []
     for i in list_of_remaining_picks:
         list_of_cols.append("PICK_" + str(i))
-        number_differences.append(i-pick_numbers_left[0])
+        number_differences.append(i - pick_numbers_left[0])
     for i in range(len(players)):
-        dict_player_value[(players[i], positions[i], team_needs[i])]=float(df.loc[df['PLAYER_ID']==players[i]]['PICK_VALUE'])
-        test_df=df.loc[df['PLAYER_ID']!=players[i]]
-        additional_player_value=0
+        dict_player_value[(players[i], positions[i], team_needs[i])] = float(
+            df.loc[df["PLAYER_ID"] == players[i]]["PICK_VALUE"]
+        )
+        test_df = df.loc[df["PLAYER_ID"] != players[i]]
+        additional_player_value = 0
         for j in range(len(number_differences)):
-            smaller_df=test_df.head(number_differences[j])
-            storing_value=1
+            smaller_df = test_df.head(number_differences[j])
+            storing_value = 1
             for _, row in smaller_df.iterrows():
-                additional_player_value+=storing_value*row['PICK_VALUE']*row[list_of_cols[j]]
-                storing_value=storing_value*(1-row[list_of_cols[j]])
-        dict_player_value[(players[i], positions[i], team_needs[i])]+=additional_player_value
+                additional_player_value += (
+                    storing_value * row["PICK_VALUE"] * row[list_of_cols[j]]
+                )
+                storing_value = storing_value * (1 - row[list_of_cols[j]])
+        dict_player_value[
+            (players[i], positions[i], team_needs[i])
+        ] += additional_player_value
     data_list = [
         {
             "PLAYER_ID": key[0],
@@ -374,7 +386,9 @@ def update_prospect_ranker(player_IDs):
     draft_order = []
 
     df_draft = pd.read_csv(str(personal_path) + "draft_info/draft_pick_numbers.csv")
-    df_2023 = pd.read_csv(str(personal_path) + "Prospect Pool/MIE479 2023 Player Pool Cleaned.csv")
+    df_2023 = pd.read_csv(
+        str(personal_path) + "Prospect Pool/MIE479 2023 Player Pool Cleaned.csv"
+    )
     df1 = pd.read_csv(str(personal_path) + "Prospect Pool/Initial Prospect Pool.csv")
 
     # Define the replacement mapping
@@ -419,7 +433,7 @@ def update_prospect_ranker(player_IDs):
     ] = df_draft["TEAM_NAME"].map(replacement_mapping)
     df_draft = df_draft["TEAM_NAME"]
 
-    for i in df_draft[0: len(player_IDs)]:
+    for i in df_draft[0 : len(player_IDs)]:
         draft_order.append(i)
 
     for ID in range(len(player_IDs)):
@@ -434,13 +448,21 @@ def update_prospect_ranker(player_IDs):
 
     return ranks_new
 
-def pos_constraints(max_pos_const: dict, min_pos_const: dict, picks_taken: list, pick_numbers_left: list, team: str):
-  
+
+def pos_constraints(
+    max_pos_const: dict,
+    min_pos_const: dict,
+    picks_taken: list,
+    pick_numbers_left: list,
+    team: str,
+):
     draft_order = []
     needs = []
 
     df_draft = pd.read_csv(str(personal_path) + "draft_info/draft_pick_numbers.csv")
-    df_2023 = pd.read_csv(str(personal_path) + "Prospect Pool/MIE479 2023 Player Pool Cleaned.csv")
+    df_2023 = pd.read_csv(
+        str(personal_path) + "Prospect Pool/MIE479 2023 Player Pool Cleaned.csv"
+    )
 
     # Define the replacement mapping
     replacement_mapping = {
@@ -479,20 +501,24 @@ def pos_constraints(max_pos_const: dict, min_pos_const: dict, picks_taken: list,
     }
 
     # Use the .loc function to replace values
-    df_draft.loc[df_draft["TEAM_NAME"].isin(replacement_mapping.keys()), "TEAM_NAME"] = df_draft["TEAM_NAME"].map(replacement_mapping)
+    df_draft.loc[
+        df_draft["TEAM_NAME"].isin(replacement_mapping.keys()), "TEAM_NAME"
+    ] = df_draft["TEAM_NAME"].map(replacement_mapping)
     df_draft = df_draft["TEAM_NAME"]
 
-    for i in df_draft[0:len(picks_taken)]:
+    for i in df_draft[0 : len(picks_taken)]:
         draft_order.append(i)
 
     for pick in range(len(picks_taken)):
         if draft_order[pick] == team:
-            specific_pos = df_2023[df_2023['PLAYER_ID'] == picks_taken[pick]]['Specific POS'].values[0]
+            specific_pos = df_2023[df_2023["PLAYER_ID"] == picks_taken[pick]][
+                "Specific POS"
+            ].values[0]
 
             # Decrease the maximum position constraint
             if max_pos_const.get(specific_pos, 0) > 0:
                 max_pos_const[specific_pos] -= 1
-  
+
             if min_pos_const.get(specific_pos, 0) > 0:
                 min_pos_const[specific_pos] -= 1
 
@@ -503,7 +529,16 @@ def pos_constraints(max_pos_const: dict, min_pos_const: dict, picks_taken: list,
 
     return max_pos_const, needs
 
-def objective(df: pd.DataFrame, max_pos_const: dict, min_pos_const: dict, picks_taken: list, pick_numbers_left: list, team: str, user_weight: float):
+
+def objective(
+    df: pd.DataFrame,
+    max_pos_const: dict,
+    min_pos_const: dict,
+    picks_taken: list,
+    pick_numbers_left: list,
+    team: str,
+    user_weight: float,
+):
     """
     @param {dataframe} df - the dataframe of values output from get_pick_values
     @param {dict} pos_const - dictionary of positional constraints
@@ -522,7 +557,9 @@ def objective(df: pd.DataFrame, max_pos_const: dict, min_pos_const: dict, picks_
     # Define constraints
     cons_lp = []  # Initialize constraint list
 
-    max, need = pos_constraints(max_pos_const, min_pos_const, picks_taken, pick_numbers_left, team)
+    max, need = pos_constraints(
+        max_pos_const, min_pos_const, picks_taken, pick_numbers_left, team
+    )
 
     for position, max_players in max.items():
         cons_lp.append(cp.sum(x[df["GROUPED_POS"] == position]) <= max_players)
@@ -586,7 +623,7 @@ def determine_optimal_pick(
     team: str,
     pick_numbers_left: list,
     picks_taken: list,
-    max_pos_const: dict, 
+    max_pos_const: dict,
     min_pos_const: dict,
     user_weight: float,
 ):
@@ -602,11 +639,13 @@ def determine_optimal_pick(
     @returns the player id of the optimal selection
     """
     # player_rankings=player_rankings.drop(['PLAYER_NAME'], axis=1)
-    l_player_val=[]
+    l_player_val = []
     for i in range(len(player_rankings)):
-        l_player_val.append(np.exp(-0.420*(i**0.391)))
-    player_rankings['PICK_VALUE']=l_player_val
-    pick_probs = checking_probability_picks(picks_taken, 1000, pick_numbers_left, player_rankings)
+        l_player_val.append(np.exp(-0.420 * (i**0.391)))
+    player_rankings["PICK_VALUE"] = l_player_val
+    pick_probs = checking_probability_picks(
+        picks_taken, 1000, pick_numbers_left, player_rankings
+    )
     new_tab = pd.merge(
         pick_probs, player_position[["PLAYER_ID", "POS"]], how="left", on=["PLAYER_ID"]
     )
@@ -614,8 +653,16 @@ def determine_optimal_pick(
     new_tab["TEAM_NEED"] = new_tab.apply(
         get_value, axis=1, team=team, external_df=team_needs
     )
-    pick_values=get_pick_values(new_tab, pick_numbers_left, picks_taken)
-    return objective(pick_values, max_pos_const, min_pos_const, picks_taken, pick_numbers_left, team, user_weight)
+    pick_values = get_pick_values(new_tab, pick_numbers_left, picks_taken)
+    return objective(
+        pick_values,
+        max_pos_const,
+        min_pos_const,
+        picks_taken,
+        pick_numbers_left,
+        team,
+        user_weight,
+    )
 
 
 def simulate_draft(
@@ -691,7 +738,8 @@ def simulate_one_player_taken(picks_taken: list):
     @returns a randomly selected player based on the probabilities calculated
     """
     player_ability_parameters_df = pd.read_csv(
-        str(personal_path)+"draft_pick_prob/player_ability_params/player_parameters.csv"
+        str(personal_path)
+        + "draft_pick_prob/player_ability_params/player_parameters.csv"
     )
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(picks_taken)
@@ -715,9 +763,14 @@ def probability_available_pick_specified(
     @param {int} pick_number - the pick number that will be checked for pick probability
     @returns the probability each player is available by the pick specified
     """
-    return get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick_number)
+    return get_pick_probability_by_next_pick(
+        players_ids_removed, num_simulations, pick_number
+    )
 
-def get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick_number):
+
+def get_pick_probability_by_next_pick(
+    players_ids_removed, num_simulations, pick_number
+):
     """
     @param {list} players_ids_removed - the list of players that have been taken
     @param {int} int - number of draft simulations to complete
@@ -728,47 +781,65 @@ def get_pick_probability_by_next_pick(players_ids_removed, num_simulations, pick
         ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
     ]
     params = player_ability_parameters_df["ABILITY_PARAMS"]
-    player_ids=list(player_ability_parameters_df["PLAYER_ID"])
-    df_new=player_ability_parameters_df[['PLAYER_ID', "ABILITY_PARAMS"]]
-    df_new['order']=range(1,len(params)+1)
-    df_new['PICK_'+str(pick_number)]=1
+    player_ids = list(player_ability_parameters_df["PLAYER_ID"])
+    df_new = player_ability_parameters_df[["PLAYER_ID", "ABILITY_PARAMS"]]
+    df_new["order"] = range(1, len(params) + 1)
+    df_new["PICK_" + str(pick_number)] = 1
     simulation_results = []
-    simulation_results=simulate_player_selection_vectorized(params, player_ids, pick_number-len(players_ids_removed)-1, num_simulations)
-    simulation_results= [item for sublist in simulation_results for item in sublist]
+    simulation_results = simulate_player_selection_vectorized(
+        params, player_ids, pick_number - len(players_ids_removed) - 1, num_simulations
+    )
+    simulation_results = [item for sublist in simulation_results for item in sublist]
     counter = Counter(simulation_results)
     for element, count in counter.items():
-        df_new.loc[df_new['PLAYER_ID']==element, 'PICK_'+str(pick_number)]-=count/num_simulations
-    df_new.loc[df_new['PICK_'+str(pick_number)]<0, 'PICK_'+str(pick_number)]=0
-    return df_new[['PLAYER_ID','PICK_'+str(pick_number)]]
+        df_new.loc[df_new["PLAYER_ID"] == element, "PICK_" + str(pick_number)] -= (
+            count / num_simulations
+        )
+    df_new.loc[df_new["PICK_" + str(pick_number)] < 0, "PICK_" + str(pick_number)] = 0
+    return df_new[["PLAYER_ID", "PICK_" + str(pick_number)]]
 
-def checking_probability_picks(players_ids_removed: list, num_simulations: int, picks: int, starting_df):
+
+def checking_probability_picks(
+    players_ids_removed: list, num_simulations: int, picks: int, starting_df
+):
     player_ability_parameters_df = UNIVERSAL_DF
     player_ability_parameters_df = player_ability_parameters_df.loc[
         ~player_ability_parameters_df["PLAYER_ID"].isin(players_ids_removed)
     ]
     params = player_ability_parameters_df["ABILITY_PARAMS"]
-    player_ids=list(player_ability_parameters_df["PLAYER_ID"])
-    pick_availability=simulate_player_selection_vectorized(params,player_ids, picks[-1]-(len(players_ids_removed)-1), 1000)
+    player_ids = list(player_ability_parameters_df["PLAYER_ID"])
+    pick_availability = simulate_player_selection_vectorized(
+        params, player_ids, picks[-1] - (len(players_ids_removed) - 1), 1000
+    )
     for i in picks:
-        simulation_results= [item for sublist in pick_availability for item in sublist[0:(i-len(players_ids_removed)-1)]]
+        simulation_results = [
+            item
+            for sublist in pick_availability
+            for item in sublist[0 : (i - len(players_ids_removed) - 1)]
+        ]
         counter = Counter(simulation_results)
-        df_new=player_ability_parameters_df[['PLAYER_ID']]
-        df_new['PICK_'+str(i)]=1
+        df_new = player_ability_parameters_df[["PLAYER_ID"]]
+        df_new["PICK_" + str(i)] = 1
         for element, count in counter.items():
-            df_new.loc[df_new['PLAYER_ID']==element, 'PICK_'+str(i)]-=count/num_simulations
-        df_new.loc[df_new['PICK_'+str(i)]<0, 'PICK_'+str(i)]=0
-        starting_df=pd.merge(starting_df, df_new, how='left', on=['PLAYER_ID'])
-    starting_df=starting_df.dropna()
+            df_new.loc[df_new["PLAYER_ID"] == element, "PICK_" + str(i)] -= (
+                count / num_simulations
+            )
+        df_new.loc[df_new["PICK_" + str(i)] < 0, "PICK_" + str(i)] = 0
+        starting_df = pd.merge(starting_df, df_new, how="left", on=["PLAYER_ID"])
+    starting_df = starting_df.dropna()
     return starting_df
 
-def simulate_player_selection_vectorized(parameters: list, player_ids, x: int, num_simulations: int):
+
+def simulate_player_selection_vectorized(
+    parameters: list, player_ids, x: int, num_simulations: int
+):
     selected_players = []
-    sims=[]
+    sims = []
     for _ in range(num_simulations):
         selected_players = []
         remaining_parameters = parameters.copy()
         indices = [i for i in range(len(parameters))]
-        player_ids_remaining=player_ids
+        player_ids_remaining = player_ids
         for _ in range(x):
             # Calculate choice probabilities based on the exponents of parameters
             choice_probabilities = [np.exp(param) for param in remaining_parameters]
@@ -784,23 +855,37 @@ def simulate_player_selection_vectorized(parameters: list, player_ids, x: int, n
             # Add the selected player to the list and remove the corresponding parameter
             selected_players.append(player_ids_remaining[selected_player])
             indices.pop(selected_player)
-            player_ids_remaining=np.delete(player_ids_remaining, selected_player)
+            player_ids_remaining = np.delete(player_ids_remaining, selected_player)
             remaining_parameters = np.delete(remaining_parameters, selected_player)
         sims.append(selected_players)
     return sims
 
-def player_value(player_rankings: pd.DataFrame, player_position: pd.DataFrame, picks_taken: list, user_weight: float, team_name: str):
-    l_player_val=[]
+
+def player_value(
+    player_rankings: pd.DataFrame,
+    player_position: pd.DataFrame,
+    picks_taken: list,
+    user_weight: float,
+    team_name: str,
+):
+    l_player_val = []
     for i in range(len(player_rankings)):
-        l_player_val.append(np.exp(-0.420*(i**0.391)))
-    player_rankings['PICK_VALUE']=l_player_val
-    player_rankings=player_rankings.loc[~ player_rankings['PLAYER_ID'].isin(picks_taken)]
-    player_rankings=pd.merge(
-        player_rankings, player_position[["PLAYER_ID", "POS"]], how="left", on=["PLAYER_ID"]
+        l_player_val.append(np.exp(-0.420 * (i**0.391)))
+    player_rankings["PICK_VALUE"] = l_player_val
+    player_rankings = player_rankings.loc[
+        ~player_rankings["PLAYER_ID"].isin(picks_taken)
+    ]
+    player_rankings = pd.merge(
+        player_rankings,
+        player_position[["PLAYER_ID", "POS"]],
+        how="left",
+        on=["PLAYER_ID"],
     )
     team_needs = update_prospect_ranker(picks_taken)
     player_rankings["TEAM_NEED"] = player_rankings.apply(
         get_value, axis=1, team=team_name, external_df=team_needs
     )
-    player_rankings['VALUE']=player_rankings['PICK_VALUE']*user_weight+player_rankings['TEAM_NEED']*(1-user_weight)
-    return player_rankings[['PLAYER_ID', 'VALUE']]
+    player_rankings["VALUE"] = player_rankings[
+        "PICK_VALUE"
+    ] * user_weight + player_rankings["TEAM_NEED"] * (1 - user_weight)
+    return player_rankings[["PLAYER_ID", "VALUE"]]

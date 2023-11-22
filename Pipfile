@@ -9,6 +9,8 @@ flask = "*"
 numpy = "*"
 scipy = "*"
 cvxpy = "*"
+numba = "*"
+flask-session = "*"
 
 [dev-packages]
 flake8 = "*"
