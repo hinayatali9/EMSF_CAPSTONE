@@ -788,3 +788,19 @@ def simulate_player_selection_vectorized(parameters: list, player_ids, x: int, n
             remaining_parameters = np.delete(remaining_parameters, selected_player)
         sims.append(selected_players)
     return sims
+
+def player_value(player_rankings: pd.DataFrame, player_position: pd.DataFrame, picks_taken: list, user_weight: float, team_name: str):
+    l_player_val=[]
+    for i in range(len(player_rankings)):
+        l_player_val.append(np.exp(-0.420*(i**0.391)))
+    player_rankings['PICK_VALUE']=l_player_val
+    player_rankings=player_rankings.loc[~ player_rankings['PLAYER_ID'].isin(picks_taken)]
+    player_rankings=pd.merge(
+        player_rankings, player_position[["PLAYER_ID", "POS"]], how="left", on=["PLAYER_ID"]
+    )
+    team_needs = update_prospect_ranker(picks_taken)
+    player_rankings["TEAM_NEED"] = player_rankings.apply(
+        get_value, axis=1, team=team_name, external_df=team_needs
+    )
+    player_rankings['VALUE']=player_rankings['PICK_VALUE']*user_weight+player_rankings['TEAM_NEED']*(1-user_weight)
+    return player_rankings[['PLAYER_ID', 'VALUE']]
