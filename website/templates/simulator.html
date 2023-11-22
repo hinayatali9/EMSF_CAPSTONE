@@ -20,7 +20,7 @@
                 <li class="list-group-item">
                     <img src="{{ url_for('static', filename='img/'+ pick['team_abrv'] +'.svg') }}"
                         alt="{{ pick['team_name'] }}" width="55">
-                    <span>{{ pick['player_name'] }}</span>
+                    <span><b>{{ pick['player_name'] }}</b></span>
                 </li>
                 {% endfor %}
             </ol>

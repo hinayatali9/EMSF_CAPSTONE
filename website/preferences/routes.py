@@ -15,7 +15,7 @@ def render_preferences_page(team_abrv: str):
     return render_template(
         "preferences.html",
         players=df_players["PLAYER_NAME"],
-        num_picks=int(num_picks.loc[0]) if not num_picks.empty else 0,
+        num_picks=int(num_picks.iloc[0]) if not num_picks.empty else 0,
         team_abrv=team_abrv,
     )
 
