@@ -49,9 +49,11 @@
                                 <p class="mb-0"><b>Pick Prob.</b></p>
                             </div>
                             <!-- Draft Button -->
+                            {% if is_next_pick_team_draft_pick %}
                             <div class="col-auto">
-                                <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
-                            </div>
+                                    <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </li>
@@ -72,10 +74,12 @@
                                 <p class="mb-0">{{ player['pick_prob'] }}</p>
                             </div>
                             <!-- Draft Button -->
+                            {% if is_next_pick_team_draft_pick %}
                             <div class="col-auto">
-                                <button id="draftButton_{{ player['id'] }}"
+                                    <button id="draftButton_{{ player['id'] }}"
                                     class="btn btn-primary draft-button mb-0 float-right">Draft</button>
-                            </div>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </li>
@@ -103,9 +107,11 @@
                             <p class="mb-0"><b>Pick Prob.</b></p>
                         </div>
                         <!-- Draft Button -->
+                        {% if is_next_pick_team_draft_pick %}
                         <div class="col-auto">
-                            <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
-                        </div>
+                                <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             </li>
@@ -126,17 +132,19 @@
                             <p class="mb-0">{{ player['pick_prob'] }}</p>
                         </div>
                         <!-- Draft Button -->
+                        {% if is_next_pick_team_draft_pick %}
                         <div class="col-auto">
-                            <button id="draftButton_{{ player['id'] }}"
+                                <button id="draftButton_{{ player['id'] }}"
                                 class="btn btn-primary draft-button mb-0 float-right">Draft</button>
-                        </div>
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             </li>
             {% endfor %}
         </ul>
         <br>
-        <h2 id="nex_pick_number">Your next pick: {{ next_pick_number }}</h2>
+        <h3 id="next_pick_number">Your next pick: {{ next_pick_number }}</h3>
     </div>
     <div id="quadrant4" class="quadrant">
         <!-- Quadrant 4 -->
@@ -160,9 +168,11 @@
                                 <p class="mb-0"><b>Pick Prob.</b></p>
                             </div>
                             <!-- Draft Button -->
+                            {% if is_next_pick_team_draft_pick %}
                             <div class="col-auto">
-                                <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
-                            </div>
+                                    <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </li>
@@ -183,10 +193,12 @@
                                 <p class="mb-0">{{ player['pick_prob'] }}</p>
                             </div>
                             <!-- Draft Button -->
+                            {% if is_next_pick_team_draft_pick %}
                             <div class="col-auto">
-                                <button id="draftButton_{{ player['id'] }}"
+                                    <button id="draftButton_{{ player['id'] }}"
                                     class="btn btn-primary draft-button mb-0 float-right">Draft</button>
-                            </div>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </li>

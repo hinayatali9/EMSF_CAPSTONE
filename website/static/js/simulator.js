@@ -1,27 +1,3 @@
-headerHtml = `
-<li class="list-group-item">
-    <div class="form-check">
-        <div class="row">
-            <div class="col">
-                <!-- Player Position -->
-                <p class="mb-0"><b>Position</b></p>
-            </div>
-            <div class="col">
-                <!-- Player Name -->
-                <p class="mb-0"><b>Name</b></p>
-            </div>
-            <div class="col">
-                <!-- Pick Prob. -->
-                <p class="mb-0"><b>Pick Prob.</b></p>
-            </div>
-            <!-- Draft Button -->
-            <div class="col-auto">
-                <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
-            </div>
-        </div>
-    </div>
-</li>`
-
 $(document).ready(function() {
     $(document).on('click', '.draft-button', function() {
         $.blockUI({ message: '<h1>Processing...</h1>' });
@@ -37,6 +13,38 @@ $(document).ready(function() {
             async: false,
             success: function(msg) {
                 // Update the players_team_ranking
+                headerHtml = `
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <div class="row">
+                            <div class="col">
+                                <!-- Player Position -->
+                                <p class="mb-0"><b>Position</b></p>
+                            </div>
+                            <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0"><b>Name</b></p>
+                            </div>
+                            <div class="col">
+                                <!-- Pick Prob. -->
+                                <p class="mb-0"><b>Pick Prob.</b></p>
+                            </div>
+                `
+                if (msg.is_next_pick_team_draft_pick === true){
+                    headerHtml = headerHtml +
+                    `<!-- Draft Button -->
+                    <div class="col-auto">
+                        <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                    </div>`
+                }
+                headerHtml = headerHtml +
+                `    
+                        </div>
+                    </div>
+                </li>`
+
+                $('#nextPick, #yourNextPick').prop('disabled', msg.is_next_pick_team_draft_pick);
+
                 $('#players-team-ranking').empty();
                 $('#players-team-ranking').append(headerHtml);
                 $.each(msg.players_team_ranking, function(i, player) {
@@ -51,12 +59,13 @@ $(document).ready(function() {
                         '</div>' +
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
-                        '</div>' +
-                        '<div class="col-auto">'
-
+                        '</div>'
+                        
                     if (msg.is_next_pick_team_draft_pick === true){
                         listItem = listItem +
-                        '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>'
+                        '<div class="col-auto">' +
+                        '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>' +
+                        '</div>'
                     }
 
                     listItem = listItem +
@@ -70,9 +79,14 @@ $(document).ready(function() {
                 // Update the draft_picks
                 $('#team-list').empty();
                 $.each(msg.draft_picks, function(i, pick) {
+                    if (teamAbvr == pick.team_abrv) {
+                        playerName = '<b>' + pick.player_name + '</b>'
+                    } else {
+                        playerName = pick.player_name                       
+                    }
                     var listItem = '<li class="list-group-item">' +
                         '<img src="/static/img/' + pick.team_abrv + '.svg" alt="'+ pick.team_name +'" width="55">' +
-                        '<span><b>' + pick.player_name + '</b></span>' +
+                        '<span>' + playerName + '</span>' +
                         '</li>';
                     $('#team-list').append(listItem);
                 });
@@ -122,12 +136,13 @@ $(document).ready(function() {
                         '</div>' +
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
-                        '</div>' +
-                        '<div class="col-auto">'
-
+                        '</div>'
+                        
                     if (msg.is_next_pick_team_draft_pick === true){
                         listItem = listItem +
-                        '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>'
+                        '<div class="col-auto">' +
+                        '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>' +
+                        '</div>'
                     }
 
                     listItem = listItem +
@@ -150,8 +165,8 @@ $(document).ready(function() {
         $.blockUI({ message: '<h1>Processing...</h1>' });
 
         var buttonId = $(this).attr('id');
-        var teamAbbr = window.location.pathname.split('/')[1];
-        var apiUrl = '/' + teamAbbr + '/api/simulate_pick';
+        var teamAbvr = window.location.pathname.split('/')[1];
+        var apiUrl = '/' + teamAbvr + '/api/simulate_pick';
         $.ajax({
             url: apiUrl,
             type: 'POST',
@@ -161,6 +176,38 @@ $(document).ready(function() {
             async: false,
             success: function(msg) {
                 // Update the players_team_ranking
+                headerHtml = `
+                <li class="list-group-item">
+                    <div class="form-check">
+                        <div class="row">
+                            <div class="col">
+                                <!-- Player Position -->
+                                <p class="mb-0"><b>Position</b></p>
+                            </div>
+                            <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0"><b>Name</b></p>
+                            </div>
+                            <div class="col">
+                                <!-- Pick Prob. -->
+                                <p class="mb-0"><b>Pick Prob.</b></p>
+                            </div>
+                `
+                if (msg.is_next_pick_team_draft_pick === true){
+                    headerHtml = headerHtml +
+                    `<!-- Draft Button -->
+                    <div class="col-auto">
+                        <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                    </div>`
+                }
+                headerHtml = headerHtml +
+                `    
+                        </div>
+                    </div>
+                </li>`
+
+                $('#nextPick, #yourNextPick').prop('disabled', msg.is_next_pick_team_draft_pick);
+
                 $('#players-team-ranking').empty();
                 $('#players-team-ranking').append(headerHtml);
                 $.each(msg.players_team_ranking, function(i, player) {
@@ -175,16 +222,16 @@ $(document).ready(function() {
                         '</div>' +
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
-                        '</div>' +
-                        '<div class="col-auto">'
-
+                        '</div>'
+                        
                     if (msg.is_next_pick_team_draft_pick === true){
                         listItem = listItem +
-                        '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>'
+                        '<div class="col-auto">' +
+                        '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>' +
+                        '</div>'
                     }
 
                     listItem = listItem +
-                        '</div>' +
                         '</div>' +
                         '</div>' +
                         '</li>';
@@ -194,9 +241,14 @@ $(document).ready(function() {
                 // Update the draft_picks
                 $('#team-list').empty();
                 $.each(msg.draft_picks, function(i, pick) {
+                    if (teamAbvr == pick.team_abrv) {
+                        playerName = '<b>' + pick.player_name + '</b>'
+                    } else {
+                        playerName = pick.player_name                       
+                    }
                     var listItem = '<li class="list-group-item">' +
                         '<img src="/static/img/' + pick.team_abrv + '.svg" alt="'+ pick.team_name +'" width="55">' +
-                        '<span><b>' + pick.player_name + '</b></span>' +
+                        '<span>' + playerName + '</span>' +
                         '</li>';
                     $('#team-list').append(listItem);
                 });
@@ -246,12 +298,13 @@ $(document).ready(function() {
                         '</div>' +
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
-                        '</div>' +
-                        '<div class="col-auto">'
+                        '</div>'
 
                     if (msg.is_next_pick_team_draft_pick === true){
                         listItem = listItem +
-                        '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>'
+                        '<div class="col-auto">' +
+                        '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>' +
+                        '</div>'
                     }
 
                     listItem = listItem +

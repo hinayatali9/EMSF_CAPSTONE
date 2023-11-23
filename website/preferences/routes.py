@@ -25,7 +25,7 @@ def submit_preferences(team_abrv: str):
     input_info = request.get_json()
     session['min_max_constraints'] = pd.DataFrame(input_info["min_max_constraints"]).to_json()
     session['new_order'] = input_info["new_order"]
-    session['positional_weight'] = 1 - int(input_info["positional_weight"])/5
+    session['positional_weight'] = 1 - int(input_info["positional_weight"])/10
     session['player_ids_picked'] = []
     session['current_pick'] = 1
 
