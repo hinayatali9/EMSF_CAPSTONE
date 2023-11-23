@@ -23,6 +23,10 @@ body {
     left: 2%;
 }
 
+.list-group-item img {
+    padding-right: 10px;
+}
+
 .list-container {
     overflow: auto;
     width: 100%;
@@ -34,9 +38,6 @@ body {
     display: none;
 }
 
-/* .list-container:hover::-webkit-scrollbar {
-    display: block;
-} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .list-container {
@@ -44,10 +45,6 @@ body {
     scrollbar-width: none;  /* Firefox */
 }
 
-/* .list-container:hover {
-    -ms-overflow-style: auto;
-    scrollbar-width: auto;
-} */
 
 .list-group-item.selected {
     background-color: #f0f0f0;
