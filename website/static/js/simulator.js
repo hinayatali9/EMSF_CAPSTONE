@@ -10,7 +10,6 @@ $(document).ready(function() {
             data: JSON.stringify({ 'player_id': playerId }),
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
-            async: false,
             success: function(msg) {
                 // Update the players_team_ranking
                 headerHtml = `
@@ -173,7 +172,6 @@ $(document).ready(function() {
             data: JSON.stringify({ 'button_id': buttonId }),
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
-            async: false,
             success: function(msg) {
                 // Update the players_team_ranking
                 headerHtml = `

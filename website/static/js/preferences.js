@@ -2,6 +2,7 @@ $(function () {
     $("#player-list").sortable();
 
     $("#submit").click(function () {
+        $.blockUI({ message: '<h1>Processing...</h1>' });
         var new_order = $("#player-list")[0].innerText.split('\n')
         var positional_weight = $("#positional-weight")[0].value
         var min_max_constraints = {
