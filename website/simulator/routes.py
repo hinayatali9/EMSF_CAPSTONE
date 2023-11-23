@@ -1,8 +1,6 @@
 from typing import List, Dict, Any
 from flask import Blueprint, jsonify, render_template, request, session
 import pandas as pd
-
-# import numpy as np
 import json
 import draft_pick_prob.modelling.scripts.extract_probabilities as ep
 
