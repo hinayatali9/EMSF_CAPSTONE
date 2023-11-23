@@ -1,7 +1,8 @@
 from typing import List, Dict, Any
 from flask import Blueprint, jsonify, render_template, request, session
 import pandas as pd
-import numpy as np
+
+# import numpy as np
 import json
 import draft_pick_prob.modelling.scripts.extract_probabilities as ep
 
@@ -11,9 +12,11 @@ simulator_blueprint = Blueprint("simulator", __name__)
 @simulator_blueprint.route("/<team_abrv>/draft_simulator", methods=["GET"])
 def draft_simulator(team_abrv):
     # Get data passed on from previous screen
-    team_ranking_original = session["new_order"]
+    team_ranking_original = session["original_order"]
+    team_ranking_new = session["new_order"]
     player_ids_picked: List[int] = session["player_ids_picked"]
     available_team_picks: List[int] = session["available_team_picks"]
+    positional_weight = float(session["positional_weight"])
 
     # Get static info
     df_player_positions = pd.read_csv("PLAYER_POSITIONS.csv")
@@ -26,12 +29,26 @@ def draft_simulator(team_abrv):
     pick_index = is_next_pick_team_draft_pick
 
     # Get pick probabilities
+    df_player_ids["PLAYER_NAME"] = pd.Categorical(
+        df_player_ids["PLAYER_NAME"], categories=team_ranking_original, ordered=True
+    )
+    df_player_ids.sort_values("PLAYER_NAME", inplace=True)
+
+    df_player_values = ep.player_value(
+        player_rankings=df_player_ids,
+        player_position=df_player_positions,
+        picks_taken=player_ids_picked,
+        user_weight=positional_weight,
+        team_name=team_abrv,
+    )
+
     pick_probs = ep.probability_available_pick_specified(
         players_ids_removed=player_ids_picked,
         num_simulations=100,
         pick_number=available_team_picks[pick_index],
     )
     pick_probs = pd.merge(pick_probs, df_player_ids, on=["PLAYER_ID"])
+    df_player_values = pd.merge(df_player_ids, df_player_values, on=["PLAYER_ID"])
 
     players_team_ranking = [
         {
@@ -42,13 +59,20 @@ def draft_simulator(team_abrv):
                 0
             ],
             "name": player_name,
-            "pick_prob": pick_probs.query("PLAYER_NAME == @player_name")[
-                f"PICK_{available_team_picks[pick_index]}"
-            ]
-            .iloc[0]
-            .round(4),
+            "pick_prob": float(
+                pick_probs.query("PLAYER_NAME == @player_name")[
+                    f"PICK_{available_team_picks[pick_index]}"
+                ]
+                .iloc[0]
+                .round(4)
+            ),
+            "player_value": float(
+                df_player_values.query("PLAYER_NAME == @player_name")["VALUE"]
+                .iloc[0]
+                .round(4)
+            ),
         }
-        for player_name in team_ranking_original
+        for player_name in team_ranking_new
     ]
 
     team_ids_df = pd.read_csv("TEAM_IDS.csv")
@@ -110,7 +134,7 @@ def api_draft(team_abrv):
         next_pick_number,
         players_pick_prob_ranking,
         pick_probs,
-    ) = move_one_pick_forward(player_picked_id)
+    ) = move_one_pick_forward(player_picked_id, team_abrv)
 
     suggested_player = (
         suggest_a_player(team_abrv, pick_probs) if is_next_pick_team_draft_pick else []
@@ -143,7 +167,7 @@ def api_simulate_pick(team_abrv):
         next_pick_number,
         players_pick_prob_ranking,
         pick_probs,
-    ) = move_one_pick_forward(player_picked_id)
+    ) = move_one_pick_forward(player_picked_id, team_abrv)
 
     if button_id == "yourNextPick":
         while not is_next_pick_team_draft_pick:
@@ -157,7 +181,7 @@ def api_simulate_pick(team_abrv):
                 next_pick_number,
                 players_pick_prob_ranking,
                 pick_probs,
-            ) = move_one_pick_forward(player_picked_id)
+            ) = move_one_pick_forward(player_picked_id, team_abrv)
 
     suggested_player = (
         suggest_a_player(team_abrv, pick_probs) if is_next_pick_team_draft_pick else []
@@ -175,7 +199,7 @@ def api_simulate_pick(team_abrv):
     )
 
 
-def move_one_pick_forward(player_picked_id: int):
+def move_one_pick_forward(player_picked_id: int, team_abrv: str):
     # Get static info
     df_player_positions = pd.read_csv("PLAYER_POSITIONS.csv")
     df_player_ids = pd.read_csv("PLAYER_IDS.csv")
@@ -189,9 +213,11 @@ def move_one_pick_forward(player_picked_id: int):
     session["player_ids_picked"].append(int(player_picked_id))
 
     # Get data passed on from previous screen
-    team_ranking_original = session["new_order"]
+    team_ranking_new = session["new_order"]
+    team_ranking_original = session["original_order"]
     player_ids_picked: List[int] = session["player_ids_picked"]
     available_team_picks: List[int] = session["available_team_picks"]
+    positional_weight = float(session["positional_weight"])
 
     is_next_pick_team_draft_pick = (len(session["player_ids_picked"]) + 1) in session[
         "available_team_picks"
@@ -200,12 +226,25 @@ def move_one_pick_forward(player_picked_id: int):
     pick_index = is_next_pick_team_draft_pick
 
     # Get pick probabilities
+    df_player_ids["PLAYER_NAME"] = pd.Categorical(
+        df_player_ids["PLAYER_NAME"], categories=team_ranking_original, ordered=True
+    )
+    df_player_ids.sort_values("PLAYER_NAME", inplace=True)
+
+    df_player_values = ep.player_value(
+        player_rankings=df_player_ids,
+        player_position=df_player_positions,
+        picks_taken=player_ids_picked,
+        user_weight=positional_weight,
+        team_name=team_abrv,
+    )
     pick_probs = ep.probability_available_pick_specified(
         players_ids_removed=player_ids_picked,
         num_simulations=100,
         pick_number=available_team_picks[pick_index],
     )
     pick_probs = pd.merge(pick_probs, df_player_ids, on=["PLAYER_ID"])
+    df_player_values = pd.merge(df_player_ids, df_player_values, on=["PLAYER_ID"])
 
     players_team_ranking = [
         {
@@ -223,8 +262,13 @@ def move_one_pick_forward(player_picked_id: int):
                 .iloc[0]
                 .round(4)
             ),
+            "player_value": float(
+                df_player_values.query("PLAYER_NAME == @player_name")["VALUE"]
+                .iloc[0]
+                .round(4)
+            ),
         }
-        for player_name in team_ranking_original
+        for player_name in team_ranking_new
     ]
 
     team_ids_df = pd.read_csv("TEAM_IDS.csv")
@@ -276,7 +320,7 @@ def suggest_a_player(team_abrv, pick_probs):
     team_needs_df = pd.read_csv("./Prospect Pool/percentiles.csv", index_col=0)
 
     df_min_max_constraints = pd.Series(json.loads(session["min_max_constraints"]))
-    team_ranking_original = session["new_order"]
+    team_ranking_original = session["original_order"]
     positional_weight = float(session["positional_weight"])
     player_ids_picked: List[int] = session["player_ids_picked"]
     available_team_picks: List[int] = session["available_team_picks"]
@@ -285,9 +329,16 @@ def suggest_a_player(team_abrv, pick_probs):
         df_player_ids["PLAYER_NAME"], categories=team_ranking_original, ordered=True
     )
     df_player_ids.sort_values("PLAYER_NAME", inplace=True)
-    df_player_ids["PICK_VALUE"] = [
-        np.exp(-0.420 * (i**0.391)) for i in range(len(df_player_ids))
-    ]
+
+    df_player_values = ep.player_value(
+        player_rankings=df_player_ids,
+        player_position=df_player_positions,
+        picks_taken=player_ids_picked,
+        user_weight=positional_weight,
+        team_name=team_abrv,
+    )
+
+    df_player_values = pd.merge(df_player_ids, df_player_values, on=["PLAYER_ID"])
 
     suggested_player_id = ep.determine_optimal_pick(
         player_rankings=df_player_ids,
@@ -314,6 +365,11 @@ def suggest_a_player(team_abrv, pick_probs):
                 pick_probs.query("PLAYER_ID == @suggested_player_id")[
                     f"PICK_{available_team_picks[1]}"
                 ]
+                .iloc[0]
+                .round(4)
+            ),
+            "player_value": float(
+                df_player_values.query("PLAYER_ID == @suggested_player_id")["VALUE"]
                 .iloc[0]
                 .round(4)
             ),

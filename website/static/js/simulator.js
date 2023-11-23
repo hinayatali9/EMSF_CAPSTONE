@@ -17,12 +17,16 @@ $(document).ready(function() {
                     <div class="form-check">
                         <div class="row">
                             <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0"><b>Name</b></p>
+                            </div>
+                            <div class="col">
                                 <!-- Player Position -->
                                 <p class="mb-0"><b>Position</b></p>
                             </div>
                             <div class="col">
-                                <!-- Player Name -->
-                                <p class="mb-0"><b>Name</b></p>
+                                <!-- Player Val. -->
+                                <p class="mb-0"><b>Player Val.</b></p>
                             </div>
                             <div class="col">
                                 <!-- Pick Prob. -->
@@ -51,11 +55,14 @@ $(document).ready(function() {
                         '<div class="form-check">' +
                         '<div class="row">' +
                         '<div class="col">' +
+                        '<p class="mb-0">' + player.name + '</p>' +
+                        '</div>' +
+                        '<div class="col">' +
                         '<p class="mb-0">' + player.position + '</p>' +
                         '</div>' +
                         '<div class="col">' +
-                        '<p class="mb-0">' + player.name + '</p>' +
-                        '</div>' +
+                        '<p class="mb-0">' + player.player_value + '</p>' +
+                        '</div>'+
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
                         '</div>'
@@ -99,11 +106,14 @@ $(document).ready(function() {
                             '<div class="form-check">' +
                             '<div class="row">' +
                             '<div class="col">' +
+                            '<p class="mb-0">' + player.name + '</p>' +
+                            '</div>' +
+                            '<div class="col">' +
                             '<p class="mb-0">' + player.position + '</p>' +
                             '</div>' +
                             '<div class="col">' +
-                            '<p class="mb-0">' + player.name + '</p>' +
-                            '</div>' +
+                            '<p class="mb-0">' + player.player_value + '</p>' +
+                            '</div>'+
                             '<div class="col">' +
                             '<p class="mb-0">' + player.pick_prob + '</p>' +
                             '</div>' +
@@ -128,11 +138,14 @@ $(document).ready(function() {
                         '<div class="form-check">' +
                         '<div class="row">' +
                         '<div class="col">' +
+                        '<p class="mb-0">' + player.name + '</p>' +
+                        '</div>' +
+                        '<div class="col">' +
                         '<p class="mb-0">' + player.position + '</p>' +
                         '</div>' +
                         '<div class="col">' +
-                        '<p class="mb-0">' + player.name + '</p>' +
-                        '</div>' +
+                        '<p class="mb-0">' + player.player_value + '</p>' +
+                        '</div>'+
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
                         '</div>'
@@ -179,12 +192,16 @@ $(document).ready(function() {
                     <div class="form-check">
                         <div class="row">
                             <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0"><b>Name</b></p>
+                            </div>
+                            <div class="col">
                                 <!-- Player Position -->
                                 <p class="mb-0"><b>Position</b></p>
                             </div>
                             <div class="col">
-                                <!-- Player Name -->
-                                <p class="mb-0"><b>Name</b></p>
+                                <!-- Player Val. -->
+                                <p class="mb-0"><b>Player Val.</b></p>
                             </div>
                             <div class="col">
                                 <!-- Pick Prob. -->
@@ -213,11 +230,14 @@ $(document).ready(function() {
                         '<div class="form-check">' +
                         '<div class="row">' +
                         '<div class="col">' +
+                        '<p class="mb-0">' + player.name + '</p>' +
+                        '</div>' +
+                        '<div class="col">' +
                         '<p class="mb-0">' + player.position + '</p>' +
                         '</div>' +
                         '<div class="col">' +
-                        '<p class="mb-0">' + player.name + '</p>' +
-                        '</div>' +
+                        '<p class="mb-0">' + player.player_value + '</p>' +
+                        '</div>'+
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
                         '</div>'
@@ -260,11 +280,14 @@ $(document).ready(function() {
                             '<div class="form-check">' +
                             '<div class="row">' +
                             '<div class="col">' +
+                            '<p class="mb-0">' + player.name + '</p>' +
+                            '</div>' +
+                            '<div class="col">' +
                             '<p class="mb-0">' + player.position + '</p>' +
                             '</div>' +
                             '<div class="col">' +
-                            '<p class="mb-0">' + player.name + '</p>' +
-                            '</div>' +
+                            '<p class="mb-0">' + player.player_value + '</p>' +
+                            '</div>'+
                             '<div class="col">' +
                             '<p class="mb-0">' + player.pick_prob + '</p>' +
                             '</div>' +
@@ -289,11 +312,14 @@ $(document).ready(function() {
                         '<div class="form-check">' +
                         '<div class="row">' +
                         '<div class="col">' +
+                        '<p class="mb-0">' + player.name + '</p>' +
+                        '</div>' +
+                        '<div class="col">' +
                         '<p class="mb-0">' + player.position + '</p>' +
                         '</div>' +
                         '<div class="col">' +
-                        '<p class="mb-0">' + player.name + '</p>' +
-                        '</div>' +
+                        '<p class="mb-0">' + player.player_value + '</p>' +
+                        '</div>'+
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
                         '</div>'

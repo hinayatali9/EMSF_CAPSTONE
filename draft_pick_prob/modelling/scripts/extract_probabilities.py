@@ -867,7 +867,7 @@ def player_value(
     picks_taken: list,
     user_weight: float,
     team_name: str,
-):
+) -> pd.DataFrame:
     l_player_val = []
     for i in range(len(player_rankings)):
         l_player_val.append(np.exp(-0.420 * (i**0.391)))
