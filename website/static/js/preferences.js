@@ -23,7 +23,7 @@ $(function () {
                 "C": $(centre_max)[0].value,
             }
         }
-        min_number_of_picks = parseInt($(goalie_min)[0].value) + parseInt($(ld_min)[0].value) + parseInt($(rd_min)[0].value) + parseInt($(lw_min)[0].value) + $(rw_min)[0].value + parseInt($(centre_min)[0].value)
+        min_number_of_picks = parseInt($(goalie_min)[0].value) + parseInt($(ld_min)[0].value) + parseInt($(rd_min)[0].value) + parseInt($(lw_min)[0].value) + parseInt($(rw_min)[0].value) + parseInt($(centre_min)[0].value)
         if (min_number_of_picks > parseInt($(num_picks)[0].getAttribute("value"))) {
             alert("Not enough draft picks available for min number of picks selected")
         }
@@ -39,7 +39,7 @@ $(function () {
                         "min_max_constraints": min_max_constraints
                     }
                 ),
-                success: function(data) {
+                success: function (data) {
                     window.location.href = data.url;
                 }
             });
