@@ -42,7 +42,7 @@ def draft_simulator(team_abrv):
 
     pick_probs = ep.probability_available_pick_specified(
         players_ids_removed=player_ids_picked,
-        num_simulations=100,
+        num_simulations=1000,
         pick_number=available_team_picks[pick_index],
     )
     pick_probs = pd.merge(pick_probs, df_player_ids, on=["PLAYER_ID"])
@@ -123,7 +123,11 @@ def api_draft(team_abrv):
     data = request.get_json()
     player_picked_id = int(data.get("player_id"))
 
-    session["available_team_picks"].pop(0)
+    is_cur_pick_team_draft_pick = (len(session["player_ids_picked"]) + 1) in session[
+        "available_team_picks"
+    ]
+    if is_cur_pick_team_draft_pick:
+        session["available_team_picks"].pop(0)
 
     (
         is_next_pick_team_draft_pick,
@@ -238,7 +242,7 @@ def move_one_pick_forward(player_picked_id: int, team_abrv: str):
     )
     pick_probs = ep.probability_available_pick_specified(
         players_ids_removed=player_ids_picked,
-        num_simulations=100,
+        num_simulations=1000,
         pick_number=available_team_picks[pick_index],
     )
     pick_probs = pd.merge(pick_probs, df_player_ids, on=["PLAYER_ID"])

@@ -32,16 +32,10 @@ $(document).ready(function() {
                                 <!-- Pick Prob. -->
                                 <p class="mb-0"><b>Pick Prob.</b></p>
                             </div>
-                `
-                if (msg.is_next_pick_team_draft_pick === true){
-                    headerHtml = headerHtml +
-                    `<!-- Draft Button -->
-                    <div class="col-auto">
-                        <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
-                    </div>`
-                }
-                headerHtml = headerHtml +
-                `    
+                            <!-- Draft Button -->
+                            <div class="col-auto">
+                                <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                            </div>
                         </div>
                     </div>
                 </li>`
@@ -65,16 +59,9 @@ $(document).ready(function() {
                         '</div>'+
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
-                        '</div>'
-                        
-                    if (msg.is_next_pick_team_draft_pick === true){
-                        listItem = listItem +
+                        '</div>' +
                         '<div class="col-auto">' +
                         '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>' +
-                        '</div>'
-                    }
-
-                    listItem = listItem +
                         '</div>' +
                         '</div>' +
                         '</div>' +
@@ -148,16 +135,9 @@ $(document).ready(function() {
                         '</div>'+
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
-                        '</div>'
-                        
-                    if (msg.is_next_pick_team_draft_pick === true){
-                        listItem = listItem +
+                        '</div>' +
                         '<div class="col-auto">' +
                         '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>' +
-                        '</div>'
-                    }
-
-                    listItem = listItem +
                         '</div>' +
                         '</div>' +
                         '</div>' +
@@ -207,16 +187,10 @@ $(document).ready(function() {
                                 <!-- Pick Prob. -->
                                 <p class="mb-0"><b>Pick Prob.</b></p>
                             </div>
-                `
-                if (msg.is_next_pick_team_draft_pick === true){
-                    headerHtml = headerHtml +
-                    `<!-- Draft Button -->
-                    <div class="col-auto">
-                        <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
-                    </div>`
-                }
-                headerHtml = headerHtml +
-                `    
+                            <!-- Draft Button -->
+                            <div class="col-auto">
+                                <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                            </div>
                         </div>
                     </div>
                 </li>`
@@ -240,16 +214,10 @@ $(document).ready(function() {
                         '</div>'+
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
-                        '</div>'
-                        
-                    if (msg.is_next_pick_team_draft_pick === true){
-                        listItem = listItem +
+                        '</div>' +
                         '<div class="col-auto">' +
                         '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>' +
-                        '</div>'
-                    }
-
-                    listItem = listItem +
+                        '</div>' +
                         '</div>' +
                         '</div>' +
                         '</li>';
@@ -322,16 +290,9 @@ $(document).ready(function() {
                         '</div>'+
                         '<div class="col">' +
                         '<p class="mb-0">' + player.pick_prob + '</p>' +
-                        '</div>'
-
-                    if (msg.is_next_pick_team_draft_pick === true){
-                        listItem = listItem +
+                        '</div>' +
                         '<div class="col-auto">' +
                         '<button id="draftButton_' + player.id + '" class="btn btn-primary draft-button mb-0 float-right">Draft</button>' +
-                        '</div>'
-                    }
-
-                    listItem = listItem +
                         '</div>' +
                         '</div>' +
                         '</div>' +
