@@ -10,10 +10,11 @@ Philip Broberg,8
 Trevor Zegras,9
 Vasili Podkolzin,10
 Victor Soderström,11
-Matthew Boldy,12
+Matt Boldy,12
 Spencer Knight,13
 Cam York,14
 Cole Caufield,15
+Alexander Newhook,16
 Alex Newhook,16
 Peyton Krebs,17
 Thomas Harley,18
@@ -35,8 +36,8 @@ Arthur Kaliyev,33
 Bobby Brink,34
 Antti Tuomisto,35
 Pyotr Kochetkov,36
-Mads Søgaard,37
-Raphaël Lavoie,38
+Mads Sogaard,37
+Raphael Lavoie,38
 Jackson LaCombe,39
 Nils Hoglander,40
 Kaedan Korczak,41
@@ -61,13 +62,12 @@ Hunter Jones,59
 Albert Johansson,60
 Nikita Okhotyuk,61
 Nikita Alexandrov,62
+Matthew Stienburg,63
 Matt Stienburg,63
 Mattias Norlinder,64
-Alex Campbell,65
 Alexander Campbell,65
 Albin Grewe,66
 Erik Portillo,67
-Zachary Jones,68
 Zac Jones,68
 John Ludvig,69
 Daniil Misyul,70
@@ -138,6 +138,7 @@ Harrison Blaisdell,134
 Isaiah Saville,135
 Henrik Rybinski,136
 Owen Lindmark,137
+Frederik Nissen Dichow,138
 Frederik Dichow,138
 Marcus Kallionkieli,139
 Sasha Mutala,140
@@ -153,6 +154,7 @@ Matvei Guskov,149
 Joshua Nodler,150
 Aku Raty,151
 Kirill Slepets,152
+Martin Hugo Has,153
 Martin Has,153
 Roman Bychkov,154
 Keean Washkurak,155
@@ -180,6 +182,7 @@ Anthony Romano,176
 Gustav Berglund,177
 Felix Bibeau,178
 Isak Walther,179
+John Jack Malone,180
 Jack Malone,180
 Kevin Wall,181
 Quinn Schmiemann,182
@@ -218,13 +221,77 @@ Dustin Wolf,214
 Arvid Costmar,215
 Massimo Rizzo,216
 Jeremy Michel,217
-Nicholas Robertson,53
 Billy Constantinou,218
 Dmitri Sheshin,219
 Xavier Simoneau,220
 Cole Mackay,221
 Daniil Gutik,222
-Cameron York ,223
-Oleg Zaytsev ,224
-Ludvig Hedstrom ,225
-Vojtech Strondala ,226
+Alex Campbell,223
+Dmitri Vorobiev ,224
+Maxwell Crozier ,225
+Oleg Zaitsev,226
+Ilya Mironov,227
+Josh Williams,228
+Jake Lee,229
+Taylor Gauthier,230
+Nando Eggenberger,231
+Radek Muzik,232
+Zachary Okabe,233
+Cameron Rowe ,234
+Luke Toporowski ,235
+Roman Basran ,236
+Liam Ross ,237
+Matthew Struthers ,238
+William Constantinou ,239
+Michal Mrazik,240
+Christopher Giroday ,241
+Joe Carroll ,242
+Ondrej Psenicka ,243
+Michael Gildon ,244
+Justin Ducharme ,245
+Samuel Hlavaj ,246
+Tarun Fizer ,247
+Eric Uba ,248
+Logan Barlage,249
+Kari Piiroinen,250
+Evgeni Oksentyuk,251
+Christopher Meriser Ortiz,252
+Oliver Turan,253
+Nathan Dunkley,254
+Kosta Manikis,255
+Mack Guzda,256
+Daniel D`Amico,257
+Brett Budgell,258
+Sean Larochelle,259
+Danil Antropov,260
+Danila Galenyuk,261
+Nick Bochen,262
+Ludvig Hedström,263
+Jordan Frasca,264
+Clay Hanus,265
+Ivan Muranov,266
+Zachary Uens,267
+Jackson van de Leest,268
+Grant Silianoff,269
+Jack York,270
+Yegor Chinakhov,271
+Mitchell Brown,272
+Dmitri Tyuvulin,273
+Ben McCartney,274
+Martin Lang,275
+Alex Young,276
+Taro Jentzsch,277
+Oliver Okuliar,278
+Lucas Johansson,279
+Kirby Proctor,280
+Ethan Leyh,281
+Mitchell Brewer,282
+Ethan Frisch,283
+Parker Ford,284
+Yegor Chizhikov,285
+Danny Weight,286
+Kyle Topping,287
+Jackson Millar,288
+Jeremi Gerber,289
+Brayden Guy,290
+Connor Horning,291
