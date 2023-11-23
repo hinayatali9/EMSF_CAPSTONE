@@ -10,7 +10,7 @@ personal_path = os.getcwd()
 personal_path = personal_path[
     : (personal_path.find("EMSF_CAPSTONE") + len("EMSF_CAPSTONE/"))
 ].replace("\\", "/")
-if personal_path[-1] != '/':
+if personal_path[-1] != "/":
     personal_path += "/"
 
 UNIVERSAL_DF = pd.read_csv(
@@ -42,7 +42,6 @@ def simulate_player_selection(parameters: list, x: int):
         selected_players.append(indices[selected_player] + 1)
         indices.pop(selected_player)
         remaining_parameters = np.delete(remaining_parameters, selected_player)
-        # print(len(remaining_parameters))
 
     return selected_players
 
@@ -161,7 +160,6 @@ def get_pick_values(df: pd.DataFrame, pick_numbers_left: list, picks_taken: list
     players = list(df["PLAYER_ID"])
     positions = list(df["POS"])
     team_needs = list(df["TEAM_NEED"])
-    print(players)
     dict_player_value = {}
     list_of_cols = []
     list_of_remaining_picks = pick_numbers_left[1:]
@@ -171,7 +169,7 @@ def get_pick_values(df: pd.DataFrame, pick_numbers_left: list, picks_taken: list
         number_differences.append(i - pick_numbers_left[0])
     for i in range(len(players)):
         dict_player_value[(players[i], positions[i], team_needs[i])] = float(
-            df.loc[df["PLAYER_ID"] == players[i]]["PICK_VALUE"]
+            df.loc[df["PLAYER_ID"] == players[i]]["PICK_VALUE"].iloc[0]
         )
         test_df = df.loc[df["PLAYER_ID"] != players[i]]
         additional_player_value = 0
@@ -307,18 +305,19 @@ def score_and_rank(df_dict):
     df_dict_out = {}
 
     for i in df_dict:
-        if len(df_dict[i]) == 1:
-            df_dict[i]["zscore"] = 0
+        df = df_dict[i].copy()
+        if len(df) == 1:
+            df.loc[:, "zscore"] = 0
         else:
             if "G" in i:
-                df_dict[i]["zscore"] = (
-                    df_dict[i]["Goalie Equivalency"]
-                    - df_dict[i]["Goalie Equivalency"].mean()
-                ) / df_dict[i]["Goalie Equivalency"].std()
+                df.loc[:, "zscore"] = (
+                    df["Goalie Equivalency"] - df["Goalie Equivalency"].mean()
+                ) / df["Goalie Equivalency"].std()
             else:
-                df_dict[i]["zscore"] = (
-                    df_dict[i]["NHL eP"] - df_dict[i]["NHL eP"].mean()
-                ) / df_dict[i]["NHL eP"].std()
+                df.loc[:, "zscore"] = (df["NHL eP"] - df["NHL eP"].mean()) / df[
+                    "NHL eP"
+                ].std()
+        df_dict[i] = df
 
         df_dict = fill_missing_teams(df_dict, i, "zscore")
         df_dict[i]["exp_zscore"] = np.exp(df_dict[i]["zscore"])
@@ -437,7 +436,7 @@ def update_prospect_ranker(player_IDs):
         draft_order.append(i)
 
     for ID in range(len(player_IDs)):
-        filtered_row = df_2023[df_2023["PLAYER_ID"] == player_IDs[ID]]
+        filtered_row = df_2023[df_2023["PLAYER_ID"] == player_IDs[ID]].copy()
         filtered_row["Team"] = draft_order[ID]
         filtered_row.drop(columns="PLAYER_ID", inplace=True)
         df1 = pd.concat([df1, filtered_row], ignore_index=True)
@@ -580,7 +579,7 @@ def objective(
     selected = np.where(x_values_lp == 1)[0]  # get assignments
 
     # Print selected player
-    return int(df.iloc[selected]["PLAYER_ID"])
+    return int(df.iloc[selected]["PLAYER_ID"].iloc[0])
 
 
 #   return sol, df.iloc[selected]['PLAYER_ID']
@@ -708,8 +707,6 @@ def simulate_draft(
                 pos_const,
                 user_weight,
             )
-            print(returned)
-            print(print(f"You selected {name_player(returned[1], player_names)}"))
             picks_taken.append(returned[1])
             players_drafted.append(returned[1])
             pick_numbers_left.pop(0)
@@ -782,7 +779,7 @@ def get_pick_probability_by_next_pick(
     ]
     params = player_ability_parameters_df["ABILITY_PARAMS"]
     player_ids = list(player_ability_parameters_df["PLAYER_ID"])
-    df_new = player_ability_parameters_df[["PLAYER_ID", "ABILITY_PARAMS"]]
+    df_new = player_ability_parameters_df[["PLAYER_ID", "ABILITY_PARAMS"]].copy()
     df_new["order"] = range(1, len(params) + 1)
     df_new["PICK_" + str(pick_number)] = 1
     simulation_results = []
@@ -791,6 +788,9 @@ def get_pick_probability_by_next_pick(
     )
     simulation_results = [item for sublist in simulation_results for item in sublist]
     counter = Counter(simulation_results)
+    df_new["PICK_" + str(pick_number)] = df_new[
+        "PICK_" + str(pick_number)
+    ].astype(float)
     for element, count in counter.items():
         df_new.loc[df_new["PLAYER_ID"] == element, "PICK_" + str(pick_number)] -= (
             count / num_simulations
@@ -818,8 +818,9 @@ def checking_probability_picks(
             for item in sublist[0 : (i - len(players_ids_removed) - 1)]
         ]
         counter = Counter(simulation_results)
-        df_new = player_ability_parameters_df[["PLAYER_ID"]]
+        df_new = player_ability_parameters_df[["PLAYER_ID"]].copy()
         df_new["PICK_" + str(i)] = 1
+        df_new.loc["PICK_" + str(i)] = df_new["PICK_" + str(i)].astype(float)
         for element, count in counter.items():
             df_new.loc[df_new["PLAYER_ID"] == element, "PICK_" + str(i)] -= (
                 count / num_simulations
