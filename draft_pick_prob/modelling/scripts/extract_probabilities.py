@@ -654,15 +654,16 @@ def determine_optimal_pick(
         get_value, axis=1, team=team, external_df=team_needs
     )
     pick_values = get_pick_values(new_tab, pick_numbers_left, picks_taken)
-    return objective(
-        pick_values,
-        max_pos_const,
-        min_pos_const,
-        picks_taken,
-        pick_numbers_left,
-        team,
-        user_weight,
-    )
+    return pick_values
+    # return objective(
+    #     pick_values,
+    #     max_pos_const,
+    #     min_pos_const,
+    #     picks_taken,
+    #     pick_numbers_left,
+    #     team,
+    #     user_weight,
+    # )
 
 
 def simulate_draft(
