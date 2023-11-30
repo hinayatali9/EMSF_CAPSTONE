@@ -203,8 +203,8 @@ def rank_pre_processing(df):
     and age group.
     Players under the age of 19 are grouped with the 19 year old datafarames.
 
-    Input: Prospect pool dataframe
-    Output: Dictionary with multiple prospect pool dataframes for each age and position
+    @param {dataframe} df - Prospect pool dataframe
+    @returns a dictionary with multiple prospect pool dataframes for each age and position
     """
     df.loc[(df["Specific POS"] == "LW"), "Specific POS"] = "F"
     df.loc[(df["Specific POS"] == "C"), "Specific POS"] = "F"
@@ -234,6 +234,11 @@ def fill_missing_teams(df_dict, key, col):
     without any players in it. This data gets stored in the dataframes such that every team gets a percentile
     ranking later in the code. And these ranking must be lower than the teams with actual prospects for each
     age group and position.
+
+    @param {dictionary} df_dict - a dictionary that contains all position-age dataframes of the seperated prospect pool
+    @param {str} key - the name of each dataframe which outlines the position and age. Used as the keys to df_dict
+    @param {str} col - the name of the column that needs to be filled in (Z-score in this case)
+    @returns the updated df_dict dictionary 
     """
     Teams = [
         "COL",
@@ -299,12 +304,13 @@ def score_and_rank(df_dict):
     are ranked. Unncessary columns are removed and what remains is the team name and rank in each
     age/position dataframe.
 
-    Input: Dictionary of dataframes for the entire prospect pool, with all metrics included.
-    Output: Dictionary of dataframes with team names and prospect pool rankings for each group.
+    @param {dictionary} df_dict - a dictionary that contains all position-age dataframes of the seperated prospect pool
+    @returns a dictionary of dataframes with team names and prospect pool rankings for each group
     """
     df_dict_out = {}
 
     for i in df_dict:
+        # Calculate Z-scores
         df = df_dict[i].copy()
         if len(df) == 1:
             df.loc[:, "zscore"] = 0
@@ -319,13 +325,16 @@ def score_and_rank(df_dict):
                 ].std()
         df_dict[i] = df
 
+        # Provide missing teams with some lower Z-score value to be ranked at the bottom
         df_dict = fill_missing_teams(df_dict, i, "zscore")
+
+        # Transform Z-scores to ensure positive prospect pool contribution for all players
         df_dict[i]["exp_zscore"] = np.exp(df_dict[i]["zscore"])
 
         df_dict_out[i] = df_dict[i].groupby("Team").sum("exp_zscore")
         df_dict_out[i]["rank"] = df_dict_out[i]["exp_zscore"].rank(
             pct=True
-        )  # ascending = False)
+        ) 
         df_dict_out[i].drop(
             columns=[
                 "AGE",
@@ -354,22 +363,24 @@ def group_ranker(rank_dfs, weights):
     newly drafted players
     get combined with the 19 year old dataframe, such that they don't have an overly drastic effect on the rankings.
 
-    Input: Dictionary of dataframes with team names and prospect pool rankings for each age/position group.
-    Output: Dataframe of team names and prospect pool rankings for each position.
+    @param {dictionary} rank_dfs - Dictionary of dataframes with team names and prospect pool rankings for each age/position group
+    @param {float} weights - Weights for each individual ranking, used in weighted sum
+    @returns a dataframe of team names and prospect pool rankings for each position
     """
     result = pd.DataFrame()
 
     for key in rank_dfs:
         position, age = key.split("-")  # split the key into position and age
-        weight = weights[int(age)]  # get the weight for this age
+        weight = weights[int(age)]  
 
-        df = rank_dfs[key].copy()  # get the DataFrame for this key
+        df = rank_dfs[key].copy()  
         df["rank"] *= weight  # multiply the percentile rankings by the weight
 
+        # add to the existing DataFrame for this position
         if position in result:
             result[position] += df[
                 "rank"
-            ]  # add to the existing DataFrame for this position
+            ]  
         else:
             result[position] = df["rank"]
 
@@ -381,6 +392,13 @@ def group_ranker(rank_dfs, weights):
 
 
 def update_prospect_ranker(player_IDs):
+    """
+    This function updates the prospect pool rankings of the league by taking into account the players who have been drafted thus far.
+
+    @param {list} player_IDs - List of player IDs for players who have been drafted so far
+    @returns the dataframe from the group_ranker function
+    """
+
     df_weight = {19: 0.85, 20: 0.7, 21: 0.55, 22: 0.4, 23: 0.25}
     draft_order = []
 
@@ -432,6 +450,7 @@ def update_prospect_ranker(player_IDs):
     ] = df_draft["TEAM_NAME"].map(replacement_mapping)
     df_draft = df_draft["TEAM_NAME"]
 
+    # Organize draft order and place players taken with their respective team's prospect pools
     for i in df_draft[0 : len(player_IDs)]:
         draft_order.append(i)
 
@@ -441,6 +460,7 @@ def update_prospect_ranker(player_IDs):
         filtered_row.drop(columns="PLAYER_ID", inplace=True)
         df1 = pd.concat([df1, filtered_row], ignore_index=True)
 
+    # Rank the dataframes and group them
     rank_pre_proc = rank_pre_processing(df1)
     indiv_ranks = score_and_rank(rank_pre_proc)
     ranks_new = group_ranker(indiv_ranks, df_weight)
@@ -455,6 +475,20 @@ def pos_constraints(
     pick_numbers_left: list,
     team: str,
 ):
+    """
+    This function implements the user's positional constraints by updating the maximum and minimum 
+    values of each position, based on who has been drafed thus far.
+    
+    @param {dictionary} max_pos_const - A dictionary of the maximum positional constraints, where the key is a str type 
+                                        of the position abbreviation and the item is an integer for the user inputted value
+    @param {dictionary} min_pos_const - A dictionary of the minimum positional constraints, where the key is a str type 
+                                        of the position abbreviation and the item is an integer for the user inputted value
+    @param {list} picks_taken - List of player IDs for players who have been drafted so far
+    @param {list} pick_numbers_left - List of pick numbers that the selected team has left to draft
+    @param {str} team - Team name
+    @returns the updated max_pos_const dictionary for players who have been selected
+    @returns a list of positional abbreviations that are not needed, in order to satisfy the minimum positional constraints
+    """
     draft_order = []
     needs = []
 
@@ -505,6 +539,7 @@ def pos_constraints(
     ] = df_draft["TEAM_NAME"].map(replacement_mapping)
     df_draft = df_draft["TEAM_NAME"]
 
+    # Organize draft order and track player position for those selecetd thus far
     for i in df_draft[0 : len(picks_taken)]:
         draft_order.append(i)
 
@@ -514,17 +549,18 @@ def pos_constraints(
                 "Specific POS"
             ].values[0]
 
-            # Decrease the maximum position constraint
+            # Decrease the maximum and minimum position constraint for who has been selected
             if max_pos_const.get(specific_pos, 0) > 0:
                 max_pos_const[specific_pos] -= 1
 
             if min_pos_const.get(specific_pos, 0) > 0:
                 min_pos_const[specific_pos] -= 1
-
+       
+    #  If remaining picks = sum of minimum constraints, need to enforce other positions to not be selected
     if len(pick_numbers_left) == sum(min_pos_const.values()):
         for key, item in min_pos_const.items():
             if item == 0:
-                needs.append(key)
+                needs.append(key) # updates list of non-needed positions
 
     return max_pos_const, needs
 
