@@ -20,7 +20,7 @@
                 <li class="list-group-item">
                     <img src="{{ url_for('static', filename='img/'+ pick['team_abrv'] +'.svg') }}"
                         alt="{{ pick['team_name'] }}" width="55">
-                    <span>{{ pick['player_name'] }}</span>
+                    <span><b>{{ pick['player_name'] }}</b></span>
                 </li>
                 {% endfor %}
             </ol>
@@ -37,21 +37,27 @@
                     <div class="form-check">
                         <div class="row">
                             <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0"><b>Name</b></p>
+                            </div>
+                            <div class="col">
                                 <!-- Player Position -->
                                 <p class="mb-0"><b>Position</b></p>
                             </div>
                             <div class="col">
-                                <!-- Player Name -->
-                                <p class="mb-0"><b>Name</b></p>
+                                <!-- Player Val. -->
+                                <p class="mb-0"><b>Player Val.</b></p>
                             </div>
                             <div class="col">
                                 <!-- Pick Prob. -->
                                 <p class="mb-0"><b>Pick Prob.</b></p>
                             </div>
                             <!-- Draft Button -->
+                            
                             <div class="col-auto">
-                                <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
-                            </div>
+                                    <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                                </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -60,22 +66,28 @@
                     <div class="form-check">
                         <div class="row">
                             <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0">{{ player['name'] }}</p>
+                            </div>
+                            <div class="col">
                                 <!-- Player Position -->
                                 <p class="mb-0">{{ player['position'] }}</p>
                             </div>
                             <div class="col">
-                                <!-- Player Name -->
-                                <p class="mb-0">{{ player['name'] }}</p>
+                                <!-- Player Val. -->
+                                <p class="mb-0">{{ player['player_value'] }}</p>
                             </div>
                             <div class="col">
                                 <!-- Pick Prob. -->
                                 <p class="mb-0">{{ player['pick_prob'] }}</p>
                             </div>
                             <!-- Draft Button -->
+                            
                             <div class="col-auto">
-                                <button id="draftButton_{{ player['id'] }}"
+                                    <button id="draftButton_{{ player['id'] }}"
                                     class="btn btn-primary draft-button mb-0 float-right">Draft</button>
-                            </div>
+                                </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -86,26 +98,32 @@
     <div id="quadrant3" class="quadrant">
         <!-- Quadrant 3 -->
         <h2>Player Suggestion</h2>
-        <ul id="players-team-ranking" class="list-group">
+        <ul id="suggested_player" class="list-group">
             <li class="list-group-item">
                 <div class="form-check">
                     <div class="row">
+                        <div class="col">
+                            <!-- Player Name -->
+                            <p class="mb-0"><b>Name</b></p>
+                        </div>
                         <div class="col">
                             <!-- Player Position -->
                             <p class="mb-0"><b>Position</b></p>
                         </div>
                         <div class="col">
-                            <!-- Player Name -->
-                            <p class="mb-0"><b>Name</b></p>
+                            <!-- Player Val. -->
+                            <p class="mb-0"><b>Player Val.</b></p>
                         </div>
                         <div class="col">
                             <!-- Pick Prob. -->
                             <p class="mb-0"><b>Pick Prob.</b></p>
                         </div>
                         <!-- Draft Button -->
+                        
                         <div class="col-auto">
-                            <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
-                        </div>
+                                <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                            </div>
+                        
                     </div>
                 </div>
             </li>
@@ -114,29 +132,35 @@
                 <div class="form-check">
                     <div class="row">
                         <div class="col">
+                            <!-- Player Name -->
+                            <p class="mb-0">{{ player['name'] }}</p>
+                        </div>
+                        <div class="col">
                             <!-- Player Position -->
                             <p class="mb-0">{{ player['position'] }}</p>
                         </div>
                         <div class="col">
-                            <!-- Player Name -->
-                            <p class="mb-0">{{ player['name'] }}</p>
+                            <!-- Player Val. -->
+                            <p class="mb-0">{{ player['player_value'] }}</p>
                         </div>
                         <div class="col">
                             <!-- Pick Prob. -->
                             <p class="mb-0">{{ player['pick_prob'] }}</p>
                         </div>
                         <!-- Draft Button -->
+                        
                         <div class="col-auto">
-                            <button id="draftButton_{{ player['id'] }}"
+                                <button id="draftButton_{{ player['id'] }}"
                                 class="btn btn-primary draft-button mb-0 float-right">Draft</button>
-                        </div>
+                            </div>
+                        
                     </div>
                 </div>
             </li>
             {% endfor %}
         </ul>
         <br>
-        <h2>Your next pick: {{ next_pick_number }}</h2>
+        <h3 id="next_pick_number">Your next pick: {{ next_pick_number }}</h3>
     </div>
     <div id="quadrant4" class="quadrant">
         <!-- Quadrant 4 -->
@@ -148,21 +172,27 @@
                     <div class="form-check">
                         <div class="row">
                             <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0"><b>Name</b></p>
+                            </div>
+                            <div class="col">
                                 <!-- Player Position -->
                                 <p class="mb-0"><b>Position</b></p>
                             </div>
                             <div class="col">
-                                <!-- Player Name -->
-                                <p class="mb-0"><b>Name</b></p>
+                                <!-- Player Val. -->
+                                <p class="mb-0"><b>Player Val.</b></p>
                             </div>
                             <div class="col">
                                 <!-- Pick Prob. -->
                                 <p class="mb-0"><b>Pick Prob.</b></p>
                             </div>
                             <!-- Draft Button -->
+                            
                             <div class="col-auto">
-                                <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
-                            </div>
+                                    <button class="btn btn-primary mb-0 draft-button-header float-right">Draft</button>
+                                </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -171,22 +201,28 @@
                     <div class="form-check">
                         <div class="row">
                             <div class="col">
+                                <!-- Player Name -->
+                                <p class="mb-0">{{ player['name'] }}</p>
+                            </div>
+                            <div class="col">
                                 <!-- Player Position -->
                                 <p class="mb-0">{{ player['position'] }}</p>
                             </div>
                             <div class="col">
-                                <!-- Player Name -->
-                                <p class="mb-0">{{ player['name'] }}</p>
+                                <!-- Player Val. -->
+                                <p class="mb-0">{{ player['player_value'] }}</p>
                             </div>
                             <div class="col">
                                 <!-- Pick Prob. -->
                                 <p class="mb-0">{{ player['pick_prob'] }}</p>
                             </div>
                             <!-- Draft Button -->
+                            
                             <div class="col-auto">
-                                <button id="draftButton_{{ player['id'] }}"
+                                    <button id="draftButton_{{ player['id'] }}"
                                     class="btn btn-primary draft-button mb-0 float-right">Draft</button>
-                            </div>
+                                </div>
+                            
                         </div>
                     </div>
                 </li>
@@ -195,6 +231,7 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
     <script src="{{ url_for('static', filename='js/simulator.js') }}"></script>
 </body>
 

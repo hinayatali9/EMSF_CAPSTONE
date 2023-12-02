@@ -9,6 +9,7 @@ flask = "*"
 numpy = "*"
 scipy = "*"
 cvxpy = "*"
+flask-session = "*"
 
 [dev-packages]
 flake8 = "*"
