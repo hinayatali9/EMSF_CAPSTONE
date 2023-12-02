@@ -16,8 +16,8 @@ Tested with Python 3.9 and 3.11
 
 ## Generate Ability Parameters
 
-The notebook to generate ability parameters for 2023 can be found under draft_pick_prob/modelling/notebooks in the generate_ability_params.ipynb file. For previous years (2019-2023) each notebook can be found in the draft_pick_prob/model_validation/ folder under the appropriate year.
+The notebook to generate ability parameters for 2023 can be found under `draft_pick_prob/modelling/notebooks` in the generate_ability_params.ipynb file. For previous years (2019-2023) each notebook can be found in the `draft_pick_prob/model_validation/` folder under the appropriate year.
 
 ## Key Functions
 
-All of the key functions used by our interface can be found under draft_pick_prob/modelling/scripts in the extract_probabilities.py file.
+All of the key functions used by our interface can be found under `draft_pick_prob/modelling/scripts` in the extract_probabilities.py file.
